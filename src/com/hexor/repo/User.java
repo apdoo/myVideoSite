@@ -19,6 +19,8 @@ public class User extends BasePojo {
     private String loginIp="";//上次登录的ip
     private String loginTime="";//上次登录的时间
     private String temp="";//会员到期时间
+    private String uploadVideoIds;//会员上传的视频的id 如:vid1,vid2,vid3
+    private String postIds;//会员发布的帖子的id 如pid1,pid2,pid3
 
     @Override
     public String toString() {

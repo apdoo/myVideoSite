@@ -18,6 +18,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/images/pageicon.png">
     <link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet" type="text/css"  media="all" />
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/button.css">
+
     <!--
     <link rel="stylesheet" type="text/css" href="styles.css">
     -->
@@ -36,30 +37,36 @@
             <div class="col span_account">
                 <div class="contact-form">
                     <h3>注册账号</h3>
-                    <form>
+                    <form  action="${pageContext.request.contextPath}/user/signup" method="post" id="signup_form" >
                         <div>
-                            <span><label>账号名(用户名以字母开头，可以包含数字、下划线，长度不小于5位)</label></span>
-                            <span><input type="text" value=""></span>
+                            <span ><label>账号名(用户名以字母开头，可以包含数字、下划线，长度不小于5位)</label></span>
+                            <span id="username_tip"></span>
+                            <span><input tabindex="1" type="text" name="username" id="newusername" value="" maxlength="20"></span>
                         </div>
                         <div>
-                            <span><label>密码(密码可以包含字母，数字，区分大小写，长度不小于6位)</label></span>
-                            <span><input type="text" value=""></span>
+                            <span ><label>密码(密码可以包含字母，数字，区分大小写，长度不小于6位)</label></span>
+                            <span id="password_tip"></span>
+                            <span><input type="password" name="password" id="newpassword"  maxlength="20"></span>
                         </div>
                         <div>
                             <span><label>确定密码</label></span>
-                            <span><input type="text" value=""></span>
+                            <span><input type="password" name="cpassword" id="cpassword"  maxlength="20"></span>
                         </div>
                         <div>
-                            <span><label>邮箱</label></span>
-                            <span><input type="text" value=""></span>
+                            <span ><label>邮箱</label></span>
+                            <span id="email_tip"></span>
+                            <span><input type="text" name="email" id="email" maxlength="30"></span>
                         </div>
                         <div>
-                            <span><label>验证码</label></span>
-                            <span><input type="text" value=""></span>
+                            <img id="vimg"  src="${pageContext.request.contextPath}/validation/one" />
                         </div>
                         <div>
-                            <%--<span><input type="submit" value="提交"></span>--%>
-                            <span>    <input type="button"  class="button blue" value="注 册" tabindex="5"></span>
+                            <span ><label>验证码</label></span>
+                            <span id="vcode_tip"></span>
+                            <span><input type="text" id="verification_code" name="vcode" maxlength="6"></span>
+                        </div>
+                        <div>
+                            <span> <input id="saveCookieSign" type="checkbox" value="" />记住密码<input id="reg" type="button"   class="button blue" value="注 册" tabindex="5"></span>
                         </div>
                     </form>
                 </div>
@@ -68,22 +75,19 @@
             <div class="col span_account">
                 <div class="contact-form">
                     <h3>登录</h3>
-                    <form>
+                    <form id="login_form" method="post" action="${pageContext.request.contextPath}/user/login" >
                         <div>
                             <span><label>账号名</label></span>
-                            <span><input type="text" value=""></span>
+                            <span><input name="username" type="text" id="login_username"  maxlength="20"></span>
+                            <span id="login_username_tip"></span>
                         </div>
                         <div>
                             <span><label>密码</label></span>
-                            <span><input type="text" value=""></span>
+                            <span><input name="password" type="password" id="login_password"  maxlength="20"></span>
+                            <span id="login_password_tip"></span>
                         </div>
                         <div>
-                            <span><label>验证码</label></span>
-                            <span><input type="text" value=""></span>
-                        </div>
-                        <div>
-                            <%--<span><input type="submit" value="提交"></span>--%>
-                            <span>    <label> <input id="saveCookie" type="checkbox" value="" />记住密码</label>  <input type="button"  class="button blue" value="登 录" tabindex="5"></span>
+                            <span><label><input id="saveCookie" type="checkbox" value="" />记住密码</label>  <input id="login" type="button"  class="button blue" value="登 录" tabindex="5"></span>
                         </div>
                     </form>
                 </div>
@@ -94,6 +98,5 @@
 </div>
     <!--尾部-->
     <%@ include file="common/footer.jsp" %>
-
 </body>
 </html>

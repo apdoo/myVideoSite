@@ -40,6 +40,30 @@ public class ForntSitePageController {
     }
 
     /**
+     * 用户信息中心页面
+     * @param request
+     * @param response
+     * @return
+     */
+    @RequestMapping(value="myaccount")
+    public String myaccount(HttpServletRequest request,HttpServletResponse response){
+        return "front-page/myaccount";
+    }
+
+    /**
+     * 视频播放页面
+     * @param request
+     * @param response
+     * @return
+     */
+    @RequestMapping(value="videoplay")
+    public String videoplay(HttpServletRequest request,HttpServletResponse response){
+        return "front-page/videoplay";
+    }
+
+
+
+    /**
      * 账号注册于登录页面
      * @param request
      * @param response

@@ -48,14 +48,17 @@
     <file url="file://$PROJECT_DIR$/WebRoot/WEB-INF/spitter-security.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebRoot/WEB-INF/spitter-servlet.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebRoot/js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/WebRoot/js/common.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebRoot/js/jwplayer/jwplayer.flash.swf" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebRoot/js/jwplayer/jwplayer.html5.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebRoot/js/jwplayer/jwplayer.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebRoot/resources/css/button.css" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/WebRoot/resources/css/video.css" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hexor/controller/ForntSitePageController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hexor/controller/ValidationCodeController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hexor/util/Configurer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hexor/util/EncodeUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hexor/util/IpUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hexor/util/ModelMapUtil.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/config.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/jdbc.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/log4j.properties" charset="UTF-8" />

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.hexor.dao.IVideoMapper">
+   <sql id="columnVideo">
+        title,
+        imgName,
+        videoName,
+        infotime,
+        updatetime,
+        rate,
+        views,
+        favourite,
+        viewAuthority,
+        vkey,
+        tags,
+        authorId,
+        author,
+        description
+	 </sql>
+ 
+    <resultMap type="com.hexor.repo.Video" id="vedioResultMap">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="imgName" column="imgName"/>
+        <result property="videoName" column="videoName"/>
+        <result property="infotime" column="infotime"/>
+        <result property="updatetime" column="updatetime"/>
+        <result property="rate" column="rate"/>
+        <result property="views" column="views"/>
+        <result property="favourite" column="favourite"/>
+        <result property="viewAuthority" column="viewAuthority"/>
+        <result property="vkey" column="vkey"/>
+        <result property="tags" column="tags"/>
+        <result property="authorId" column="authorId"/>
+        <result property="author" column="author"/>
+        <result property="description" column="description"/>
+    </resultMap>
+    <!--首页根据发布时间查找最新的9条视频信息-->
+    <select id="selectRecently" resultMap="vedioResultMap">
+        select * from video  order by updatetime desc limit 9
+    </select>
+
+ </mapper>

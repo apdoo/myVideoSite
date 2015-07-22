@@ -17,6 +17,7 @@ CREATE TABLE user(
 CREATE TABLE video(
   id int NOT NULL AUTO_INCREMENT primary key,
 	title varchar(100),
+	vkey varchar(30),
   imgName varchar(30),
 	videoName varchar(10),
 	infotime varchar(30),
@@ -24,5 +25,10 @@ CREATE TABLE video(
 	rate int,
 	views int,
 	favourite int,
-	viewAuthority int
+	viewAuthority int,
+  tags varchar(30),
+  authorId int,
+  author varchar(30),
+  description varchar(200)
 )default charset=utf8;
+alter table video add column description varchar(200)

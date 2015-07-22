@@ -74,7 +74,7 @@
 	<!--<error-code>500</error-code>-->
 	<!--<location>/WEB-INF/page/error.jsp</location>-->
 	<!--</error-page>-->
-	<!--<session-config>-->
-	<!--<session-timeout>30</session-timeout>-->
-	<!--</session-config>-->
+	<session-config>
+	<session-timeout>30</session-timeout>
+	</session-config>
 </web-app>
