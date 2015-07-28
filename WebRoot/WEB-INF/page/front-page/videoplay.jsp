@@ -170,9 +170,15 @@
         </div>
         <%@include file="common/right-content.jsp"%>
     <div class="clear"> </div>
+    </div>
 </div>
     <!--尾部-->
     <%@ include file="common/footer.jsp" %>
-
+<script type="text/javascript">
+    $(function(){
+        var root="${pageContext.request.contextPath}";
+        init_right_content_randomview_video(root);
+    });
+</script>
 </body>
 </html>

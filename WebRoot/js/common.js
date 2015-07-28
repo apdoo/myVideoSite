@@ -24,7 +24,7 @@ $(function() {
             $("#login_password_tip").html("<label style='color: red'>密码不符合规则!</label>");
             return false;
         }
-        //设置cookie
+        //勾选了记住密码选项-设置cookie
         if( $("#saveCookie").is(':checked')){
 //            alert("saveCookie"+username);
             setCookie("username",username,24,"/");
@@ -57,7 +57,7 @@ $(function() {
             return false;
         }
         $("#email_tip").html("");
-        //保存cookie
+        //勾选了记住密码选项-设置cookie
         if( $("#saveCookieSign").is(':checked')){
             setCookie("username",username,24,"/");
             setCookie("password",password,24,"/");
@@ -65,6 +65,82 @@ $(function() {
         $("#signup_form").submit();
     }) ;
 });
+/**
+ * 右侧加载随机推荐的一组视频
+ * @param root
+ */
+function init_right_content_randomview_video(root){
+    $.ajax({
+        type : "POST",
+        url : root+"/video/viewVideosInfo",
+        data:{
+            views:"random"//获得是随机一组的视频信息
+        },
+        dataType:"json",
+        success : function(data) {
+            var pre="  <div class=\"popular\">  <h3>大家都在看</h3>  <div class=\"clear\"> </div> </div>";
+            var after="<div class=\"r-all\"> <a href=\"#\">查看更多</a> </div>";
+            var content="";
+            $.each(data,function(key,val){
+                content=content+"<div class=\"video1\">"+
+                "<img src=\""+val.imgName+"\" title=\""+val.title+"\" />"+
+                "<span>"+val.title+"</span>"+
+                "<p>"+val.updatetime+"</p>"+
+                "<p>"+val.views+" 观看</p>"+
+                "<div class=\"clear\"> </div></div>";
+            });
+            content=pre+content+after;
+            $("#random_views").html(content);
+
+        },
+        //请求出错的处理
+        error:function(){
+//               alert("请求出错");
+        }
+    });
+}
+
+/**
+ * 首页右侧加载观看最多
+ * @param root
+ */
+function init_right_content_mostview_video(root){
+    $.ajax({
+        type : "POST",
+        url : root+"/video/viewVideosInfo",
+        data:{
+          views:"most"//获得是观看最多的视频信息
+        },
+        dataType:"json",
+        success : function(data) {
+            var pre="  <div class=\"popular\">  <h3>观看最多的视频</h3>  <div class=\"clear\"> </div> </div>";
+            var after="<div class=\"r-all\"> <a href=\"#\">查看更多</a> </div>";
+            var content="";
+            $.each(data,function(key,val){
+                content=content+"<div class=\"video1\">"+
+                "<img src=\""+val.imgName+"\" title=\""+val.title+"\" />"+
+                "<span>"+val.title+"</span>"+
+                "<p>"+val.updatetime+"</p>"+
+                "<p>"+val.views+" 观看</p>"+
+                "<div class=\"clear\"> </div></div>";
+            });
+            content=pre+content+after;
+            $("#most_views").html(content);
+
+        },
+        //请求出错的处理
+        error:function(){
+//               alert("请求出错");
+        }
+    });
+}
+/**
+ * 视频列表加载视频信息
+ * @param data
+ */
+function init_categories_box(data){
+    $("#categories_box").html(videos_init(data));
+}
 /**
  * 首页加载最新视频信息
  * @param root
@@ -75,29 +151,7 @@ function init_index_video(root){
         url : root+"/video/recentlyVideos",
         dataType:"json",
         success : function(data) {
-            var i=1;
-            var grids_pre="<div class=\"grids\">";
-            var grids_after="</div>";
-            var content="";
-            $.each(data,function(key,val){
-                //console.info(i+".."+(i-1)%3);
-                if((i-1)%3==0){
-                    //因为首页样式是3行一个
-                    content=content+grids_pre;
-                }
-                content=content+"<div class=\"grid\"><h3>"+val.title+"</h3><a href=\"single.html\">" +
-                "<img src=\""+val.imgName+"\" title=\"video-name\" style=\"width:255;\"/></a>"+" <div class=\"time\"> <span>"+val.infotime+"</span> </div>"+
-                "<div class=\"grid-info\"><div class=\"video-share\"><ul><li><a href=\"#\"><img src=\""+root+"/resources/images/likes.png\" title=\"links\" /></a></li>"+
-                "<li><a href=\"#\"><img src=\""+root+"/resources/images/link.png\" title=\"Link\" /></a></li>"+
-                " <li><a href=\"#\"><img src=\""+root+"/resources/images/views.png\" title=\"Views\" /></a></li></ul></div>"+"  <div class=\"clear\"> </div>"+
-                " <div class=\"lables\"> <p>Labels:<a href=\"categories.html\">Lorem</a></p></div></div></div>";
-                if((i-1)%3==2){
-                    content=content+grids_after+"<div class=\"clear\"> </div>";
-                }
-                i++;
-            });
-            $("#video_box").html(content);
-
+            $("#video_box").html(videos_init(data));
         },
         //请求出错的处理
         error:function(){
@@ -105,7 +159,68 @@ function init_index_video(root){
         }
     });
 }
-
+/**
+ * 通用获得视频列表
+ * @param data 视频信息json串
+ * @returns {string}
+ */
+function videos_init(data){
+    var i=1;
+    var grids_pre="<div class=\"grids\">";
+    var grids_after="</div>";
+    var content="";
+    $.each(data,function(key,val){
+        if((i-1)%3==0){
+            //因为首页样式是3行一个
+            content=content+grids_pre;
+        }
+        content=content+"<div class=\"grid\"><h3>"+val.title+"</h3><a href=\"single.html\">" +
+        "<img src=\""+val.imgName+"\" title=\"video-name\" style=\"width:355;\"/></a>"+" <div class=\"time\"> <span>"+val.infotime+"</span> </div>"+
+        "<div class=\"grid-info\"><div class=\"video-share\">"+val.updatetime+"</div>"+"<div class=\"video-watch\"> "+val.views+" 观看</div>"+" <div class=\"clear\"> </div>"+
+        " <div class=\"lables\"> <p>标签:<a href=\"categories.html\">"+val.tags+"</a></p></div></div></div>";
+        if((i-1)%3==2){
+            content=content+grids_after+"<div class=\"clear\"> </div>";
+        }
+        i++;
+    });
+    return content;
+}
+//分页生成方法
+function pagecreat(root,path,current,pageCount){
+    var first="";
+    var last="";
+    var content="";
+      if(current<=5){//当前页小于等于5页
+          for(var i=1;i<=9;i++){   //因为采集的信息肯定大于9页，就偷懒这么写了 直接循环9页
+              if(i==current){
+                  content=content+" <li><a class=\"current\" href=\""+root+path+i+"\">"+i+"</a></li>";
+              }else{
+                  content=content+" <li><a  href=\""+root+path+i+"\">"+i+"</a></li>";
+              }
+          }
+      }else if(current>5){//当前页大于5页
+          var t=current+4;
+          if(current+4>pageCount) t=pageCount;//限制生成的分页不大于最大的页数
+          for(var i=(current-4);i<=t;i++){//生成当前页的前后四页
+              if(i==current){
+                  content=content+" <li><a class=\"current\" href=\""+root+path+i+"\">"+i+"</a></li>";
+              }else{
+                  content=content+" <li><a  href=\""+root+path+i+"\">"+i+"</a></li>";
+              }
+          }
+      }
+    if(current==1){
+        first="<li><a href=\""+root+path+1+"\" class=\"first\">首页</a></li> <li><a href=\""+root+path+1+"\"  class=\"previous\"><<</a></li>" ;
+    }else{
+        first="<li><a href=\""+root+path+1+"\" class=\"first\">首页</a></li> <li><a href=\""+root+path+(current-1)+"\"  class=\"previous\"><<</a></li>" ;
+    }
+    if(current==pageCount){
+        last=" <li><a href=\""+root+path+pageCount+"\" class=\"next\">>></a></li> <li><a href=\""+root+path+pageCount+"\" class=\"last\">"+pageCount+"</a></li>";
+    }else{
+        last=" <li><a href=\""+root+path+(current+1)+"\" class=\"next\">>></a></li> <li><a href=\""+root+path+pageCount+"\" class=\"last\">"+pageCount+"</a></li>";
+    }
+    $("#categories_page").html(first+content+last);
+}
 //验证规则：字母、数字、下划线组成，字母开头，5-16位。
 function checkUser(str){
     var re = /^[a-zA-z]\w{4,15}$/;
@@ -137,6 +252,7 @@ function checkLogin(root){
     var username=getCookieValue("username");
     var password=getCookieValue("password");
     if(username!=""&&password!=""){
+        //console.info(username+password);
         //获得cookie信息后发送到服务端验证
         $.ajax({
             type : "POST",
@@ -149,8 +265,8 @@ function checkLogin(root){
             success : function(data) {
                 if(data.msg){
                     //表示自动登录成功
-                    $("#my").html(username);
-                    $("#rp_loginpad").hide();
+                    $("a[name='headr_account']").text("个人中心");
+                    $("a[name='headr_account']").attr("href",root+"/myaccount");
                 }
             },
             //请求出错的处理

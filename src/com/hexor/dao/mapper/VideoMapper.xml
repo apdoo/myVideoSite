@@ -18,8 +18,25 @@
         author,
         description
 	 </sql>
- 
-    <resultMap type="com.hexor.repo.Video" id="vedioResultMap">
+    <!--不带视频名字 如:10097.flv 防止被直接下载-->
+    <resultMap type="com.hexor.repo.Video" id="simplyVideoResultMap">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="imgName" column="imgName"/>
+        <result property="infotime" column="infotime"/>
+        <result property="updatetime" column="updatetime"/>
+        <result property="rate" column="rate"/>
+        <result property="views" column="views"/>
+        <result property="favourite" column="favourite"/>
+        <result property="viewAuthority" column="viewAuthority"/>
+        <result property="vkey" column="vkey"/>
+        <result property="tags" column="tags"/>
+        <result property="authorId" column="authorId"/>
+        <result property="author" column="author"/>
+        <result property="description" column="description"/>
+    </resultMap>
+
+    <resultMap type="com.hexor.repo.Video" id="videoResultMap">
         <id property="id" column="id"/>
         <result property="title" column="title"/>
         <result property="imgName" column="imgName"/>
@@ -36,9 +53,24 @@
         <result property="author" column="author"/>
         <result property="description" column="description"/>
     </resultMap>
-    <!--首页根据发布时间查找最新的9条视频信息-->
-    <select id="selectRecently" resultMap="vedioResultMap">
-        select * from video  order by updatetime desc limit 9
+    <!-- 针对mysql的分页 limit函数,针对本地化的视频  ${xxxx}：$将传入的数据直接显示生成在sql中，对于字符串数据，需要手动加上引号。-->
+    <select id="limit" parameterType="com.hexor.repo.Pager" resultMap="simplyVideoResultMap">
+        select * from video   order by  ${type} desc limit #{index},#{data}
     </select>
-
+    <!--首页根据发布时间查找最新的条视频信息-->
+    <select id="selectRecently" resultMap="simplyVideoResultMap">
+        select * from video  order by updatetime desc limit 15
+    </select>
+    <!--查询总视频数-->
+    <select id="getTotalCounts" resultType="long">
+        select count(*) from video
+    </select>
+    <!--查询观看最多的视频列表-->
+    <select id="getMostViewsVideos" parameterType="int" resultMap="simplyVideoResultMap">
+        select * from video order by views desc limit #{value}
+    </select>
+    <!--查询随机的一组的视频列表-->
+    <select id="selectRand" parameterType="int" resultMap="simplyVideoResultMap">
+        select *, rand() as random from video order by random limit #{value}
+    </select>
  </mapper>

@@ -21,9 +21,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
   </head>
-  
   <body>
-
   <!----start-wrap---->
   <div class="wrap">
 	  <!--头部-->
@@ -44,93 +42,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			  </div>
 			  <!--最新视频列表-->
 			  <div class="box" id="video_box">
-				  <div class="grids">
-					  <div class="grid">
-						  <h3>Consectetur adipisicing elit</h3>
-						  <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g1 copy.png" title="video-name" /></a>
-						  <div class="time">
-							  <span>00:10</span>
-						  </div>
-						  <div class="grid-info">
-							  <div class="video-share">
-								  <ul>
-									  <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links" /></a></li>
-									  <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link" /></a></li>
-									  <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views" /></a></li>
-								  </ul>
-							  </div>
-							  <div class="video-watch">
-								  <a href="single.html">Watch Now</a>
-							  </div>
-							  <div class="clear"> </div>
-							  <div class="lables">
-								  <p>Labels:<a href="categories.html">Lorem</a></p>
-							  </div>
-						  </div>
-					  </div>
-
-					  <div class="grid">
-						  <h3>Consectetur adipisicing elit</h3>
-						  <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g2 copy.png" title="video-name" /></a>
-						  <div class="time">
-							  <span>2:10</span>
-						  </div>
-						  <div class="grid-info">
-							  <div class="video-share">
-								  <ul>
-									  <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links" /></a></li>
-									  <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link" /></a></li>
-									  <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views" /></a></li>
-								  </ul>
-							  </div>
-							  <div class="video-watch">
-								  <a href="single.html">Watch Now</a>
-							  </div>
-							  <div class="clear"> </div>
-							  <div class="lables">
-								  <p>Labels:<a href="categories.html">Lorem</a></p>
-							  </div>
-						  </div>
-					  </div>
-					  <div class="grid">
-						  <h3>Consectetur adipisicing elit</h3>
-						  <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g4.jpg" title="video-name" /></a>
-						  <div class="time">
-							  <span>10:10</span>
-						  </div>
-						  <div class="grid-info">
-							  <div class="video-share">
-								  <ul>
-									  <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links" /></a></li>
-									  <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link" /></a></li>
-									  <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views" /></a></li>
-								  </ul>
-							  </div>
-							  <div class="video-watch">
-								  <a href="single.html">Watch Now</a>
-							  </div>
-							  <div class="clear"> </div>
-							  <div class="lables">
-								  <p>Labels:<a href="categories.html">Lorem</a></p>
-							  </div>
-						  </div>
-					  </div>
-				  </div>
-				  <div class="clear"> </div>
 			  </div>
 			  <div class="clear"> </div>
 			  <!--分页-->
-			  <ul class="dc_pagination dc_paginationA dc_paginationA03">
-				  <li><a href="#" class="first">First</a></li>
-				  <li><a href="#" class="previous">Previous</a></li>
-				  <li><a href="#">1</a></li>
-				  <li><a href="#">2</a></li>
-				  <li><a href="#" class="current">3</a></li>
-				  <li><a href="#">4</a></li>
-				  <li><a href="#">5</a></li>
-				  <li><a href="#" class="next">Next</a></li>
-				  <li><a href="#" class="last">Last</a></li>
-			  </ul>
+			  <%--<ul class="dc_pagination dc_paginationA dc_paginationA03">--%>
+				  <%--<li><a href="#" class="first">First</a></li>--%>
+				  <%--<li><a href="#" class="previous">Previous</a></li>--%>
+				  <%--<li><a href="#">1</a></li>--%>
+				  <%--<li><a href="#">2</a></li>--%>
+				  <%--<li><a href="#" class="current">3</a></li>--%>
+				  <%--<li><a href="#">4</a></li>--%>
+				  <%--<li><a href="#">5</a></li>--%>
+				  <%--<li><a href="#" class="next">Next</a></li>--%>
+				  <%--<li><a href="#" class="last">Last</a></li>--%>
+			  <%--</ul>--%>
 			  <div class="clear"> </div>
 		  </div>
 		  <%@include file="WEB-INF/page/front-page/common/right-content.jsp"%>
@@ -147,6 +72,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		 * 首页加载最新视频
 		 */
 		init_index_video(root);
+		init_right_content_mostview_video(root);
 	});
 </script>
   </body>

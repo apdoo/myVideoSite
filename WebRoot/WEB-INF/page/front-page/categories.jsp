@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -23,346 +24,70 @@
 </head>
 
 <body>
+
 <!----start-wrap---->
-<div class="wrap">
+ <div class="wrap">
     <!--头部-->
     <%@ include file="common/header.jsp" %>
     <div class="clear"> </div>
-    <div class="content">
-        <div class="categories">
-            <div class="categories-list">
-                <div class="content-sidebar">
-                    <h4><img src="${pageContext.request.contextPath}/resources/images/fi.png" alt="" />Categories</h4>
-                    <ul>
-                        <li><a href="#">Arts &amp; Media</a></li>
-                        <li><a href="#">Business &amp; Finance</a></li>
-                        <li><a href="#">Careers &amp; Education</a></li>
-                        <li><a href="#">Cars &amp; Transportation</a></li>
-                        <li><a href="#">Crafts &amp; Hobbies</a></li>
-                        <li><a href="#">Environment</a></li>
-                        <li><a href="#">First Aid &amp; Safety</a></li>
-                        <li><a href="#">Food &amp; Drink</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Health &amp; Nutrition</a></li>
-                        <li><a href="#">Holidays &amp; Celebrations</a></li>
-                        <li><a href="#">House &amp; Garden</a></li>
-                        <li><a href="#">Kids</a></li>
-                        <li><a href="#">Language &amp; Reference</a></li>
-                        <li><a href="#">Mind &amp; Body</a></li>
-                        <li><a href="#">Parenting &amp; Family</a></li>
-                        <li><a href="#">Performing Arts</a></li>
-                        <li><a href="#">Sports &amp; Fitness</a></li>
-                        <li><a href="#">Technology</a></li>
-                        <li><a href="#">Travel</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="categories-types">
-                <div class="recent-videos">
-                    <h5><img src="${pageContext.request.contextPath}/resources/images/recent.png" alt="" />Recent-videos</h5>
-                    <div class="grids grids2">
-                        <div class="grid grid2">
-                            <h3>Consectetur adipisicing elit</h3>
-                            <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g1 copy.png" title="video-name"></a>
-                            <div class="time">
-                                <span>00:10</span>
-                            </div>
-                            <div class="grid-info">
-                                <div class="video-share">
-                                    <ul>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="video-watch">
-                                    <a href="single.html">Watch Now</a>
-                                </div>
-                                <div class="clear"> </div>
-                                <div class="lables">
-                                    <p>Labels:<a href="#">Lorem</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid grid2">
-                            <h3>Consectetur adipisicing elit</h3>
-                            <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g2 copy.png" title="video-name"></a>
-                            <div class="time">
-                                <span>2:10</span>
-                            </div>
-                            <div class="grid-info">
-                                <div class="video-share">
-                                    <ul>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="video-watch">
-                                    <a href="single.html">Watch Now</a>
-                                </div>
-                                <div class="clear"> </div>
-                                <div class="lables">
-                                    <p>Labels:<a href="#">Lorem</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid grid2">
-                            <h3>Consectetur adipisicing elit</h3>
-                            <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g4.jpg" title="video-name"></a>
-                            <div class="time">
-                                <span>10:10</span>
-                            </div>
-                            <div class="grid-info">
-                                <div class="video-share">
-                                    <ul>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="video-watch">
-                                    <a href="single.html">Watch Now</a>
-                                </div>
-                                <div class="clear"> </div>
-                                <div class="lables">
-                                    <p>Labels:<a href="#">Lorem</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clear"> </div>
-                    </div>
-                    <div class="grids grids2">
-                        <div class="grid grid2">
-                            <h3>Consectetur adipisicing elit</h3>
-                            <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g1 copy.png" title="video-name"></a>
-                            <div class="time">
-                                <span>00:10</span>
-                            </div>
-                            <div class="grid-info">
-                                <div class="video-share">
-                                    <ul>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="video-watch">
-                                    <a href="single.html">Watch Now</a>
-                                </div>
-                                <div class="clear"> </div>
-                                <div class="lables">
-                                    <p>Labels:<a href="#">Lorem</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid grid2">
-                            <h3>Consectetur adipisicing elit</h3>
-                            <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g2 copy.png" title="video-name"></a>
-                            <div class="time">
-                                <span>2:10</span>
-                            </div>
-                            <div class="grid-info">
-                                <div class="video-share">
-                                    <ul>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="video-watch">
-                                    <a href="single.html">Watch Now</a>
-                                </div>
-                                <div class="clear"> </div>
-                                <div class="lables">
-                                    <p>Labels:<a href="#">Lorem</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid grid2">
-                            <h3>Consectetur adipisicing elit</h3>
-                            <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g4.jpg" title="video-name"></a>
-                            <div class="time">
-                                <span>10:10</span>
-                            </div>
-                            <div class="grid-info">
-                                <div class="video-share">
-                                    <ul>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="video-watch">
-                                    <a href="single.html">Watch Now</a>
-                                </div>
-                                <div class="clear"> </div>
-                                <div class="lables">
-                                    <p>Labels:<a href="#">Lorem</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clear"> </div>
-                    </div>
-                </div>
-                <div class="recent-videos">
-                    <h5><img src="${pageContext.request.contextPath}/resources/images/recent.png" alt="" />Most-View-videos</h5>
-                    <div class="grids">
-                        <div class="grid grid2">
-                            <h3>Consectetur adipisicing elit</h3>
-                            <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g1 copy.png" title="video-name"></a>
-                            <div class="time">
-                                <span>00:10</span>
-                            </div>
-                            <div class="grid-info">
-                                <div class="video-share">
-                                    <ul>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="video-watch">
-                                    <a href="single.html">Watch Now</a>
-                                </div>
-                                <div class="clear"> </div>
-                                <div class="lables">
-                                    <p>Labels:<a href="#">Lorem</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid grid2">
-                            <h3>Consectetur adipisicing elit</h3>
-                            <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g2 copy.png" title="video-name"></a>
-                            <div class="time">
-                                <span>2:10</span>
-                            </div>
-                            <div class="grid-info">
-                                <div class="video-share">
-                                    <ul>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="video-watch">
-                                    <a href="single.html">Watch Now</a>
-                                </div>
-                                <div class="clear"> </div>
-                                <div class="lables">
-                                    <p>Labels:<a href="#">Lorem</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid grid2">
-                            <h3>Consectetur adipisicing elit</h3>
-                            <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g4.jpg" title="video-name"></a>
-                            <div class="time">
-                                <span>10:10</span>
-                            </div>
-                            <div class="grid-info">
-                                <div class="video-share">
-                                    <ul>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="video-watch">
-                                    <a href="single.html">Watch Now</a>
-                                </div>
-                                <div class="clear"> </div>
-                                <div class="lables">
-                                    <p>Labels:<a href="#">Lorem</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clear"> </div>
-                    </div>
-                    <div class="clear"> </div>
-                    <div class="grids">
-                        <div class="grid grid2">
-                            <h3>Consectetur adipisicing elit</h3>
-                            <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g1 copy.png" title="video-name"></a>
-                            <div class="time">
-                                <span>00:10</span>
-                            </div>
-                            <div class="grid-info">
-                                <div class="video-share">
-                                    <ul>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="video-watch">
-                                    <a href="single.html">Watch Now</a>
-                                </div>
-                                <div class="clear"> </div>
-                                <div class="lables">
-                                    <p>Labels:<a href="#">Lorem</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid grid2">
-                            <h3>Consectetur adipisicing elit</h3>
-                            <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g2 copy.png" title="video-name"></a>
-                            <div class="time">
-                                <span>2:10</span>
-                            </div>
-                            <div class="grid-info">
-                                <div class="video-share">
-                                    <ul>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="video-watch">
-                                    <a href="single.html">Watch Now</a>
-                                </div>
-                                <div class="clear"> </div>
-                                <div class="lables">
-                                    <p>Labels:<a href="#">Lorem</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid grid2">
-                            <h3>Consectetur adipisicing elit</h3>
-                            <a href="single.html"><img src="${pageContext.request.contextPath}/resources/images/g4.jpg" title="video-name"></a>
-                            <div class="time">
-                                <span>10:10</span>
-                            </div>
-                            <div class="grid-info">
-                                <div class="video-share">
-                                    <ul>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="video-watch">
-                                    <a href="single.html">Watch Now</a>
-                                </div>
-                                <div class="clear"> </div>
-                                <div class="lables">
-                                    <p>Labels:<a href="#">Lorem</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clear"> </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="clear"> </div>
+     <div class="content">
+         <div class="categories">
+             <div class="categories-list">
+                 <div class="content-sidebar">
+                     <h4><img src="${pageContext.request.contextPath}/resources/images/fi.png" alt="" />目录</h4>
+                     <ul>
+                         <li><a id="categories_1" href="${pageContext.request.contextPath}/videoList?categories=1">最新视频</a></li>
+                         <li><a id="categories_2" href="${pageContext.request.contextPath}/videoList?categories=2">观看最多</a></li>
+                         <li><a id="categories_3" href="${pageContext.request.contextPath}/videoList?categories=3">收藏最多</a></li>
+                         <li><a id="categories_4" href="${pageContext.request.contextPath}/videoList?categories=4">最高评分</a></li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="categories-types">
+                 <div class="recent-videos">
+                     <div class="searchbar">
+                         <div class="search-left">
+                             <p>最新上传的视频</p>
+                         </div>
+                         <div class="search-right">
+                             <form>
+                                 <input type="text"><input type="submit" value="">
+                             </form>
+                         </div>
+                         <div class="clear"> </div>
+                     </div>
+                     <!--最新视频列表-->
+                     <div  id="categories_box"></div>
+                     <div class="clear"> </div>
+                 </div>
+             </div>
+             <div class="recent-videos">
+                 <!--分页-->
+                 <ul id="categories_page" class="dc_pagination dc_paginationA dc_paginationA03">
+                 </ul>
+             </div>
+         </div>
+     </div>
+    <div class="clear"> </div>
     </div>
-</div>
 <div class="clear"> </div>
 </div>
 <!--头部-->
 <%@ include file="common/footer.jsp" %>
 
 <!----End-wrap---->
+<script type="text/javascript">
+    $(function(){
+        var root="${pageContext.request.contextPath}";
+        var categories="${categories}";//目录
+        var path="/videoList?categories="+categories+"&wpage=";
+        var current=${pager.currentPage};      //当前页数
+        var pageCount=${pager.pageCount};  //总页数
+        var list=${list};       //视频列表 json格式
+        $("#categories_"+categories).addClass("active");
+        init_categories_box(list);
+        pagecreat(root,path,current,pageCount)
+    });
+</script>
 </body>
 </html>

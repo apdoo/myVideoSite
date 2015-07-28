@@ -12,6 +12,8 @@ CREATE TABLE user(
 	loginTime  varchar(30),
 	temp   varchar(100)
 )default charset=utf8;
+--插入admin用户
+-- insert into user(id,username,password,email,signupTime,points)
 
 --视频信息表
 CREATE TABLE video(
@@ -31,4 +33,11 @@ CREATE TABLE video(
   author varchar(30),
   description varchar(200)
 )default charset=utf8;
-alter table video add column description varchar(200)
+--访问视频播放日志表
+ CREATE TABLE vistlog(
+    id int NOT NULL AUTO_INCREMENT primary key,
+    username varchar(20),
+    ip varchar(20),
+    url varchar(100),
+    time varchar(30)
+ )default charset=utf8;

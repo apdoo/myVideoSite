@@ -1,5 +1,6 @@
 package com.hexor.dao;
 
+import com.hexor.repo.Pager;
 import com.hexor.repo.Video;
 import org.springframework.stereotype.Service;
 
@@ -14,4 +15,8 @@ import java.util.List;
 @Service("com.hexor.dao.IVideoMapper")
 public interface IVideoMapper {
     public List<Video> selectRecently();
+    public long getTotalCounts();
+    public List<Video> limit(Pager pager);
+    public List<Video> getMostViewsVideos(int count);
+    public List<Video> selectRand(int count);
 }

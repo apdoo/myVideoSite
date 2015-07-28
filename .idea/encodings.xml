@@ -55,10 +55,16 @@
     <file url="file://$PROJECT_DIR$/WebRoot/resources/css/button.css" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hexor/controller/ForntSitePageController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hexor/controller/ValidationCodeController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hexor/dao/IVistLogMapper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hexor/dao/mapper/VistLogMapper.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hexor/repo/VistLogBean.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hexor/service/IVistLogService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hexor/service/impl/VistLogService.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hexor/util/Configurer.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hexor/util/EncodeUtil.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hexor/util/IpUtil.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hexor/util/ModelMapUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hexor/util/PagerUtil.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/config.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/jdbc.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/log4j.properties" charset="UTF-8" />
