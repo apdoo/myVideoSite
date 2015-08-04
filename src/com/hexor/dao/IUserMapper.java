@@ -33,5 +33,6 @@ public interface IUserMapper {
     public void updateUser(User user);
     public List<User> getUserByType();
     public void resetPoints();
+    public void updateFavoriteVideo(User user);
 
 }

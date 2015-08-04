@@ -39,7 +39,7 @@
                          <li><a id="categories_1" href="${pageContext.request.contextPath}/videoList?categories=1">最新视频</a></li>
                          <li><a id="categories_2" href="${pageContext.request.contextPath}/videoList?categories=2">观看最多</a></li>
                          <li><a id="categories_3" href="${pageContext.request.contextPath}/videoList?categories=3">收藏最多</a></li>
-                         <li><a id="categories_4" href="${pageContext.request.contextPath}/videoList?categories=4">最高评分</a></li>
+                         <li><a id="categories_4" href="${pageContext.request.contextPath}/videoList?categories=4">点赞最多</a></li>
                      </ul>
                  </div>
              </div>
@@ -47,12 +47,13 @@
                  <div class="recent-videos">
                      <div class="searchbar">
                          <div class="search-left">
-                             <p>最新上传的视频</p>
+                             <p>${categories_title}的视频</p>
                          </div>
                          <div class="search-right">
-                             <form>
-                                 <input type="text"><input type="submit" value="">
-                             </form>
+                                 <form onsubmit="return categories_search_from_check()" method="post"  action="${pageContext.request.contextPath}/searchvideos">
+                                     <input   value="" name="search" type="text" value=""><input  type="submit"  value="">
+                                </form>
+
                          </div>
                          <div class="clear"> </div>
                      </div>
@@ -85,9 +86,23 @@
         var pageCount=${pager.pageCount};  //总页数
         var list=${list};       //视频列表 json格式
         $("#categories_"+categories).addClass("active");
-        init_categories_box(list);
+        init_categories_box(root,list);
         pagecreat(root,path,current,pageCount)
     });
+    /**
+    * 检测用户是否登录
+    * @returns {boolean}
+     */
+    function categories_search_from_check(){
+        var uid="${userinfo.id}";
+        //判断是否是游客，游客不允许搜索
+        if(uid==""){  //如果当前session中没有用户信息，则判断cookie中是否有用户信息 调用自动登录
+            alert("对不起，游客暂时不支持搜索功能，请先注册或者登录。");
+            return false;
+        }
+        return true;
+    }
+
 </script>
 </body>
 </html>

@@ -10,11 +10,12 @@ CREATE TABLE user(
 	type int,
 	loginIp varchar(20),
 	loginTime  varchar(30),
-	temp   varchar(100)
+	temp   varchar(100),
+  favoriteVideo varchar(2000)
 )default charset=utf8;
 --插入admin用户
 -- insert into user(id,username,password,email,signupTime,points)
-
+--alter table user add favoriteVideo varchar(2000) ;
 --视频信息表
 CREATE TABLE video(
   id int NOT NULL AUTO_INCREMENT primary key,
@@ -41,3 +42,12 @@ CREATE TABLE video(
     url varchar(100),
     time varchar(30)
  )default charset=utf8;
+ --留言信息表
+ CREATE TABLE contact(
+ 	 id int NOT NULL AUTO_INCREMENT primary key,
+ 	 title varchar(50),
+ 	 email varchar(50),
+ 	 content VARCHAR (500),
+ 	 isRead int,
+ 	 time varchar(30)
+ ) DEFAULT  charset=utf8;

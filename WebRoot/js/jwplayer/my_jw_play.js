@@ -1,5 +1,5 @@
 /**
- * Created by Administrator on 2015-07-18.
+ *为了测试jwplay播放器的js
  */
 var f='10041.flv';
 jwplayer('myplayer').setup({

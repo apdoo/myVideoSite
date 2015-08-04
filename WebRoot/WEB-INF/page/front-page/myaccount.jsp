@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -29,8 +30,48 @@
     <%@ include file="common/header.jsp" %>
     <div class="clear"> </div>
     <!--内容-->
-    ${msg}
-    ${userinfo.username}
+    <div class="content">
+        <div class="section group">
+            <div class="col span_1_of_3">
+
+                <div class="company_address">
+                    <h3>用户信息</h3>
+                    <p>账号：${userinfo.username} 	<a href="${pageContext.request.contextPath}/user/loginout" class="tp_txt" id="loginout" onclick="loginout()">退出登录</a> </p>
+
+                    <c:if test="${userinfo.type==0}">
+                        <p>会员级别：会员</p>
+                    </c:if>
+                    <c:if test="${userinfo.type==1}">
+                        <p>会员级别：高级会员</p>
+                    </c:if>
+                    <c:if test="${userinfo.type==2}">
+                        <p>会员级别：赞助会员</p>
+                    </c:if>
+                    <c:if test="${userinfo.type==5}">
+                        <p>会员级别：管理员</p>
+                    </c:if>
+                    <p>注册时间: ${userinfo.signupTime}</p>
+                    <p>注册邮箱: ${userinfo.email}</p>
+                    <p>上次登录时间: ${userinfo.loginTime}</p>
+                    <p>上次登录ip: ${userinfo.loginIp}</p>
+
+
+                </div>
+            </div>
+            <div class="col span_2_of_3">
+                <div id="my_favorite_video" class="contact-form">
+                    <h3>收藏视频列表</h3>
+                    <c:forEach items="${favoriteVideos}" var="val">
+                        <div style="float: left;padding: 1px;">
+                            <a target="_blank" href="${pageContext.request.contextPath}/videoplay?vkey=${val.vkey}"><img style="width:160px;height: 120px;;" src="${val.imgName}" title="${val.title}"></a>
+                            <p style="width: 160px; height:18px;overflow:hidden;" >${val.title}</p>
+                        </div>
+                    </c:forEach>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="clear"> </div>
 </div>
     <!--尾部-->

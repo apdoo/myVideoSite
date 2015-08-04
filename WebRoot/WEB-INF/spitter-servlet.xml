@@ -48,6 +48,7 @@
   -->
     <!-- 配置过滤资源文件 否则spring的servlet会将这些资源文件请求过滤-->
     <mvc:resources mapping="/js/**" location="/js/" />
+    <mvc:resources mapping="/6/**" location="/6/" />
     <mvc:resources mapping="/resources/**" location="/resources/" />
     <!--配置视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

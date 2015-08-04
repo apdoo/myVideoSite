@@ -4,9 +4,12 @@ import com.hexor.repo.Pager;
 import com.hexor.repo.User;
 import com.hexor.repo.Video;
 import com.hexor.service.IVideoService;
+import com.hexor.service.impl.UserService;
 import com.hexor.util.Configurer;
+import com.hexor.util.EncodeUtil;
 import com.hexor.util.ResponseUtil;
 import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -20,7 +23,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -33,13 +38,6 @@ import java.util.List;
 @RequestMapping(value="video")
 public class VideoController extends BaseController{
     private static Logger logger = Logger.getLogger(VideoController.class);
-    @Autowired
-    @Qualifier("com.hexor.service.impl.VideoService")
-    private IVideoService videoService;
-    public void setVideoService(IVideoService videoService) {
-        this.videoService = videoService;
-    }
-
     /**
      * 获得最新的视频列表
      */
@@ -85,16 +83,79 @@ public class VideoController extends BaseController{
      * @param session
      * @param request
      */
+    @Deprecated
     @RequestMapping(value="videoslist")
     public void videoslist(@RequestParam(value = "page",required = true,defaultValue = "1") String page,HttpSession session,HttpServletRequest request){
         long count=videoService.getTotalCounts();//获得视频总数
         Pager pager=pagerSet(page, count);
         try{
             List<Video> list=videoService.limit(pager);
-            System.out.println(list.size());
         }catch (Exception e){
             logger.error("获得列表失败"+e.getMessage());
         }
     }
 
+    /**
+     * 视频点赞
+     * @param shareKey
+     * @param session
+     * @param response
+     */
+    @RequestMapping(value = "praiseVideo")
+    public void praiseVideo(@RequestParam(value = "shareKey") String shareKey,HttpSession session,HttpServletResponse response){
+        String trueVkey="";
+        JSONObject json=new JSONObject();
+        try{
+            trueVkey = EncodeUtil.decodeString(shareKey);//解密出真正的vkey
+        }catch (Exception e){
+            json.put("msg","解析失败");
+        }
+        Map map=new HashMap();
+        map.put("vkey", trueVkey);
+        map.put("rate", "rate");
+        json.put("msg","已赞");
+        videoService.videoAddSelf(map);
+        try {
+            ResponseUtil.outWriteJson(response,json.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    /**
+     * 用户收藏视频
+     * @param shareKey
+     * @param session
+     * @param response
+     */
+    @RequestMapping(value="houseVideo")
+    public void houseVideo(@RequestParam(value = "shareKey") String shareKey,HttpSession session,HttpServletResponse response){
+        User user= (User) session.getAttribute((String) Configurer.getContextProperty("session.userinfo"));//检查session中是否已经存在用户信息
+        if(user==null) return;
+        String trueVkey="";
+        JSONObject json=new JSONObject();
+        try{
+            trueVkey = EncodeUtil.decodeString(shareKey);//解密出真正的vkey
+        }catch (Exception e){
+            json.put("msg","收藏失败");
+        }
+        Map map=new HashMap();
+        map.put("vkey", trueVkey);
+        map.put("favourite","favourite");
+        if(!user.getFavoriteVideo().contains(trueVkey)){//没有收藏该视频，则进行视频收藏
+            user.setFavoriteVideo((user.getFavoriteVideo() + "," + trueVkey).replace(",,", ","));
+            json.put("msg","取消收藏");
+            videoService.videoAddSelf(map);
+        }else {//收藏该视频，则进行取消收藏
+            user.setFavoriteVideo(user.getFavoriteVideo().replace(trueVkey, "").replace(",,", ","));
+            json.put("msg", "收藏");
+            videoService.videoReduceSelf(map);
+        }
+
+            userService.updateFavoriteVideo(user);
+        try {
+            ResponseUtil.outWriteJson(response,json.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

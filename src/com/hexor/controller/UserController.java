@@ -6,6 +6,7 @@ import com.hexor.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -25,15 +26,8 @@ import java.util.Map;
  */
 @Controller
 @RequestMapping(value="user")
-public class UserController {
-    @Autowired
-    @Qualifier("com.hexor.service.impl.UserService")
-    private UserService userService = null;
-
-    public void setUserService(UserService userService) {
-        this.userService = userService;
-    }
-    /**
+public class UserController extends BaseController{
+  /**
      * 登录接口
      * @return
      */
@@ -56,7 +50,10 @@ public class UserController {
             System.out.println("登录异常");
         }
         session.setAttribute((String) Configurer.getContextProperty("session.userinfo"), result);
-        ModelAndView modelAndView=new ModelAndView("front-page/myaccount",ModelMapUtil.getUserMap(result)) ;
+        Map modelMap=new HashMap();
+        modelMap.put("userinfo",result);
+        modelMap.put("favoriteVideos", getUserFavoriteVideos(result));
+        ModelAndView modelAndView=new ModelAndView("front-page/myaccount",modelMap) ;
         return modelAndView;
     }
     /**
@@ -90,6 +87,16 @@ public class UserController {
         return  new ModelAndView("front-page/myaccount",ModelMapUtil.getUserMap(user)) ;
     }
     /**
+     * 登出接口
+     * @param session
+     * @return
+     */
+    @RequestMapping(value="loginout")
+    public ModelAndView loginout(HttpSession session){
+        session.removeAttribute((String) Configurer.getContextProperty("session.userinfo"));
+        return new ModelAndView("front-page/account");
+    }
+    /**
      * 自动登录
      * @param user
      * @param response
@@ -100,11 +107,8 @@ public class UserController {
     public void autoLogin(User user,HttpServletResponse response,HttpSession session,HttpServletRequest request){
         Map map=new HashMap();
         map.put("msg","success");
-        User suser= (User) session.getAttribute((String) Configurer.getContextProperty("session.userinfo"));
-        if(suser!=null){
-            //已经登录了 则直接返回
-            return ;
-        }
+        User suser= (User) session.getAttribute((String) Configurer.getContextProperty("session.userinfo"));//检查session中是否已经存在用户信息
+        if(suser!=null)   return ; //已经登录了 则直接返回
         User result=userService.checkLogin(user);
         session.setAttribute((String) Configurer.getContextProperty("session.userinfo"), result);
         //当数据库中存在此用户

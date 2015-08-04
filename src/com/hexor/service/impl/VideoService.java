@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -38,7 +39,7 @@ public class VideoService implements IVideoService{
     @Override
     public List<Video> selectRecently() throws Exception {
         List<Video> list= mapper.selectRecently();
-        return handleVideo(list);
+        return handleVideoList(list);
     }
 
     /**
@@ -53,7 +54,7 @@ public class VideoService implements IVideoService{
     @Override
     public List<Video> limit(Pager pager) throws Exception {
         List<Video> list=mapper.limit(pager);
-        return handleVideo(list);
+        return handleVideoList(list);
     }
 
     /**
@@ -65,7 +66,7 @@ public class VideoService implements IVideoService{
     @Override
     public List<Video> getMostViewsVideos(int count)throws Exception {
         List<Video> list= mapper.getMostViewsVideos(count);
-        return handleVideo(list);
+        return handleVideoList(list);
     }
 
     /**
@@ -77,15 +78,79 @@ public class VideoService implements IVideoService{
     @Override
     public List<Video> selectRand(int count) throws Exception {
         List<Video> list=mapper.selectRand(count);
-        return  handleVideo(list);
+        return  handleVideoList(list);
     }
 
     /**
-     * 对视频信息进行图片路径处理和视频vkey加密
+     * 根据vkey查询出一条视频信息
+     * @param vkey
+     * @return
+     */
+    @Override
+    public Video selectByVkey(String vkey) throws Exception {
+        return handleVideo(mapper.selectByVkey(vkey));
+    }
+
+    /**
+     * 搜索视频的总数
+     * @param title
+     * @return
+     */
+    @Override
+    public long searchTotalCounts(String title) {
+        return mapper.searchTotalCounts(title);
+    }
+    /**
+     * 分页实现搜索视频
+     * @param pager
+     * @return
+     * @throws IOException
+     */
+    @Override
+    public List<Video> searchVideosLimit(Pager pager) throws IOException {
+        return handleVideoList(mapper.searchVideosLimit(pager));
+    }
+
+    /**
+     * 视频观看、点赞、收藏自增
+     * @param map
+     */
+    @Override
+    public void videoAddSelf(Map map) {
+        mapper.videoAddSelf(map);
+    }
+
+    /**
+     * 视频观看、点赞、收藏自减
+     * @param map
+     */
+    @Override
+    public void videoReduceSelf(Map map) {
+        mapper.videoReduceSelf(map);
+    }
+
+    @Override
+    public List<Video> selectVideosInVkeys(List<String> list) throws IOException {
+        return handleVideoList(mapper.selectVideosInVkeys(list));
+    }
+
+    /**
+     * 对视频信息的视频播放路和图片路径径进行处理
+     * @param video
+     * @return
+     */
+    public Video handleVideo(Video video) throws Exception{
+        video.setImgName(imageRoot + video.getImgName());
+        video.setVideoName(videoRoot+video.getVideoName());
+        return video;
+    }
+    
+    /**
+     * 对视频信息list进行图片路径处理和视频vkey加密
      * @param list
      * @return
      */
-    public List<Video> handleVideo(List<Video> list) throws IOException {
+    public List<Video> handleVideoList(List<Video> list) throws IOException {
         for(int i=0;i<list.size();i++){
             list.get(i).setImgName(imageRoot + list.get(i).getImgName());//设置图片路径
             list.get(i).setVkey(EncodeUtil.encodeString(list.get(i).getVkey()));//加密视频vkey

@@ -55,20 +55,20 @@ public class ValidationCodeController {
         response.setHeader("Cache-Control", "no-cache");
         response.setDateHeader("Expires", 0);
         // 设置图形验证码的长和宽（图形的大小）
-        int width = 90, height = 20;
+        int width = 100, height = 30;
         BufferedImage image = new BufferedImage(width, height,
                 BufferedImage.TYPE_INT_RGB);
         Graphics g = image.getGraphics();// 获得用于输出文字的Graphics对象
         Random random = new Random();
-        g.setColor(getRandomColor(180, 250));// 随机设置要填充的颜色
+        g.setColor(getRandomColor(100, 150));// 随机设置要填充的颜色
         g.fillRect(0, 0, width, height);// 填充图形背景
         // 设置初始字体
-        g.setFont(new Font("Times New Roman", Font.ITALIC, height));
+        g.setFont(new Font("Calibri", Font.ITALIC, height));
         g.setColor(getRandomColor(120, 180));// 随机设置字体颜色
         // 用于保存最后随机生成的验证码
         StringBuilder validationCode = new StringBuilder();
         // 验证码的随机字体
-        String[] fontNames = { "Times New Roman", "Book antiqua", "Arial" };
+        String[] fontNames = { "Calibri", "Candara", "Arial" };
         // 随机生成3个到5个验证码
         for (int i = 0; i < 3 + random.nextInt(3); i++) {
             // 随机设置当前验证码的字符的字体

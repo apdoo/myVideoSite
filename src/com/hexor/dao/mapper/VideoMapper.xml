@@ -73,4 +73,55 @@
     <select id="selectRand" parameterType="int" resultMap="simplyVideoResultMap">
         select *, rand() as random from video order by random limit #{value}
     </select>
+    <!--查询出一条视频信息-->
+    <select id="selectByVkey" parameterType="String"  resultType="com.hexor.repo.Video">
+        select * from video where vkey=#{value} limit 1
+    </select>
+    <!--搜索符合视频的总数-->
+    <select id="searchTotalCounts" parameterType="String" resultType="long">
+        select count(*) from video where title  LIKE CONCAT('%','${value}','%' )
+    </select>
+    <!--模糊搜索视频按照更新时间排序-->
+    <select id="searchVideosLimit" parameterType="com.hexor.repo.Pager" resultMap="simplyVideoResultMap">
+        select * from video where title LIKE CONCAT('%','${type}','%' )   order by   updatetime  desc limit #{index},#{data}
+    </select>
+    <!--rate fav views 动态加1 如果set中一个条件都不满足，即set中包含的内容为空的时候就会报错。-->
+    <update id="videoAddSelf" parameterType="Map">
+        update video
+        <set>
+            <if test="rate!=null">
+                rate=if(isnull(rate),0,rate)+1,
+            </if>
+            <if test="favourite!=null">
+                favourite=if(isnull(favourite),0,favourite)+1,
+            </if>
+            <if test="views!=null">
+                views=if(isnull(views),0,views)+1
+            </if>
+        </set>
+        where vkey=#{vkey}
+    </update>
+    <!--rate fav views 动态加1 如果set中一个条件都不满足，即set中包含的内容为空的时候就会报错。-->
+    <update id="videoReduceSelf" parameterType="Map">
+        update video
+        <set>
+            <if test="rate!=null">
+                rate=if(isnull(rate),0,rate)-1,
+            </if>
+            <if test="favourite!=null">
+                favourite=if(isnull(favourite),0,favourite)-1,
+            </if>
+            <if test="views!=null">
+                views=if(isnull(views),0,views)-1
+            </if>
+        </set>
+        where vkey=#{vkey}
+    </update>
+    <!--查询用户收藏的视频列表-->
+    <select id="selectVideosInVkeys"   resultMap="simplyVideoResultMap">
+        Select  *  from video where vkey in
+        <foreach item="item" index="index" collection="list" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
  </mapper>

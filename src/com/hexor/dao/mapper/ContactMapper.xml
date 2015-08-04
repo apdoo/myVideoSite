@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.hexor.dao.IContactMapper">
+   <sql id="columnContact">
+		 title,
+		 email,
+		 content,
+		 isRead,
+		 time
+   </sql>
+ 
+    <resultMap type="com.hexor.repo.Contact" id="contactResultMap">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="email" column="email"/>
+        <result property="content" column="content"/>
+        <result property="isRead" column="isRead"/>
+        <result property="time" column="time"/>
+
+    </resultMap>
+
+    <insert id="insertContact" parameterType="com.hexor.repo.Contact" >
+        insert into contact(<include refid="columnContact"/> ) values(
+          #{title},
+          #{email},
+          #{content},
+          #{isRead},
+          #{time}
+        )
+    </insert>
+
+ </mapper>

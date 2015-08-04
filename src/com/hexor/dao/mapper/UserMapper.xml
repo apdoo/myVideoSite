@@ -11,7 +11,8 @@
 		  type,
 		  loginIp,
 		  loginTime,
-		  temp
+		  temp,
+          favoriteVideo
 	 </sql>
  
     <resultMap type="com.hexor.repo.User" id="userResultMap">  
@@ -25,6 +26,7 @@
         <result property="loginIp" column="loginIp"/>
         <result property="loginTime" column="loginTime"/>
         <result property="temp" column="temp"/>
+        <result property="favoriteVideo" column="favoriteVideo"/>
     </resultMap>
     
      <select id="getAllUser"   resultMap="userResultMap">
@@ -49,7 +51,8 @@
             	#{type},
             	#{loginIp},
             	#{loginTime},
-            	#{temp}
+            	#{temp},
+                #{favoriteVideo}
             	)
     </insert>
     
@@ -102,5 +105,10 @@
     <!--将普通会员小于100积分的重置更新为100积分-->
     <update id="resetPoints" >
         update user set points=100 where type=0 and points &lt;100;
+    </update>
+
+    <!--用户收藏视频列表更新-->
+    <update id="updateFavoriteVideo" parameterType="com.hexor.repo.User">
+          update user set favoriteVideo=#{favoriteVideo} where id=#{id}
     </update>
  </mapper>

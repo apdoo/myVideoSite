@@ -30,4 +30,5 @@ public interface IUserService {
     public User getUserById(String id);
     public List<User> getUserByType();
     public void resetPoints();
+    public void updateFavoriteVideo(User user);
 }

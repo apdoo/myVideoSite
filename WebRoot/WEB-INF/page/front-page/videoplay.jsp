@@ -31,141 +31,45 @@
 
     <div class="content">
         <div class="inner-page">
-            <div class="searchbar">
-                <div class="search-left">
-                    <p>搜索视频</p>
-                </div>
-                <div class="search-right">
-                    <form>
-                        <input type="text"><input type="submit" value="" />
-                    </form>
-                </div>
-                <div class="clear"> </div>
-            </div>
             <div class="title">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h3>
+                <h3>${video.title}</h3>
                 <ul>
                     <li><h4>By:</h4></li>
-                    <li><a href="#">Author</a></li>
-                    <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/sub.png" title="subscribe" />subscribe</a></li>
+                    <li><a href="#">94lu-就是撸</a></li>
+                    <li><a href="#" id="favorite_title" onclick="houseVideo('${shareKey}','${userinfo.id}','${pageContext.request.contextPath}');return false"><img src="${pageContext.request.contextPath}/resources/images/sub.png" title="subscribe" />${favorite}</a></li>
+                    <li><a href="#" id="praise_title" onclick="praiseVideo('${shareKey}','${pageContext.request.contextPath}');return false;"><img src="${pageContext.request.contextPath}/resources/images/likes1.png" title="subscribe" />赞一个</a></li>
                 </ul>
             </div>
             <div class="video-inner">
-                <a href="#"><img src="${pageContext.request.contextPath}/resources/images/b11.png" title="videoname" /><span>10:00</span></a>
+                <div id='myplayer'></div>
             </div>
             <div class="viwes">
                 <div class="view-links">
                     <ul>
-                        <li><h4>Share on:</h4></li>
-                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/f1.png" title="facebook" /></a></li>
-                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/t1.png" title="Twitter" /></a></li>
-                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/s1.png" title="Google+" /></a></li>
-                    </ul>
-                    <ul class="comment1">
-                        <li><a href="#">Comment(1)</a></li>
-                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/re.png" title="report" /><span>Report</span></a></li>
+                        <li><h4>分享:</h4></li>
+                        <input type="text" value="http://${header['host']}${pageContext.request.contextPath}/videoplay?vkey=${shareKey}" name="s" class="chain">
                     </ul>
                 </div>
                 <div class="views-count">
-                    <p><span>2,500</span> Views</p>
+                    <p><span>${video.views}</span> 观看</p>
                 </div>
                 <div class="clear"> </div>
             </div>
             <div class="clear"> </div>
             <div class="video-details">
                 <ul>
-                    <li><p>Uploaded on <a href="#">June 21, 2013</a> by <a href="#">Lorem</a></p></li>
-                    <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></li>
-                </ul>
-                <ul class="other-links">
-                    <li><a href="#">youtube.com/videos-tube</a></li>
-                    <li><a href="#">facebook.com/videos-tube</a></li>
-                    <li><a href="#">Twitter.com/videos-tube</a></li>
+                    <li><p>更新时间:  ${video.updatetime}</p></li>
+                    <li><span> 此处可以写一些宣传的</span></li>
                 </ul>
             </div>
             <div class="clear"> </div>
             <div class="tags">
                 <ul>
-                    <li><h3>Tags:</h3></li>
-                    <li><a href="#">Games</a> ,</li>
-                    <li><a href="#">HD-Videos</a></li>
+                    <li><h3>标签:${video.tags}</h3></li>
                 </ul>
             </div>
             <div class="clear"> </div>
-            <div class="related-videos">
-                <h6>Related-Videos</h6>
-                <div class="grids">
-                    <div class="grid">
-                        <h3>Consectetur adipisicing elit</h3>
-                        <a href="#"><img src="${pageContext.request.contextPath}/resources/images/g3.jpg" title="video-name"></a>
-                        <div class="time">
-                            <span>2:30</span>
-                        </div>
-                        <div class="grid-info">
-                            <div class="video-share">
-                                <ul>
-                                    <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                    <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                    <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                </ul>
-                            </div>
-                            <div class="video-watch">
-                                <a href="#">Watch Now</a>
-                            </div>
-                            <div class="clear"> </div>
-                            <div class="lables">
-                                <p>Labels:<a href="#">Lorem</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <h3>Consectetur adipisicing elit</h3>
-                        <a href="#"><img src="${pageContext.request.contextPath}/resources/images/g5.jpg" title="video-name"></a>
-                        <div class="time">
-                            <span>5:10</span>
-                        </div>
-                        <div class="grid-info">
-                            <div class="video-share">
-                                <ul>
-                                    <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                    <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                    <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                </ul>
-                            </div>
-                            <div class="video-watch">
-                                <a href="#">Watch Now</a>
-                            </div>
-                            <div class="clear"> </div>
-                            <div class="lables">
-                                <p>Labels:<a href="#">Lorem</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <h3>Consectetur adipisicing elit</h3>
-                        <a href="#"><img src="${pageContext.request.contextPath}/resources/images/g4.jpg" title="video-name"></a>
-                        <div class="time">
-                            <span>2:00</span>
-                        </div>
-                        <div class="grid-info">
-                            <div class="video-share">
-                                <ul>
-                                    <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/likes.png" title="links"></a></li>
-                                    <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/link.png" title="Link"></a></li>
-                                    <li><a href="#"><img src="${pageContext.request.contextPath}/resources/images/views.png" title="Views"></a></li>
-                                </ul>
-                            </div>
-                            <div class="video-watch">
-                                <a href="#">Watch Now</a>
-                            </div>
-                            <div class="clear"> </div>
-                            <div class="lables">
-                                <p>Labels:<a href="#">Lorem</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <%@include file="common/below-content.jsp"%>
             <div class="clear"> </div>
         </div>
         <%@include file="common/right-content.jsp"%>
@@ -174,11 +78,24 @@
 </div>
     <!--尾部-->
     <%@ include file="common/footer.jsp" %>
+<!--js放在div的后面 才能正确加载-->
+<script src="${pageContext.request.contextPath}/js/jwplayer/jwplayer.js"></script>
 <script type="text/javascript">
     $(function(){
         var root="${pageContext.request.contextPath}";
-        init_right_content_randomview_video(root);
+        init_right_content_randomview_video(root);//加载右侧
+        init_below_content_video(root);
     });
+    jwplayer('myplayer').setup({
+        file:"${video.videoName}" ,
+        width: '630',
+        height: '500',
+        image:"${video.imgName}",//视频预览图片
+        //controlbar: "over",//控制条位置
+        controlbar: "none",
+        screencolor :"#fff"//播放器颜色
+    });
+
 </script>
 </body>
 </html>

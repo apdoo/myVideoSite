@@ -98,5 +98,14 @@
 </div>
     <!--尾部-->
     <%@ include file="common/footer.jsp" %>
+<script type="text/javascript">
+    /**
+     * 点击切换验证码图片
+     * */
+    $("#vimg").click(function() {
+        //带上一个参数，防止请求被缓存
+        $("#vimg").attr("src","${pageContext.request.contextPath}/validation/one?random="+Math.random());
+    });
+</script>
 </body>
 </html>

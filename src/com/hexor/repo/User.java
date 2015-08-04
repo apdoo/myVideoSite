@@ -15,12 +15,13 @@ public class User extends BasePojo {
     private String email="";//会员email
     private String signupTime="";//注册时间
     private int points=100;//会员积分，初始积分100
-    private int type=0;//会员类型 0，普通会员，1包月会员，2包季度会员，3包年会员，4永久会员，5管理员 ，-1被封禁会员
+    private int type=0;//会员类型 0-会员、1-尊贵会员、2-赞助会员、 5管理员 ，-1被封禁会员
     private String loginIp="";//上次登录的ip
     private String loginTime="";//上次登录的时间
     private String temp="";//会员到期时间
-    private String uploadVideoIds;//会员上传的视频的id 如:vid1,vid2,vid3
-    private String postIds;//会员发布的帖子的id 如pid1,pid2,pid3
+    private String favoriteVideo="";//会员收藏的视频id
+    private String uploadVideoIds="";//会员上传的视频的id 如:vid1,vid2,vid3
+    private String postIds="";//会员发布的帖子的id 如pid1,pid2,pid3
 
     @Override
     public String toString() {
@@ -36,6 +37,14 @@ public class User extends BasePojo {
                 ", loginTime='" + loginTime + '\'' +
                 ", temp='" + temp + '\'' +
                 '}';
+    }
+
+    public String getFavoriteVideo() {
+        return favoriteVideo;
+    }
+
+    public void setFavoriteVideo(String favoriteVideo) {
+        this.favoriteVideo = favoriteVideo;
     }
 
     public String getSignupTime() {

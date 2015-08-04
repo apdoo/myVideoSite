@@ -33,45 +33,34 @@
     <div class="content">
         <div class="section group">
             <div class="col span_1_of_3">
-                <div class="contact_info">
-                    <h3>Find Us Here</h3>
-                    <div class="map">
-                    </div>
-                </div>
+
                 <div class="company_address">
-                    <h3>Company Information :</h3>
-                    <p>500 Lorem Ipsum Dolor Sit,</p>
-                    <p>22-56-2-9 Sit Amet, Lorem,</p>
-                    <p>USA</p>
-                    <p>Phone:(00) 222 666 444</p>
-                    <p>Fax: (000) 000 00 00 0</p>
-                    <p>Email: <span>info@mycompany.com</span></p>
-                    <p>Follow on: <span>Facebook</span>, <span>Twitter</span></p>
+                    <h3>刊登广告</h3>
+                    <p>广告联系请发到Email: <span>info@mycompany.com</span></p>
+                    <p>标题请注明广告联系，请带上广告网址。不写明者将不予回复。广告价格请查阅<a href="#"><span>sss</span></a></p>
+                    <p> 欢迎关注我们的微博与微信</p>
+                    <p>新浪微博:<span>Facebook</span>  微信公众号:<span>Twitter</span></p>
                 </div>
             </div>
             <div class="col span_2_of_3">
                 <div class="contact-form">
                     <h3>留言板</h3>
-                    <form>
+                    <form  action="${pageContext.request.contextPath}/user/signup" method="post" id="contact_form">
                         <div>
-                            <span><label>NAME</label></span>
-                            <span><input type="text" value=""></span>
+                            <span><label>主题</label></span>
+                            <span><input type="text" value="" maxlength="30"></span>
                         </div>
                         <div>
-                            <span><label>E-MAIL</label></span>
-                            <span><input type="text" value=""></span>
-                        </div>
-                        <div>
-                            <span><label>MOBILE.NO</label></span>
-                            <span><input type="text" value=""></span>
+                            <span><label>您的联系方式(电子邮箱/QQ/手机)</label></span>
+                            <span><input type="text" value="" maxlength="30"></span>
                         </div>
                         <div>
                             <span><label>内容</label></span>
-                            <span><textarea> </textarea></span>
+                            <span><textarea > </textarea></span>
                         </div>
                         <div>
                             <%--<span><input type="submit" value="提交"></span>--%>
-                            <span>    <input type="button"  class="button blue" value="注 册" tabindex="5"></span>
+                            <span>    <input type="button" id="contact_submit" class="button blue" value="提 交 " tabindex="5"></span>
                         </div>
                     </form>
                 </div>

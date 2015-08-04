@@ -6,7 +6,7 @@
 <div class="header">
     <!----start-Logo---->
     <div class="logo">
-        <a href="${pageContext.request.contextPath}"><img src="${pageContext.request.contextPath}/resources/images/logo.png" title="logo" /></a>
+        <a href="${pageContext.request.contextPath}"><img  src="${pageContext.request.contextPath}/resources/images/logo-94lu.png" title="logo" /></a>
     </div>
     <!----End-Logo---->
     <!----start-top-nav---->
@@ -23,7 +23,7 @@
             <li><a href="${pageContext.request.contextPath}/videoList">视频列表</a><p></p></li>
             <li><a href="${pageContext.request.contextPath}/introduce">网站动态</a><p></p></li>
             <li><a href="${pageContext.request.contextPath}/contact">商务合作</a><p></p></li>
-            <li><a href="${pageContext.request.contextPath}/contact">交流论坛</a><p></p></li>
+            <li><a target="_blank" href="${pageContext.request.contextPath}/bbs">交流论坛</a><p></p></li>
 
         </ul>
     </div>

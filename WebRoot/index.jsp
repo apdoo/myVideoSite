@@ -33,11 +33,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				  <div class="search-left">
 					  <p>最新上传的视频</p>
 				  </div>
-				  <div class="search-right">
-					  <form>
-						  <input type="text"><input type="submit" value="" />
-					  </form>
-				  </div>
 				  <div class="clear"> </div>
 			  </div>
 			  <!--最新视频列表-->

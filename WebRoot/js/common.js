@@ -2,14 +2,13 @@
  * 网站前端通用的js
  */
 $(function() {
-
     /**
-     * 点击切换验证码图片
-     * */
-    $("#vimg").click(function() {
-        //带上一个参数，请求会被缓存
-        $("#vimg").attr("src","${pageContext.request.contextPath}/validation/one?random="+Math.random());
+     * 留言板提交点击
+     */
+    $("#contact_submit").click(function(){
+
     });
+
     /***
      * 登录方法
      * */
@@ -66,6 +65,34 @@ $(function() {
     }) ;
 });
 /**
+ * 视频播放页面下部分随机视频列表加载
+ * @param root
+ */
+function init_below_content_video(root){
+    $.ajax({
+        type : "POST",
+        url : root+"/video/viewVideosInfo",
+        data:{
+            count:"9",
+            type:"random"//获得是随机一组的视频信息
+        },
+        dataType:"json",
+        success : function(data) {
+            var content="";
+            $.each(data,function(key,val){
+                content=content+" <div class=\"grid\"><h3>"+val.title+"</h3>"+
+                      "<a  href=\""+root+"/videoplay?vkey="+val.vkey+"\"><img  style=\"width:255;\" src=\""+val.imgName+"\" title=\""+val.title+"\" /></a>"+
+                      "<div class=\"time\"><span>"+val.infotime+"</span> </div>"+" <div class=\"grid-info\"><div class=\"video-share\">"+val.updatetime+"</div><div class=\"video-watch\"> "+val.views+" 观看</div> <div class=\"clear\"> </div> <div class=\"lables\"> <p>标签: "+val.tags+"</p></div></div></div>";
+            });
+            $("#below_videos").html(content);
+        },
+        //请求出错的处理
+        error:function(){
+//               alert("请求出错");
+        }
+    });
+}
+/**
  * 右侧加载随机推荐的一组视频
  * @param root
  */
@@ -74,16 +101,16 @@ function init_right_content_randomview_video(root){
         type : "POST",
         url : root+"/video/viewVideosInfo",
         data:{
-            views:"random"//获得是随机一组的视频信息
+            type:"random"//获得是随机一组的视频信息
         },
         dataType:"json",
         success : function(data) {
             var pre="  <div class=\"popular\">  <h3>大家都在看</h3>  <div class=\"clear\"> </div> </div>";
-            var after="<div class=\"r-all\"> <a href=\"#\">查看更多</a> </div>";
+            var after="<div class=\"r-all\"> <a href=\""+root+"/videoList\">查看更多</a> </div>";
             var content="";
             $.each(data,function(key,val){
                 content=content+"<div class=\"video1\">"+
-                "<img src=\""+val.imgName+"\" title=\""+val.title+"\" />"+
+                "<a href=\""+root+"/videoplay?vkey="+val.vkey+"\"><img src=\""+val.imgName+"\" title=\""+val.title+"\" /></a>"+
                 "<span>"+val.title+"</span>"+
                 "<p>"+val.updatetime+"</p>"+
                 "<p>"+val.views+" 观看</p>"+
@@ -109,16 +136,16 @@ function init_right_content_mostview_video(root){
         type : "POST",
         url : root+"/video/viewVideosInfo",
         data:{
-          views:"most"//获得是观看最多的视频信息
+            type:"most"//获得是观看最多的视频信息
         },
         dataType:"json",
         success : function(data) {
             var pre="  <div class=\"popular\">  <h3>观看最多的视频</h3>  <div class=\"clear\"> </div> </div>";
-            var after="<div class=\"r-all\"> <a href=\"#\">查看更多</a> </div>";
+            var after="<div class=\"r-all\"> <a href=\""+root+"/videoList\">查看更多</a> </div>";
             var content="";
             $.each(data,function(key,val){
                 content=content+"<div class=\"video1\">"+
-                "<img src=\""+val.imgName+"\" title=\""+val.title+"\" />"+
+                "<a href=\""+root+"/videoplay?vkey="+val.vkey+"\"><img src=\""+val.imgName+"\" title=\""+val.title+"\" /></a>"+
                 "<span>"+val.title+"</span>"+
                 "<p>"+val.updatetime+"</p>"+
                 "<p>"+val.views+" 观看</p>"+
@@ -126,7 +153,6 @@ function init_right_content_mostview_video(root){
             });
             content=pre+content+after;
             $("#most_views").html(content);
-
         },
         //请求出错的处理
         error:function(){
@@ -138,8 +164,8 @@ function init_right_content_mostview_video(root){
  * 视频列表加载视频信息
  * @param data
  */
-function init_categories_box(data){
-    $("#categories_box").html(videos_init(data));
+function init_categories_box(root,data){
+    $("#categories_box").html(videos_init(root,data));
 }
 /**
  * 首页加载最新视频信息
@@ -151,7 +177,7 @@ function init_index_video(root){
         url : root+"/video/recentlyVideos",
         dataType:"json",
         success : function(data) {
-            $("#video_box").html(videos_init(data));
+            $("#video_box").html(videos_init(root,data));
         },
         //请求出错的处理
         error:function(){
@@ -164,7 +190,7 @@ function init_index_video(root){
  * @param data 视频信息json串
  * @returns {string}
  */
-function videos_init(data){
+function videos_init(root,data){
     var i=1;
     var grids_pre="<div class=\"grids\">";
     var grids_after="</div>";
@@ -174,10 +200,10 @@ function videos_init(data){
             //因为首页样式是3行一个
             content=content+grids_pre;
         }
-        content=content+"<div class=\"grid\"><h3>"+val.title+"</h3><a href=\"single.html\">" +
-        "<img src=\""+val.imgName+"\" title=\"video-name\" style=\"width:355;\"/></a>"+" <div class=\"time\"> <span>"+val.infotime+"</span> </div>"+
+        content=content+"<div class=\"grid\"><h3>"+val.title+"</h3><a href=\""+root+"/videoplay?vkey="+val.vkey+"\">" +
+        "<img src=\""+val.imgName+"\" title=\""+val.title+"\" style=\"width:355;\"/></a>"+" <div class=\"time\"> <span>"+val.infotime+"</span> </div>"+
         "<div class=\"grid-info\"><div class=\"video-share\">"+val.updatetime+"</div>"+"<div class=\"video-watch\"> "+val.views+" 观看</div>"+" <div class=\"clear\"> </div>"+
-        " <div class=\"lables\"> <p>标签:<a href=\"categories.html\">"+val.tags+"</a></p></div></div></div>";
+        " <div class=\"lables\"> <p>标签: "+val.tags+" </p></div></div></div>";
         if((i-1)%3==2){
             content=content+grids_after+"<div class=\"clear\"> </div>";
         }
@@ -185,13 +211,19 @@ function videos_init(data){
     });
     return content;
 }
-//分页生成方法
+/**
+ * 分页生成方法
+ */
 function pagecreat(root,path,current,pageCount){
     var first="";
     var last="";
     var content="";
+    var count=9;
+    if(pageCount<=count){
+        count=pageCount;
+    }
       if(current<=5){//当前页小于等于5页
-          for(var i=1;i<=9;i++){   //因为采集的信息肯定大于9页，就偷懒这么写了 直接循环9页
+          for(var i=1;i<=count;i++){   //因为采集的信息肯定大于9页，就偷懒这么写了 直接循环9页
               if(i==current){
                   content=content+" <li><a class=\"current\" href=\""+root+path+i+"\">"+i+"</a></li>";
               }else{
@@ -220,6 +252,60 @@ function pagecreat(root,path,current,pageCount){
         last=" <li><a href=\""+root+path+(current+1)+"\" class=\"next\">>></a></li> <li><a href=\""+root+path+pageCount+"\" class=\"last\">"+pageCount+"</a></li>";
     }
     $("#categories_page").html(first+content+last);
+}
+//登出
+function loginout(){
+    //清除cookie
+    deleteCookie("username","/");
+    deleteCookie("password","/");
+}
+/**
+ * 视频点赞
+ * */
+function praiseVideo(shareKey,root){
+    var praise_title=$("#praise_title").text();
+    if(praise_title.indexOf("已赞")>0){
+        return false;//点过赞不能再点了
+    }
+
+    $.ajax({
+        type : "POST",
+        url : root+"/video/praiseVideo",
+        data:{
+            shareKey:shareKey
+        },
+        dataType:"json",
+        success : function(data) {
+            $("#praise_title").html("<img src=\""+root+"/resources/images/likes1.png\" title=\"subscribe\" />已赞");
+        },
+        //请求出错的处理
+        error:function(){
+        }
+    });
+}
+/**
+ *收藏视频
+ */
+function houseVideo(shareKey,uid,root){
+    if(uid==""){
+        alert("请登录用户后进行收藏视频！");
+    }else{//视频收藏
+        $.ajax({
+            type : "POST",
+            url : root+"/video/houseVideo",
+            data:{
+                shareKey:shareKey
+            },
+            dataType:"json",
+            success : function(data) {
+                $("#favorite_title").html("<img src=\""+root+"/resources/images/sub.png\" title=\"subscribe\" />"+data.msg);
+            },
+            //请求出错的处理
+            error:function(){
+            }
+        });
+
+    }
 }
 //验证规则：字母、数字、下划线组成，字母开头，5-16位。
 function checkUser(str){

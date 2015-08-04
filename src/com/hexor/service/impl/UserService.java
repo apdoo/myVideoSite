@@ -92,4 +92,13 @@ public class UserService implements IUserService {
         mapper.resetPoints();
     }
 
+    /**
+     * 更新用户收藏视频列表
+     * @param user
+     */
+    @Override
+    public void updateFavoriteVideo(User user) {
+        mapper.updateFavoriteVideo(user);
+    }
+
 }

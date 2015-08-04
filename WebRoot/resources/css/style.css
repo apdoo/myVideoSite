@@ -26,7 +26,8 @@ nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
 body{
-	background: #f4f4f4;;
+	/**修改背景色*/
+	background: #f4f4f4;
 }
 .wrap{
 	width:70%;
@@ -148,6 +149,7 @@ body{
 	font-family: 'Ropa Sans', sans-serif;
 	padding-top: 4px;
 	padding-bottom: 4px;
+	/**修改字体颜色*/
 	color: #845100;
 
 }
@@ -222,6 +224,8 @@ body{
 	padding-bottom: 4px;
 	float:right;
 	width: 67%;
+	/**修改字体颜色*/
+	color: #845100;
 }
 .video1 p{
 	font-family: Arial, Helvetica, sans-serif;
@@ -342,6 +346,7 @@ body{
 }
 .views-count{
 	float:right;
+	padding-right: 222px;/**修改观看对齐*/
 }
 .view-links h4,.views-count p{
 	color: rgb(155, 155, 155);
@@ -751,7 +756,7 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 }
 .copy-right {
 	text-align: center;
-	background: rgb(1, 48, 107);
+	background: rgb(30, 93, 173);
 	padding: 7px 0px;
 }
 .copy-right p {
@@ -790,6 +795,20 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 		width:94%;
 		padding:3%; 
 	}
+}
+/**链接分享样式*/
+input.chain {
+	width: 351px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0px 10px 0px 40px;
+	background-color: #FFF;
+	border: #cccccc solid 1px;
+	background-image: url(../images/chain.gif);
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	color: #666666;
+	margin-right: 12px;
 }
 
 /*  GO FULL WIDTH AT LESS THAN 640 PIXELS */
