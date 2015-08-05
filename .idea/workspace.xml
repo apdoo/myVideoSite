@@ -38,8 +38,8 @@
       <file leaf-file-name="header.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24203822">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.30254778">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -649,7 +649,7 @@
       <workItem from="1438701396081" duration="2252000" />
       <workItem from="1438735168971" duration="6532000" />
       <workItem from="1438763515456" duration="177000" />
-      <workItem from="1438777114432" duration="2755000" />
+      <workItem from="1438777114432" duration="2871000" />
     </task>
     <task id="LOCAL-00001" summary="test git connect">
       <created>1436150671763</created>
@@ -717,11 +717,17 @@
       <option name="project" value="LOCAL" />
       <updated>1438779805250</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="完善网站功能1&#10;">
+      <created>1438779885184</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1438779885184</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210945000" />
+    <option name="totallyTimeSpent" value="211061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -796,7 +802,8 @@
     <MESSAGE value="update a&#10;" />
     <MESSAGE value="增加用户登录与自动登录功能&#10;" />
     <MESSAGE value="完善网站功能&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善网站功能&#10;" />
+    <MESSAGE value="完善网站功能1&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善网站功能1&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1198,8 +1205,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24203822">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.30254778">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding />
         </state>
       </provider>
