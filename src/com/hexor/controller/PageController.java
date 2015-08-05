@@ -175,6 +175,14 @@ public class PageController extends BaseController{
     }
 
     /**
+     * 广告页面
+      * @return
+     */
+    @RequestMapping(value="ad")
+    public String ad(){
+        return "front-page/adpage";
+    }
+    /**
      * 网站动态
      * 包含介绍 微博微信等
      */

@@ -810,7 +810,47 @@ input.chain {
 	color: #666666;
 	margin-right: 12px;
 }
-
+/**广告页面样式*/
+.ad-sidebar {
+	width: 260px;
+	min-height: 100%;
+	float: left;
+}
+.ad-content {
+	width: auto;
+	overflow: hidden;
+	height: 100%;
+	background: #fff;
+}
+.am-padding {
+	padding: 1.6rem;
+}
+.am-text-primary {
+	 color: #0e90d2;
+}
+.am-text-lg {
+	 font-size: 1.8rem;
+}
+b, strong {
+	 font-weight: 700;
+}
+.ad-p{
+	margin: 0 0 1.6rem 0;
+}
+.ad-h{
+	margin: 0 0 1.6rem 0;
+	font-weight: 600;
+	font-size: 100%;
+}
+.ad-hr {
+	display: block;
+	padding: 0;
+	border: 0;
+	height: 0;
+	border-top: 1px solid #bbeeec;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
 /*  GO FULL WIDTH AT LESS THAN 640 PIXELS */
 
 @media only screen and (max-width: 640px) and (min-width: 480px) {

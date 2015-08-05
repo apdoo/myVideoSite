@@ -37,7 +37,7 @@
                 <div class="company_address">
                     <h3>刊登广告</h3>
                     <p>广告联系请发到Email: <span>info@mycompany.com</span></p>
-                    <p>标题请注明广告联系，请带上广告网址。不写明者将不予回复。广告价格请查阅<a href="#"><span>sss</span></a></p>
+                    <p>标题请注明广告联系，请带上广告网址。不写明者将不予回复。广告详情请查阅<a href="${pageContext.request.contextPath}/ad"><span>广告联络详情</span></a></p>
                     <p> 欢迎关注我们的微博与微信</p>
                     <p>新浪微博:<span>Facebook</span>  微信公众号:<span>Twitter</span></p>
                 </div>
