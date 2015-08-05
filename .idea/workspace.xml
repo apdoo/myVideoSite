@@ -198,7 +198,7 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="dynamic.classpath" value="false" />
@@ -649,7 +649,7 @@
       <workItem from="1438701396081" duration="2252000" />
       <workItem from="1438735168971" duration="6532000" />
       <workItem from="1438763515456" duration="177000" />
-      <workItem from="1438777114432" duration="2679000" />
+      <workItem from="1438777114432" duration="2755000" />
     </task>
     <task id="LOCAL-00001" summary="test git connect">
       <created>1436150671763</created>
@@ -711,11 +711,17 @@
       <option name="project" value="LOCAL" />
       <updated>1438779762080</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="完善网站功能&#10;">
+      <created>1438779805250</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1438779805250</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210869000" />
+    <option name="totallyTimeSpent" value="210945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
