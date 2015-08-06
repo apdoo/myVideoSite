@@ -15,7 +15,7 @@
     <meta http-equiv="expires" content="0">
     <meta http-equiv="keywords" content="就是撸,94lu">
     <meta http-equiv="description" content="就是撸">
-    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/forum-images/pageicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/forum-images/94lu-icon.png">
     <link href="${pageContext.request.contextPath}/resources/forum-css/style.css" rel="stylesheet" type="text/css"  media="all" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/forum-css/style.css" type="text/css" media="screen" />
     <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/forum-css/ie_fixes.css" media="screen" /><![endif]-->

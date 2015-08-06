@@ -108,7 +108,7 @@ public class BaseController {
        String videos=user.getFavoriteVideo();
         String []temp=videos.split(",");
         List<String> list=new ArrayList<String>();
-        List<Video> videoList=null;
+        List<Video> videoList=new ArrayList<Video>();
         for(int i=0;i<temp.length;i++){
             if(!temp[i].equals(""))  list.add(temp[i]);
         }
@@ -118,7 +118,9 @@ public class BaseController {
             }
         } catch (IOException e) {
             e.printStackTrace();
+        }finally {
+            return videoList;
         }
-        return videoList;
+
     }
 }

@@ -15,7 +15,7 @@
     <meta http-equiv="expires" content="0">
     <meta http-equiv="keywords" content="就是撸,94lu">
     <meta http-equiv="description" content="就是撸">
-    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/images/pageicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/images/94lu-icon.png">
     <link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet" type="text/css"  media="all" />
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/button.css">
     <!--

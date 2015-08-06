@@ -37,7 +37,7 @@
       select * from vistlog order by time desc limit #{index},#{data}
     </select>
 
-    <select id="getIpVistCounts" parameterType="int" resultType="long">
+    <select id="getIpVistCounts" parameterType="String" resultType="long">
          select count(*) from vistlog where ip=#{value}
     </select>
 

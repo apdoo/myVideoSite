@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     -->
 </head>
+
 <body>
 <!----start-wrap---->
 <div class="wrap">
@@ -28,7 +29,22 @@
     <%@ include file="common/header.jsp" %>
     <div class="clear"> </div>
     <!--内容-->
-
+    <div class="content">
+        <div class="ad-sidebar">
+        </div>
+        <div class="admin-content">
+            <div class="am-cf am-padding">
+            </div>
+            <hr class="ad-hr">
+            <div class="am-g">
+                <div class="am-u-sm-12 am-u-sm-centered" >
+                    <h2 class="ad-h">信息提示</h2>
+                    <p class="ad-p">观看超过次数</p>
+                    <hr class="ad-hr">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="clear"> </div>
 </div>

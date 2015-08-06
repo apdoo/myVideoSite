@@ -123,6 +123,15 @@ public class PageController extends BaseController{
     }
 
     /**
+     * 观看视频限制页面
+     * @return
+     */
+    @RequestMapping(value = "viewlimit")
+    public String viewlimit(){
+        return "front-page/viewlimit";
+    }
+
+    /**
      * 视频播放页面
      * @param request
      * @param response
@@ -182,6 +191,8 @@ public class PageController extends BaseController{
     public String ad(){
         return "front-page/adpage";
     }
+
+
     /**
      * 网站动态
      * 包含介绍 微博微信等
@@ -190,6 +201,11 @@ public class PageController extends BaseController{
     public String bbs(){
         return "forum-page/index";
     }
+
+    /**
+     * 如果在controller最外层 @throws Exception 此处抛出的Exception是抛出被tomcat捕获了 所以error信息要到tomcat的logs文件夹里查看
+     */
+
 
 
 }

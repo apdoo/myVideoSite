@@ -37,7 +37,7 @@ public class UserController extends BaseController{
         //当数据库检验用户名密码
         if(result==null){
             ModelAndView modelAndView=new ModelAndView();
-            modelAndView.setViewName("front-page/myaccount");
+            modelAndView.setViewName("front-page/messagetip");
             modelAndView.addObject("msg", " 用户名或密码错误");
             return modelAndView;
         }
@@ -47,7 +47,7 @@ public class UserController extends BaseController{
             result.setLoginTime(DateUtil.getStrOfDateTime());
             userService.loginUpdate(result);
         }catch (Exception e){
-            System.out.println("登录异常");
+            return new ModelAndView("front-page/messagetip", ModelMapUtil.getMsg("登录异常！"));
         }
         session.setAttribute((String) Configurer.getContextProperty("session.userinfo"), result);
         Map modelMap=new HashMap();
@@ -64,13 +64,13 @@ public class UserController extends BaseController{
     public ModelAndView signup(User user,HttpSession session,HttpServletRequest request){
         String vcode=(String)session.getAttribute("validation_code");//从session拿去服务端所存的验证码
         User result=userService.checkUser(user.getUsername());//
-        if(result!=null)  return new ModelAndView("front-page/myaccount", ModelMapUtil.getMsg("已经存在用户名！")); //当数据库中存在同名用户的时候
+        if(result!=null)  return new ModelAndView("front-page/messagetip", ModelMapUtil.getMsg("已经存在用户名！")); //当数据库中存在同名用户的时候
         if(vcode!=null&&user.getVcode()!=null){
             //转换大小写
             vcode=vcode.toLowerCase();
             String in=user.getVcode().toLowerCase();
             if(!in.equals(vcode)){
-                return new ModelAndView("front-page/myaccount",ModelMapUtil.getMsg("验证码输入错误！"));
+                return new ModelAndView("front-page/messagetip",ModelMapUtil.getMsg("验证码输入错误！"));
             }
         }
         try{
@@ -82,7 +82,7 @@ public class UserController extends BaseController{
             userService.insertUser(user);
         }catch (Exception e){
             Map map=ModelMapUtil.getMsg("注册失败!");
-            return new ModelAndView("front-page/myaccount",map);
+            return new ModelAndView("front-page/messagetip",map);
         }
         return  new ModelAndView("front-page/myaccount",ModelMapUtil.getUserMap(user)) ;
     }
