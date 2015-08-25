@@ -8,7 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -55,6 +57,29 @@ public class VistLogService implements IVistLogService {
     @Override
     public void deleteAll() {
         mapper.deleteAll();
+    }
+
+
+    /**
+     * 获得今日访问页面的ip记录的条数
+     * @param ip
+     * @param date
+     */
+    @Override
+    public long getTodayIpVistCount(String  ip,String date) {
+        Map map=new HashMap();
+        map.put("ip",ip);
+        map.put("date", date);
+        return mapper.getTodayIpVistCount(map);
+    }
+    /**
+     * 用户访问记录
+     * @param username
+     * @return
+     */
+    @Override
+    public List<VistLogBean> selectByUserUserName(String username) {
+        return mapper.selectByUserUserName(username);
     }
 
 

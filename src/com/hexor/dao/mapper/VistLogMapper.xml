@@ -44,5 +44,13 @@
     <delete id="deleteAll">
          delete  from vistlog
     </delete>
+    <!--获取今日访问的ip的条数-->
+    <select id="getTodayIpVistCount" parameterType="Map" resultType="long">
+        select count(*) from vistlog where ip=#{ip} and time=#{date}
+    </select>
+    <!--用户访问记录信息-->
+    <select id="selectByUserUserName" parameterType="String" resultMap="VistLogResultMap">
+        select * from vistlog where username=#{value}
+    </select>
 
  </mapper>

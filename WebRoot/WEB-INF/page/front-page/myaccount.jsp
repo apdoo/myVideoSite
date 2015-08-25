@@ -36,16 +36,15 @@
 
                 <div class="company_address">
                     <h3>用户信息</h3>
-                    <p>账号：${userinfo.username} 	<a href="${pageContext.request.contextPath}/user/loginout" class="tp_txt" id="loginout" onclick="loginout()">退出登录</a> </p>
-
+                    <p>账号：${userinfo.username} &nbsp;	<a href="${pageContext.request.contextPath}/user/loginout?from=video" class="tp_txt" id="loginout" onclick="loginout()">退出登录</a> </p>
                     <c:if test="${userinfo.type==0}">
-                        <p>会员级别：会员</p>
+                        <p>会员级别：会员   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">查看会员福利介绍</a></p>
                     </c:if>
                     <c:if test="${userinfo.type==1}">
-                        <p>会员级别：高级会员</p>
+                        <p>会员级别：高级会员 &nbsp;<a href="#">会员福利介绍</a></p>
                     </c:if>
                     <c:if test="${userinfo.type==2}">
-                        <p>会员级别：赞助会员</p>
+                        <p>会员级别：vip会员 &nbsp;<a href="#">会员福利介绍</a></p>
                     </c:if>
                     <c:if test="${userinfo.type==5}">
                         <p>会员级别：管理员</p>
@@ -75,7 +74,7 @@
     <div class="clear"> </div>
 </div>
     <!--尾部-->
-    <%@ include file="common/footer.jsp" %>
+    <%@ include file="common/bottom.jsp" %>
 
 </body>
 </html>

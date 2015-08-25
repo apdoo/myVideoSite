@@ -53,6 +53,14 @@
     <file url="file://$PROJECT_DIR$/WebRoot/js/jwplayer/jwplayer.flash.swf" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebRoot/js/jwplayer/jwplayer.html5.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebRoot/js/jwplayer/jwplayer.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebRoot/js/selectordie/selectordie.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebRoot/js/selectordie/selectordie.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebRoot/js/selectordie/selectordie_theme_03.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebRoot/js/xheditor/common.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebRoot/js/xheditor/xheditor-1.2.2.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebRoot/js/xheditor/zh-cn.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebRoot/resources/css/button.css" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hexor/controller/PageController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hexor/controller/ValidationCodeController.java" charset="UTF-8" />

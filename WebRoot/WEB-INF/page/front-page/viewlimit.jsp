@@ -39,7 +39,8 @@
             <div class="am-g">
                 <div class="am-u-sm-12 am-u-sm-centered" >
                     <h2 class="ad-h">信息提示</h2>
-                    <p class="ad-p">观看超过次数</p>
+                    <p class="ad-p">作为<strong>游客</strong>,您每天最部多只能观看<strong>5</strong>部视频。注册成为94lu会员，观看更多视频。</p>
+                    <p><a href="${pageContext.request.contextPath}/account">注册</a> <a href="#">点击返回首页</a></p>
                     <hr class="ad-hr">
                 </div>
             </div>
@@ -49,7 +50,7 @@
     <div class="clear"> </div>
 </div>
     <!--尾部-->
-    <%@ include file="common/footer.jsp" %>
+    <%@ include file="common/bottom.jsp" %>
 
 </body>
 </html>

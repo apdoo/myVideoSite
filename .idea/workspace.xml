@@ -1,30 +1,437 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01dc29ef-f31f-416d-be40-a4b805f28356" name="Default" comment="完善网站功能1&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/94lu-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/images/94lu-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/interceptor/VideoPlayInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/messagetip.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/viewlimit.jsp" />
+    <list default="true" id="01dc29ef-f31f-416d-be40-a4b805f28356" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/10.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/100offer_201505_small.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/105296_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/11.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/119683_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/12.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/126945_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/127840_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/13.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/14.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/14055_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/14067_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/14174_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/15.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/16.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/16278_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/16887_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/17.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/18.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/18198_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/19.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/20.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/21.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/22.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/23.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/24.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/25.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/26.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/27.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/28.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/29.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/30.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/31.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/31225_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/32.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/33.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/34.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/35.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/36.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/37.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/37038_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/38.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/39.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/39389_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/39784_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/40.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/41279_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/44179_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/46835_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/51186_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/59588_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/6.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/6096_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/69162_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/7.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/70856_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/73613_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/78007_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/84351_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/86244_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/87356_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/msn/9.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/93867_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/94591_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/alien.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/alipay_qr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/anchor.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/anchor.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/anchor.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/anchor.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/anchor.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/angel.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/angry.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/angry.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/angry.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/awkward.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/bad.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/bandit.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/biglaugh.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/blink.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/blush.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/blush.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/brokenheart.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/buttonbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/buttonbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/buttonbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/bye.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/bye.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/coffee.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/commons-fileupload-1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/cool.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/cool.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/corner_star.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/crazy.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/cry.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/cry.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/cry.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/curse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/curse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/cute.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/cute.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/default_avatar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/depres.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/despise.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/devil.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/devil.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/do.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/doubt.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/envy.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/envy.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/fastcry.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/flash.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/flash.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/flash.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/flash.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/flash.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/flat_compose.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/gift.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/glare.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/good.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/heart.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/icons.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/icons.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/icons.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/icons.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/icons.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/joyful.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/kiss.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/kiss.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/knock.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/lang_zhcn_32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/laugh.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/laugh.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/laugh.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/logo@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/love.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/mad.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/magician.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/music.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/ninja.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/ohmy.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/panic.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/pinch.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/police.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/progress.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/progress.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/progress.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/progress.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/progress.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/progressbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/progressbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/progressbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/progressbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/progressbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/proud.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/question.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/quiet.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/rose.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/rss.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/sad.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/sad.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/sad.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/shadow_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/shocked.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/shout.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/shutup.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/shy.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/sick.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/sick.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/sideways.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-images/silver.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/sleep.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/sleep.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/sleepy.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/soccer.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/struggle.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/surprised.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/sweat.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/tag-address.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/tag-address.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/tag-address.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/tag-address.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/tag-address.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/tag-div.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/tag-div.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/tag-div.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/tag-div.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/tag-div.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/tag-h1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/tag-h1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/tag-h1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/tag-h1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/tag-h1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/tag-h2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/tag-h2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/tag-h2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/tag-h2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/tag-h2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/tag-h3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/tag-h3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/tag-h3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/tag-h3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/tag-h3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/tag-h4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/tag-h4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/tag-h4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/tag-h4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/tag-h4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/tag-h5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/tag-h5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/tag-h5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/tag-h5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/tag-h5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/tag-h6.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/tag-h6.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/tag-h6.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/tag-h6.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/tag-h6.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/tag-p.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/tag-p.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/tag-p.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/tag-p.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/tag-p.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/tag-pre.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/tag-pre.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/tag-pre.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/tag-pre.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/tag-pre.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/tired.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/titlebg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/titter.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/tongue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/tongue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/tongue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/unsure.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/victory.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/w00t.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/wail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/waiting.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/waiting.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/waiting.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/waiting.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/waiting.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/whistling.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/wink.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/wmp.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/wmp.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/wmp.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/wmp.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/wmp.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/wondering.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/img/wordimg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/img/wordimg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/img/wordimg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/img/wordimg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/img/wordimg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/wronged.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/wub.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/controller/AdminController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/interceptor/BaseHandlerInterceptorAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/interceptor/BaseInterceptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/controller/ForumController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/interceptor/ForumInterceptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/dao/ITopicalMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/dao/ITopicalReplayMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/service/ITopicalReplayService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/service/ITopicalService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/dao/IUserBalanceMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/service/IUserBalanceService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/dao/IUserDownloadLogMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/service/IUserDownloadLogService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/util/MyStringUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/util/RequestUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/repo/Topical.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/dao/mapper/TopicalMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/repo/TopicalReplay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/dao/mapper/TopicalReplayMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/service/impl/TopicalReplayService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/service/impl/TopicalService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/repo/UserBalance.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/dao/mapper/UserBalanceMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/service/impl/UserBalanceService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/repo/UserDownloadLog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/dao/mapper/UserDownloadLogMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/service/impl/UserDownloadLogService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/about.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ad" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/adminPage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/advertise.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/avatar.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/balance.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-css/basic.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/bottom.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/default/config.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/ipb/config.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_emot/pidgin/config.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/daily.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-css/desktop.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/downloadlimit.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/faq.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/header.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-css/highlight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/iframe.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/iframe.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/iframe.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/iframe.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/iframe.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-css/jquery.textcomplete.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/member.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/memberlimit.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/messagetips.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/newTopic.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/posts.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/recharge.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/replay.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/right-content.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-css/select2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/selectordie/selectordie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/selectordie/selectordie.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/selectordie/selectordie_theme_03.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/settings.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/simply-right-content.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/topics.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/default/ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/nostyle/ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007blue/ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/o2007silver/ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor_skin/vista/ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/xheditor-1.2.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/xheditor/zh-cn.js" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-css\ie_fixes.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\body.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\box\body.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\box\bottom.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\box\title.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\button_go.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\button_submit.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\footer.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\icon_comment.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\layout_edges.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\logo-94lu.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\navigation.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\pageicon.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\pagenav_bottom.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\pagenav_top.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\post\body.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\post\bottom.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\post\title.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\quote.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\sample-gravatar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\sample-thumb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\site_title.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\tableftc.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\tabrightc.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\top.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\myVideoSite\WebRoot\resources\forum-images\top_separator.gif" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/hexor/dao/IUserMapper.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/hexor/dao/IUserMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/hexor/service/IUserService.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/hexor/service/IUserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/hexor/repo/User.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/hexor/repo/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/hexor/service/impl/UserService.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/hexor/service/impl/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/controller/BaseController.java" afterPath="$PROJECT_DIR$/src/com/hexor/controller/BaseController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/dao/IUserMapper.java" afterPath="$PROJECT_DIR$/src/com/hexor/dao/IUserMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/service/IUserService.java" afterPath="$PROJECT_DIR$/src/com/hexor/service/IUserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/dao/IVideoMapper.java" afterPath="$PROJECT_DIR$/src/com/hexor/dao/IVideoMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/service/IVideoService.java" afterPath="$PROJECT_DIR$/src/com/hexor/service/IVideoService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/dao/IVistLogMapper.java" afterPath="$PROJECT_DIR$/src/com/hexor/dao/IVistLogMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/service/IVistLogService.java" afterPath="$PROJECT_DIR$/src/com/hexor/service/IVistLogService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/controller/PageController.java" afterPath="$PROJECT_DIR$/src/com/hexor/controller/PageController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/util/PagerUtil.java" afterPath="$PROJECT_DIR$/src/com/hexor/util/PagerUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/repo/User.java" afterPath="$PROJECT_DIR$/src/com/hexor/repo/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/controller/UserController.java" afterPath="$PROJECT_DIR$/src/com/hexor/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/hexor/dao/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/hexor/dao/mapper/UserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/dao/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/com/hexor/dao/mapper/UserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/service/impl/UserService.java" afterPath="$PROJECT_DIR$/src/com/hexor/service/impl/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/controller/VideoController.java" afterPath="$PROJECT_DIR$/src/com/hexor/controller/VideoController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/dao/mapper/VideoMapper.xml" afterPath="$PROJECT_DIR$/src/com/hexor/dao/mapper/VideoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/interceptor/VideoPlayInterceptor.java" afterPath="$PROJECT_DIR$/src/com/hexor/interceptor/VideoPlayInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/service/impl/VideoService.java" afterPath="$PROJECT_DIR$/src/com/hexor/service/impl/VideoService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/repo/VistLogBean.java" afterPath="$PROJECT_DIR$/src/com/hexor/repo/VistLogBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/dao/mapper/VistLogMapper.xml" afterPath="$PROJECT_DIR$/src/com/hexor/dao/mapper/VistLogMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/service/impl/VistLogService.java" afterPath="$PROJECT_DIR$/src/com/hexor/service/impl/VistLogService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/account.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/account.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/adpage.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/adpage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/categories.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/categories.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/js/common.js" afterPath="$PROJECT_DIR$/WebRoot/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/config.properties" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config.properties" afterPath="$PROJECT_DIR$/src/config.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/contact.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/contact.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.sql" afterPath="$PROJECT_DIR$/database.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/forum-template.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/forum-template.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/front-template.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/front-template.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/header.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/index.jsp" afterPath="$PROJECT_DIR$/WebRoot/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/index.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/introduce.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/introduce.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/log4j.properties" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/log4j.properties" afterPath="$PROJECT_DIR$/src/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/messagetip.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/messagetip.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/myaccount.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/myaccount.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/searchvideos.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/searchvideos.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/service-context.xml" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/service-context.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/spitter-servlet.xml" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/spitter-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/resources/forum-css/style.css" afterPath="$PROJECT_DIR$/WebRoot/resources/forum-css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/videoplay.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/videoplay.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/viewlimit.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/viewlimit.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="E:\workspace\myVideoSite\WebRoot\WEB-INF\page\front-page\common\footer.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/bottom.jsp" />
     </list>
     <ignored path="myVideoSite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,11 +454,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="searchvideos.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/searchvideos.jsp">
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.607143">
-              <caret line="18" column="108" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="39" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminPage.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/adminPage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="214" column="35" selection-start-line="214" selection-start-column="35" selection-end-line="214" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -61,74 +478,29 @@
         <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/PageController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+              <caret line="219" column="28" selection-start-line="219" selection-start-column="28" selection-end-line="219" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForumController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/ForumController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="44" column="37" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="37" />
               <folding>
-                <element signature="e#5682#5683#0" expanded="true" />
-                <element signature="e#5727#5728#0" expanded="true" />
-                <element signature="e#7728#7729#0" expanded="true" />
-                <element signature="e#7769#7770#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewlimit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/viewlimit.jsp">
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.071429">
-              <caret line="17" column="108" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="videoplay.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/videoplay.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3838384">
-              <caret line="17" column="108" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.071429">
-              <caret line="17" column="110" selection-start-line="17" selection-start-column="110" selection-end-line="17" selection-end-column="110" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/BaseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="121" column="29" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
-              <folding>
-                <element signature="e#3027#3034#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VideoController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/VideoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.3544776">
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -138,18 +510,52 @@
         <entry file="file://$PROJECT_DIR$/src/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="108" />
+              <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/ContactController.java">
+      <file leaf-file-name="BaseController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/BaseController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+              <caret line="90" column="29" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoPlayInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hexor/interceptor/VideoPlayInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDownloadLogMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/mapper/UserDownloadLogMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="42" column="30" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IUserDownloadLogService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hexor/service/IUserDownloadLogService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,8 +567,8 @@
       <list>
         <option value="Html5" />
         <option value="Html" />
-        <option value="Interface" />
         <option value="JavaScript File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -178,56 +584,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/hexor/dao/mapper/ContactMapper.xml" />
-        <option value="$PROJECT_DIR$/src/com/hexor/dao/IContactMapper.java" />
-        <option value="$PROJECT_DIR$/src/com/hexor/service/IContactService.java" />
-        <option value="$PROJECT_DIR$/src/com/hexor/service/impl/ContactService.java" />
-        <option value="$PROJECT_DIR$/src/com/hexor/controller/ContactController.java" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/footer.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/js/jwplayer/jwpsrv.js" />
-        <option value="$PROJECT_DIR$/WebRoot/6/6/jwpsrv.js" />
-        <option value="$PROJECT_DIR$/WebRoot/js/jwplayer/jwplayer.js" />
-        <option value="$PROJECT_DIR$/src/com/hexor/controller/ValidationCodeController.java" />
-        <option value="$PROJECT_DIR$/WebRoot/resources/forum-css/style.css" />
-        <option value="$PROJECT_DIR$/src/com/hexor/controller/ForntSitePageController.java" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/com/hexor/repo/Pager.java" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/below-content.jsp" />
-        <option value="$PROJECT_DIR$/database.sql" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/settings.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/right-content.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/avatar.jsp" />
+        <option value="$PROJECT_DIR$/src/com/hexor/repo/TopicalReplay.java" />
+        <option value="$PROJECT_DIR$/WebRoot/js/common.js" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/videoplay.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/index.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/newTopic.jsp" />
+        <option value="$PROJECT_DIR$/src/com/hexor/controller/PageController.java" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/faq.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/about.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/bottom.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/messagetips.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/advertise.jsp" />
+        <option value="$PROJECT_DIR$/ad" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/header.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/replay.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/member.jsp" />
         <option value="$PROJECT_DIR$/src/com/hexor/dao/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/com/hexor/dao/IUserMapper.java" />
         <option value="$PROJECT_DIR$/src/com/hexor/service/IUserService.java" />
         <option value="$PROJECT_DIR$/src/com/hexor/service/impl/UserService.java" />
         <option value="$PROJECT_DIR$/src/com/hexor/repo/User.java" />
-        <option value="$PROJECT_DIR$/src/com/hexor/dao/mapper/VideoMapper.xml" />
-        <option value="$PROJECT_DIR$/src/com/hexor/service/IVideoService.java" />
-        <option value="$PROJECT_DIR$/src/com/hexor/service/impl/VideoService.java" />
-        <option value="$PROJECT_DIR$/src/com/hexor/dao/IVideoMapper.java" />
-        <option value="$PROJECT_DIR$/src/com/hexor/controller/VideoController.java" />
-        <option value="$PROJECT_DIR$/src/com/hexor/service/impl/VistLogService.java" />
-        <option value="$PROJECT_DIR$/WebRoot/js/common.js" />
-        <option value="$PROJECT_DIR$/WebRoot/resources/css/style.css" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/header.jsp" />
         <option value="$PROJECT_DIR$/src/com/hexor/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/spitter-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/com/hexor/interceptor/VideoPlayInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/repo/Topical.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/controller/ForumController.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/dao/mapper/TopicalMapper.xml" />
+        <option value="$PROJECT_DIR$/src/com/hexor/dao/ITopicalMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/service/ITopicalService.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/service/impl/TopicalService.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/dao/mapper/TopicalReplayMapper.xml" />
+        <option value="$PROJECT_DIR$/src/com/hexor/dao/ITopicalReplayMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/service/ITopicalReplayService.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/service/impl/TopicalReplayService.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/dao/mapper/UserBalanceMapper.xml" />
+        <option value="$PROJECT_DIR$/src/com/hexor/dao/mapper/UserDownloadLogMapper.xml" />
         <option value="$PROJECT_DIR$/src/com/hexor/dao/mapper/VistLogMapper.xml" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/forum-template.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/index.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/account.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/adpage.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/categories.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/contact.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/front-template.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/introduce.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/messagetip.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/myaccount.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/searchvideos.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/videoplay.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/viewlimit.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/index.jsp" />
+        <option value="$PROJECT_DIR$/src/com/hexor/dao/IUserBalanceMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/service/IUserBalanceService.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/service/impl/UserBalanceService.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/dao/IUserDownloadLogMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/service/IUserDownloadLogService.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/service/impl/UserDownloadLogService.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/dao/IVistLogMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/service/IVistLogService.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/service/impl/VistLogService.java" />
         <option value="$PROJECT_DIR$/src/com/hexor/controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/src/com/hexor/controller/PageController.java" />
+        <option value="$PROJECT_DIR$/src/com/hexor/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/config.properties" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/adminPage.jsp" />
         <option value="$PROJECT_DIR$/src/log4j.properties" />
       </list>
     </option>
@@ -254,10 +660,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="374" />
+    <option name="y" value="7" />
+    <option name="width" value="1025" />
+    <option name="height" value="737" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -282,8 +688,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -292,25 +697,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myVideoSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myVideoSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../android/26AndroidVideoPlayer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../new_manassi/ManageAssiTabs" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -326,23 +722,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace\myVideoSite\WebRoot\resources\images" />
-      <recent name="E:\workspace\myVideoSite\WebRoot\resources\forum-images" />
+      <recent name="E:\workspace\myVideoSite\WebRoot\WEB-INF\page" />
+      <recent name="E:\workspace\myVideoSite\WebRoot\WEB-INF\page\forum-page" />
+      <recent name="E:\workspace\myVideoSite\WebRoot\WEB-INF\lib" />
+      <recent name="E:\workspace\myVideoSite\WebRoot\WEB-INF\page\forum-page\common" />
       <recent name="E:\workspace\myVideoSite\WebRoot\WEB-INF\page\front-page" />
-      <recent name="E:\workspace\myVideoSite\WebRoot\resources\css" />
-      <recent name="E:\workspace\myVideoSite\WebRoot\WEB-INF\page\front-page\common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace\myVideoSite\WebRoot\WEB-INF\page\forum-page" />
+      <recent name="E:\workspace\myVideoSite\WebRoot\resources\forum-images" />
       <recent name="E:\workspace\myVideoSite\WebRoot\6\6" />
       <recent name="E:\workspace\myVideoSite\WebRoot\resources" />
       <recent name="E:\workspace\myVideoSite\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hexor.util" />
       <recent name="com.hexor.service.impl" />
       <recent name="com.hexor.service" />
       <recent name="com.hexor.dao" />
       <recent name="com.hexor.repo" />
-      <recent name="com.hexor.util" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat7">
@@ -354,6 +752,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.hexor.util.EncodeUtil" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="94lu" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MyStringUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hexor.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.hexor.util.MyStringUtil" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -690,13 +1108,15 @@
       </ConfigurationWrapper>
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.EncodeUtil" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.tomcat7" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat7" />
+      <item index="1" class="java.lang.String" itemvalue="Application.EncodeUtil" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MyStringUtil" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.EncodeUtil" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.MyStringUtil" />
+        <item index="1" class="java.lang.String" itemvalue="Application.EncodeUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -771,7 +1191,51 @@
       <workItem from="1438763515456" duration="177000" />
       <workItem from="1438777114432" duration="2925000" />
       <workItem from="1438780957303" duration="4330000" />
-      <workItem from="1438829020227" duration="7692000" />
+      <workItem from="1438829020227" duration="7823000" />
+      <workItem from="1438911562329" duration="18840000" />
+      <workItem from="1439010226171" duration="658000" />
+      <workItem from="1439012893978" duration="658000" />
+      <workItem from="1439166946645" duration="16698000" />
+      <workItem from="1439254270063" duration="593000" />
+      <workItem from="1439271783110" duration="11290000" />
+      <workItem from="1439340184679" duration="1073000" />
+      <workItem from="1439366512260" duration="3688000" />
+      <workItem from="1439424470518" duration="9415000" />
+      <workItem from="1439434994140" duration="6686000" />
+      <workItem from="1439452996200" duration="3030000" />
+      <workItem from="1439463622726" duration="5865000" />
+      <workItem from="1439471051120" duration="1353000" />
+      <workItem from="1439473466833" duration="5924000" />
+      <workItem from="1439511465942" duration="1110000" />
+      <workItem from="1439520492457" duration="8666000" />
+      <workItem from="1439539754252" duration="11344000" />
+      <workItem from="1439556595710" duration="2341000" />
+      <workItem from="1439600220172" duration="44000" />
+      <workItem from="1439604242404" duration="6902000" />
+      <workItem from="1439615829894" duration="2157000" />
+      <workItem from="1439772833850" duration="31879000" />
+      <workItem from="1439857637362" duration="29460000" />
+      <workItem from="1439910584598" duration="48000" />
+      <workItem from="1439944776513" duration="9662000" />
+      <workItem from="1439961247755" duration="11959000" />
+      <workItem from="1439974952670" duration="2985000" />
+      <workItem from="1439987600670" duration="228000" />
+      <workItem from="1439988571180" duration="244000" />
+      <workItem from="1439989500149" duration="4781000" />
+      <workItem from="1439997527065" duration="150000" />
+      <workItem from="1440032966116" duration="11000" />
+      <workItem from="1440039747627" duration="1066000" />
+      <workItem from="1440117100253" duration="392000" />
+      <workItem from="1440167294436" duration="144000" />
+      <workItem from="1440167852647" duration="938000" />
+      <workItem from="1440204448915" duration="26101000" />
+      <workItem from="1440257179450" duration="268000" />
+      <workItem from="1440292323982" duration="8620000" />
+      <workItem from="1440377910383" duration="473000" />
+      <workItem from="1440382760455" duration="14413000" />
+      <workItem from="1440507306914" duration="10000" />
+      <workItem from="1440507364610" duration="6000" />
+      <workItem from="1440514746446" duration="351000" />
     </task>
     <task id="LOCAL-00001" summary="test git connect">
       <created>1436150671763</created>
@@ -851,67 +1315,47 @@
       <option name="project" value="LOCAL" />
       <updated>1438780000949</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="修改icon图标&#10;">
+      <created>1438849003013</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1438849003013</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223137000" />
+    <option name="totallyTimeSpent" value="485792000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="374" y="7" width="1025" height="737" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18771331" sideWeight="0.5030257" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.63822526" sideWeight="0.5151286" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39590445" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48704663" sideWeight="0.48487142" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21406959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21450777" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4171123" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29522184" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3003413" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.278157" sideWeight="0.48865354" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18771331" sideWeight="0.5030257" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32841328" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39130434" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36222222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30086955" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5947826" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -931,14 +1375,47 @@
     <MESSAGE value="增加用户登录与自动登录功能&#10;" />
     <MESSAGE value="完善网站功能&#10;" />
     <MESSAGE value="完善网站功能1&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善网站功能1&#10;" />
+    <MESSAGE value="修改icon图标&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改icon图标&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hexor/controller/VideoController.java</url>
+          <line>183</line>
+          <properties />
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hexor/service/impl/TopicalService.java</url>
+          <line>142</line>
+          <properties />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hexor/controller/ForumController.java</url>
+          <line>144</line>
+          <properties />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hexor/controller/ForumController.java</url>
+          <line>142</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hexor/service/impl/TopicalService.java</url>
+          <line>144</line>
+          <properties />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="34" />
+      <option name="time" value="86" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -947,205 +1424,331 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebRoot/resources/images/sub.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/right-content.jsp">
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/about.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/below-content.jsp">
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/advertise.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <caret line="36" column="96" selection-start-line="36" selection-start-column="96" selection-end-line="36" selection-end-column="96" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/impl/UserService.java">
+    <entry file="file://$PROJECT_DIR$/ad">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="99" column="35" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="35" />
+        <state vertical-scroll-proportion="1.0126903">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/bottom.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.013661202">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.178572">
+          <caret line="15" column="83" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/right-content.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5136612">
+          <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/replay.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5714285">
+          <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/newTopic.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.071429">
+          <caret line="95" column="95" selection-start-line="95" selection-start-column="66" selection-end-line="95" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/member.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7142856">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/IUserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="47" />
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/mapper/UserMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/impl/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/repo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.springframework.web.servlet-3.1.0.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3736842">
-          <caret line="418" column="19" selection-start-line="418" selection-start-column="19" selection-end-line="418" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/repo/Video.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02014652">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/mapper/VideoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="59" selection-start-line="122" selection-start-column="55" selection-end-line="122" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/IVideoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/IVideoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <caret line="212" column="51" selection-start-line="212" selection-start-column="51" selection-end-line="212" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hexor/service/IUserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/impl/VideoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="132" column="23" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/util/EncodeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/js/cookie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45144358">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.springframework.web-3.1.0.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05292479">
-          <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="33" />
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="260" column="1" selection-start-line="260" selection-start-column="1" selection-end-line="260" selection-end-column="1" />
+          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="185" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/resources/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.21646342">
-          <caret line="849" column="33" selection-start-line="849" selection-start-column="27" selection-end-line="849" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/header.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/repo/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/repo/UserBalance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/messagetips.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29867676">
+          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="123" column="46" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/util/ModelMapUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/repo/TopicalReplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.46004844">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/spitter-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/repo/Topical.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8">
-          <caret line="80" column="50" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="67" />
+        <state vertical-scroll-proportion="1.1708684">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0">
+          <caret line="19" column="557" selection-start-line="19" selection-start-column="557" selection-end-line="19" selection-end-column="586" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/impl/VistLogService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38655463">
+          <caret line="78" column="33" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/mapper/VideoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5966387">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/ITopicalMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/ITopicalService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/impl/TopicalReplayService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/ITopicalReplayService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/ITopicalReplayMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/impl/TopicalService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="180" column="36" selection-start-line="180" selection-start-column="22" selection-end-line="180" selection-end-column="36" />
           <folding>
-            <element signature="e#1622#1623#0" expanded="false" />
-            <element signature="e#1671#1672#0" expanded="false" />
+            <element signature="e#4148#4149#0" expanded="true" />
+            <element signature="e#4200#4201#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/IVistLogMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/mapper/TopicalReplayMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="38" />
-          <folding />
+          <caret line="53" column="2" selection-start-line="53" selection-start-column="2" selection-end-line="55" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/repo/VistLogBean.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/mapper/TopicalMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <caret line="110" column="2" selection-start-line="110" selection-start-column="2" selection-end-line="110" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/IUserBalanceMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46778712">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="51" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/IUserBalanceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8935574">
+          <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/impl/UserBalanceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6806723">
+          <caret line="81" column="54" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/IUserDownloadLogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="31" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/impl/UserDownloadLogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/mapper/VistLogMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="54" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="54" />
+          <caret line="51" column="36" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/IVistLogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="31" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/IVistLogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/impl/VistLogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="51" selection-start-line="81" selection-start-column="51" selection-end-line="81" selection-end-column="51" />
           <folding>
-            <marker date="1438784152641" expanded="true" signature="-1:-1" placeholder="select * fro..vistlog..." />
-            <marker date="1438784152641" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1438784152641" expanded="true" signature="-1:-1" placeholder="select count..vistlog..." />
-            <marker date="1438784152641" expanded="true" signature="-1:-1" placeholder="select * fro..vistlog..." />
-            <marker date="1438784152641" expanded="true" signature="-1:-1" placeholder="select count..vistlog..." />
-            <marker date="1438784152641" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#1764#1765#0" expanded="true" />
+            <element signature="e#1798#1799#0" expanded="true" />
+            <element signature="e#2245#2246#0" expanded="true" />
+            <element signature="e#2305#2306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/service/IUserDownloadLogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/mapper/UserBalanceMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41896024">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/dao/mapper/UserDownloadLogMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/interceptor/BaseHandlerInterceptorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5994398">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="29" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1153,160 +1756,17 @@
     <entry file="file://$PROJECT_DIR$/src/com/hexor/interceptor/VideoPlayInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/ForumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="37" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/resources/images/pageicon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/forum-template.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.714286">
-          <caret line="17" column="114" selection-start-line="17" selection-start-column="114" selection-end-line="17" selection-end-column="114" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.607143">
-          <caret line="17" column="114" selection-start-line="17" selection-start-column="114" selection-end-line="17" selection-end-column="114" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/account.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.607143">
-          <caret line="17" column="108" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/adpage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.607143">
-          <caret line="17" column="108" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/categories.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.607143">
-          <caret line="18" column="108" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/contact.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.607143">
-          <caret line="17" column="108" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/front-template.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.607143">
-          <caret line="17" column="108" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/messagetip.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.607143">
-          <caret line="17" column="108" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/introduce.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8571428">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/myaccount.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.214286">
-          <caret line="63" column="54" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/ValidationCodeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/VideoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/ContactController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/searchvideos.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.607143">
-          <caret line="18" column="108" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="121" column="29" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
-          <folding>
-            <element signature="e#3027#3034#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1314,36 +1774,39 @@
     <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/PageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
-          <folding>
-            <element signature="e#5682#5683#0" expanded="true" />
-            <element signature="e#5727#5728#0" expanded="true" />
-            <element signature="e#7728#7729#0" expanded="true" />
-            <element signature="e#7769#7770#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.071429">
-          <caret line="17" column="110" selection-start-line="17" selection-start-column="110" selection-end-line="17" selection-end-column="110" />
+          <caret line="219" column="28" selection-start-line="219" selection-start-column="28" selection-end-line="219" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/viewlimit.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/hexor/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.071429">
-          <caret line="17" column="108" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="39" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/videoplay.jsp">
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/adminPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3838384">
-          <caret line="17" column="108" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="214" column="35" selection-start-line="214" selection-start-column="35" selection-end-line="214" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3544776">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
           <folding />
         </state>
       </provider>

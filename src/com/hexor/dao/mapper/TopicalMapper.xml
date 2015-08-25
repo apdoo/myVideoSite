@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.hexor.dao.ITopicalMapper">
+   <sql id="columnTopical">
+		 authorId,
+		 author,
+		 tags,
+		 vkey,
+		 title,
+		 content,
+		 time,
+		 authority,
+		 views,
+		 type,
+		 orderIndex
+   </sql>
+ 
+    <resultMap type="com.hexor.repo.Topical" id="topicalResultMap">
+        <id property="id" column="id"/>
+        <result property="authorId" column="authorId"/>
+        <result property="author" column="author"/>
+        <result property="tags" column="tags"/>
+        <result property="vkey" column="vkey"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="time" column="time"/>
+        <result property="authority" column="authority"/>
+        <result property="views" column="views"/>
+        <result property="type" column="type"/>
+        <result property="orderIndex" column="orderIndex"/>
+    </resultMap>
+
+    <insert id="insertTopical" parameterType="com.hexor.repo.Topical" useGeneratedKeys="true" keyProperty="id" >
+
+        insert into topical(<include refid="columnTopical"/> ) values(
+        #{authorId},
+        #{author},
+        #{tags},
+        #{vkey},
+        #{title},
+        #{content},
+        #{time},
+        #{authority},
+        #{views},
+        #{type},
+        #{orderIndex}
+        )
+
+    </insert>
+
+    <!--按照主题点击量分页-->
+    <select id="selectByViewsLimit" parameterType="com.hexor.repo.Pager" resultMap="topicalResultMap">
+         select * from topical     order by views desc , orderIndex desc ,time desc limit #{index},#{data}
+    </select>
+    <!--按照标签分类查询当前区域的主题分页列表-->
+    <select id="selectByTagsLimit" parameterType="com.hexor.repo.Pager" resultMap="topicalResultMap">
+        select * from topical  where tags=#{type} order by type desc , orderIndex desc ,time desc limit #{index},#{data}
+    </select>
+    <!--按照标签分类查询总数-->
+    <select id="selectByTagsCount" parameterType="String" resultType="long">
+        select count(*) from topical where tags=#{value}
+    </select>
+    <!--按照主题id号进行查询-->
+    <select id="selectById" parameterType="String" resultType="com.hexor.repo.Topical">
+        select * from topical where id=#{value}
+    </select>
+    <!--查询主题总数-->
+    <select id="selectTotalCount" resultType="long">
+        select count(*) from topical
+    </select>
+    <!--主题观看数+1-->
+    <update id="topicalViewsAdd" parameterType="Map">
+        update topical
+        <set>
+            <if test="views!=null">
+                views=if(isnull(views),0,views)+1
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+    <!--检测主题的vkey是否重复-->
+    <select id="checkVkey" parameterType="String" resultType="com.hexor.repo.Topical">
+        select * from topical where vkey=#{value}
+    </select>
+    <!--根据用户id查询发帖总数-->
+    <select id="selectCountByAuthorId" parameterType="int" resultType="long">
+        select count(*) from topical where authorId=#{value}
+    </select>
+    <!--根据用户id分页查询用户发帖信息列表-->
+    <select id="selectLimitByAuthorId" parameterType="com.hexor.repo.Pager" resultMap="topicalResultMap">
+        select * from topical   where authorId=#{type}  order by  time desc limit #{index},#{data}
+    </select>
+
+    <!--查询id记录为如下的梯子记录信息 当查询的参数有多个时,例如 这种情况需要特别注意，在传参数时，一定要改用Map方式, 这样在collection属性可以指定名称-->
+    <select id="selectLimitInIds"    parameterType="map" resultMap="topicalResultMap">
+        Select  *  from topical where id in
+        <foreach item="item" index="index" collection="ids" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+        order by time limit #{star},#{data}
+    </select>
+    <!--删除主题帖子与主题帖子的回复记录-->
+    <delete id="deleteTopical" parameterType="String">
+        delete from topical  where  id=#{value}
+    </delete>
+    <!--置顶主题-->
+    <update id="topicalTop" parameterType="Map">
+         update topical set type=#{type} ,orderIndex=#{order} where id=#{id}
+    </update>
+    <!--用户发帖信息-->
+    <select id="selectByUserId" parameterType="String" resultMap="topicalResultMap">
+        select * from topical where authorId=#{value}
+    </select>
+
+ </mapper>

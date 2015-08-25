@@ -74,7 +74,7 @@
 <div class="clear"> </div>
 </div>
 <!--头部-->
-<%@ include file="common/footer.jsp" %>
+<%@ include file="common/bottom.jsp" %>
 
 <!----End-wrap---->
 <script type="text/javascript">

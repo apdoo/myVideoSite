@@ -5,6 +5,7 @@ import com.hexor.repo.VistLogBean;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,5 +22,13 @@ public interface IVistLogMapper {
     public List<VistLogBean> limit(Pager pager);
     public long getIpVistCounts(String ip);
     public void deleteAll();
+    public long getTodayIpVistCount(Map map);
+
+    /**
+     * 用户访问记录
+     * @param username
+     * @return
+     */
+    public List<VistLogBean> selectByUserUserName(String username);
 
 }

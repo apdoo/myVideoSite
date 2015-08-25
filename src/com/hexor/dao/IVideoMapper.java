@@ -26,4 +26,5 @@ public interface IVideoMapper {
     public void videoAddSelf(Map map);
     public void videoReduceSelf(Map map);
     public List<Video> selectVideosInVkeys(List<String> list);
+    public List<Video> selectAll();
 }

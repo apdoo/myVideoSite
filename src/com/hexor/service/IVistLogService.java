@@ -4,6 +4,7 @@ import com.hexor.repo.Pager;
 import com.hexor.repo.VistLogBean;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,4 +20,11 @@ public interface IVistLogService {
     public List<VistLogBean> limit(Pager pager);
     public long getIpVistCounts(String ip);
     public void deleteAll();
+    public long getTodayIpVistCount(String  ip,String date);
+    /**
+     * 用户访问记录
+     * @param username
+     * @return
+     */
+    public List<VistLogBean> selectByUserUserName(String username);
 }

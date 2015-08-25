@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -17,11 +18,20 @@
     <meta http-equiv="description" content="就是撸">
     <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/forum-images/94lu-icon.png">
     <link href="${pageContext.request.contextPath}/resources/forum-css/style.css" rel="stylesheet" type="text/css"  media="all" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/forum-css/style.css" type="text/css" media="screen" />
-    <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/forum-css/ie_fixes.css" media="screen" /><![endif]-->
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    -->
 </head>
 <body>
+<%@ include file="common/header.jsp" %>
+<div id="Wrapper">
+    <div class="content">
+        <div id="Leftbar"></div>
+        <%@ include file="common/right-content.jsp" %>
+        <div id="Main"  >
+            <div class="sep20"></div>
+        </div>
+    </div>
+    <div class="c"></div>
+    <div class="sep20"></div>
+</div>
+<%@ include file="common/bottom.jsp" %>
 </body>
 </html>

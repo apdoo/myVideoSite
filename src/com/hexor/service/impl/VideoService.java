@@ -82,6 +82,20 @@ public class VideoService implements IVideoService{
     }
 
     /**
+     * 根据vkey查询当前video的文件名
+     * @param vkey
+     * @return
+     */
+    public Video getOnlyVideoName(String vkey){
+        return mapper.selectByVkey(vkey);
+    }
+
+    @Override
+    public List<Video> selectAll() {
+        return mapper.selectAll();
+    }
+
+    /**
      * 根据vkey查询出一条视频信息
      * @param vkey
      * @return

@@ -1,13 +1,8 @@
 package com.hexor.controller;
-import com.hexor.repo.Pager;
-import com.hexor.repo.User;
-import com.hexor.repo.Video;
+import com.hexor.repo.*;
 import com.hexor.service.IVideoService;
 import com.hexor.service.impl.UserService;
-import com.hexor.util.Configurer;
-import com.hexor.util.EncodeUtil;
-import com.hexor.util.ModelMapUtil;
-import com.hexor.util.ResponseUtil;
+import com.hexor.util.*;
 import net.sf.json.JSONArray;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +18,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.lang.management.MonitorInfo;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -47,7 +43,7 @@ public class PageController extends BaseController{
     @RequestMapping(value="videoList")
     public ModelAndView videoList(@RequestParam(value = "categories",required = true,defaultValue = "1") String categories,@RequestParam(value = "wpage",required = true,defaultValue = "1") String wpage,HttpServletRequest request,HttpServletResponse response){
         Map modelMap =new HashMap();
-        int ca=getIntCategories(categories,1,4);//想要观看的目录
+        int ca=getFormatInt(categories, 1, 4);//想要观看的目录
         long count=videoService.getTotalCounts();//获得视频总数
         Pager pager=null;
         switch (ca){
@@ -109,7 +105,7 @@ public class PageController extends BaseController{
      */
     @RequestMapping(value="myaccount")
     public ModelAndView myaccount(HttpServletRequest request,HttpServletResponse response,HttpSession session){
-        User user= (User) session.getAttribute((String) Configurer.getContextProperty("session.userinfo"));
+        User user= getSessionUserinfo(session);//获得session中的用户信息
         if(user==null){
             return new ModelAndView("front-page/account");
         }else{
@@ -132,6 +128,15 @@ public class PageController extends BaseController{
     }
 
     /**
+     * 会员观看视频限制页面
+     * @return
+     */
+    @RequestMapping(value = "memberlimit")
+    public String memberlimit(){
+        return "front-page/memberlimit";
+    }
+
+    /**
      * 视频播放页面
      * @param request
      * @param response
@@ -143,9 +148,12 @@ public class PageController extends BaseController{
         modelMap.put("shareKey",vkey);
         modelMap.put("favorite","收藏");
         String trueVkey= EncodeUtil.decodeString(vkey);//解密出真正的vkey
+       Topical topical=topicalService.checkVkey(trueVkey); //查询中topical的对应的主题信息
+        modelMap.put("topical",topical);
         Map map=new HashMap();
         map.put("vkey", trueVkey);
         map.put("views", "views");
+
         videoService.videoAddSelf(map);//观看数+1
         Video video=videoService.selectByVkey(trueVkey);//使用解密出来的vkey查询出视频信息
         User user= (User) session.getAttribute((String) Configurer.getContextProperty("session.userinfo"));//检查session中是否已经存在用户信息
@@ -194,18 +202,71 @@ public class PageController extends BaseController{
 
 
     /**
-     * 网站动态
-     * 包含介绍 微博微信等
+     *  论坛主页
+     *  交流区，种子区，建议区，下载区，图片区 五个大区
+     *  根据参数不同，查询返回不同区的主题
+     *  @param tab 1-交流区 2-种子区 3-建议区 4-下载区 5-图片区 6 最热访问的板块的参数
      */
     @RequestMapping(value="bbs")
-    public String bbs(){
-        return "forum-page/index";
+    public ModelAndView bbs(@RequestParam(value = "tab",required = true,defaultValue = "1") String tab,@RequestParam(value = "wpage",required = true,defaultValue = "1") String wpage,HttpServletRequest request,HttpServletResponse response,HttpSession session){
+        int t=getFormatInt(tab,1,6);//限制了tab只能是1-6的数字
+        Map modelMap=new HashMap();
+        Pager pager;//分页
+        long count;//当前板块的总数
+        String cn_name;//访问的板块中文名称
+        switch (t){
+            case 1:cn_name="交流区";count=topicalService.selectByTagsCount(cn_name);pager=pagerSet(wpage,cn_name,count);break;//交流区
+            case 2:cn_name="建议区";count=topicalService.selectByTagsCount(cn_name);pager=pagerSet(wpage,cn_name,count);break;//种子区
+            case 3:cn_name="图片区";count=topicalService.selectByTagsCount(cn_name);pager=pagerSet(wpage,cn_name,count);break;//建议区
+            case 4:cn_name="种子区";count=topicalService.selectByTagsCount(cn_name);pager=pagerSet(wpage,cn_name,count);break;//下载区
+            case 5:cn_name="下载区";count=topicalService.selectByTagsCount(cn_name);pager=pagerSet(wpage,cn_name,count);break;//下载区
+            case 6:cn_name="最热";count=topicalService.selectTotalCount();pager=pagerSet(wpage,count);break;//最热
+            default:cn_name="交流区";count=topicalService.selectByTagsCount(cn_name);pager=pagerSet(wpage,cn_name,count);break;//默认-交流区
+        }
+        List<Topical> list=new ArrayList<Topical>();
+        if(t==6){
+            list=topicalService.selectByViewsLimit(pager);//最热分页 按照点击量排序
+        }else{
+            list=topicalService.selectByTagsLimit(pager);//分页查找的主题 按照置顶、发布时间排序
+        }
+        for(int i=0;i<list.size();i++){//循环当前板块的主题
+            long tid_replay=topicalReplayService.selectReplaysCount(list.get(i).getId()+"");//当前主题的回复总数
+            list.get(i).setReplays(tid_replay);
+            User author=userService.getUserById(list.get(i).getAuthorId());//查询该作者是否有自定义头像图片
+            if(author!=null&&!author.getTemp().equals("0")){//当前作者有自定义头像
+                list.get(i).setAuthorAvatar(Configurer.getContextProperty("avatar.root")+author.getTemp());//自定义图片的hhtp访问路径
+            }else{
+                list.get(i).setAuthorAvatar(Configurer.getContextProperty("avatar.root")+"default_avatar.png");//默认图片的路径
+            }
+        }
+        modelMap.put("count",count);//当前版块主题总数
+        modelMap.put("cn_name",cn_name);//板块中文名
+        modelMap.put("tab",t);//板块id
+        modelMap.put("pager",pager);//分页信息
+        modelMap.put("topical_list",list);//分页主题列表信息
+        //--右侧使用的参数 因为拦截器不拦截论坛首页，所以此处单独查询一下。
+        modelMap.put("total_topical_count", topicalService.selectTotalCount());//总的主题总数
+        modelMap.put("total_topicalreplay_count", topicalReplayService.selectTotalCount());//总的回复总数
+        modelMap.put("total_user_count", userService.getUsersCount());//总的注册会员总数
+        //--用户头像存储路径
+        modelMap.put("avatar_img_path", Configurer.getContextProperty("avatar.root"));
+        //--用户实时信息
+        User user=getSessionUserinfo(session);
+        if(user!=null){//如果首页是登录的用户
+            User trueUser=userService.getUserById(user.getId());
+            modelMap.put((String) Configurer.getContextProperty("session.userinfo"), trueUser);
+            //-- 发帖纪录 主题收藏 下载记录参数
+            modelMap.put("user_post_count",topicalService.selectCountByAuthorId(user.getId()));//发帖纪录
+            modelMap.put("user_topical_count", MyStringUtil.occurTimes(trueUser.getFavoriteTopical(), ","));//收藏的主题的记录
+        }
+
+        return new ModelAndView("forum-page/index",modelMap);
     }
+
 
     /**
      * 如果在controller最外层 @throws Exception 此处抛出的Exception是抛出被tomcat捕获了 所以error信息要到tomcat的logs文件夹里查看
      */
-
 
 
 }

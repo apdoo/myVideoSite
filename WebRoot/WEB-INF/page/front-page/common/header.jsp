@@ -13,17 +13,17 @@
     <div class="top-nav">
         <ul>
             <li><a href="${pageContext.request.contextPath}">网站首页</a><p></p></li>
+            <li><a target="_blank" href="${pageContext.request.contextPath}/bbs">社区论坛</a><p></p></li>
             <c:if test="${!empty userinfo}">
-                <li><a name="headr_account" href="${pageContext.request.contextPath}/myaccount">个人中心</a><p></p></li>
+                <li><a name="headr_account" href="${pageContext.request.contextPath}/myaccount">视频收藏</a><p></p></li>
             </c:if>
             <c:if test="${empty userinfo}">
                 <li><a name="headr_account" href="${pageContext.request.contextPath}/account">登录/注册</a><p></p></li>
             </c:if>
-
             <li><a href="${pageContext.request.contextPath}/videoList">视频列表</a><p></p></li>
             <%--<li><a href="${pageContext.request.contextPath}/introduce">网站动态</a><p></p></li>--%>
-            <li><a href="${pageContext.request.contextPath}/ad">广告合作</a><p></p></li>
-            <li><a target="_blank" href="${pageContext.request.contextPath}/bbs">交流论坛</a><p></p></li>
+            <li><a href="${pageContext.request.contextPath}/advertise">广告合作</a><p></p></li>
+
 
         </ul>
     </div>
@@ -39,11 +39,6 @@
         }
 
     });
-    //登出
-    function loginout(){
-        //清除cookie
-        deleteCookie("username","/");
-        deleteCookie("password","/");
-    }
+
 </script>
 <!----End-Header---->

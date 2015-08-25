@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.hexor.dao.IUserDownloadLogMapper">
+   <sql id="columnUserDownloadLog">
+		 userId,
+		 userName,
+		 localPath,
+		 title,
+		 url,
+		 time
+
+   </sql>
+ 
+    <resultMap type="com.hexor.repo.UserDownloadLog" id="userDownloadLogResultMap">
+        <id property="id" column="id"/>
+        <result property="userId" column="userId"/>
+        <result property="userName" column="userName"/>
+        <result property="localPath" column="localPath"/>
+        <result property="title" column="title"/>
+        <result property="url" column="url"/>
+        <result property="time" column="time"/>
+
+
+    </resultMap>
+
+    <insert id="insertUserDownloadLog" parameterType="com.hexor.repo.UserDownloadLog" >
+        insert into UserDownloadLog(<include refid="columnUserDownloadLog"/> ) values(
+          #{userId},
+          #{userName},
+          #{localPath},
+          #{title},
+          #{url},
+          #{time}
+
+        )
+    </insert>
+    <!--检查是否是第一次下载-->
+    <select id="checkDownloadUrl" parameterType="Map" resultType="com.hexor.repo.UserDownloadLog">
+        select * from UserDownloadLog where url=#{url} and userId=#{userId}
+    </select>
+    <!--用户下载记录信息-->
+    <select id="selectByUserId" parameterType="String" resultMap="userDownloadLogResultMap">
+        select * from UserDownloadLog where userId=#{value}
+    </select>
+ </mapper>

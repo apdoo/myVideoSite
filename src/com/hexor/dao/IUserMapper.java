@@ -5,6 +5,7 @@ import com.hexor.repo.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -28,11 +29,18 @@ public interface IUserMapper {
     public void loginUpdate(User user);
 
     public User getUserByUsername(String name);
-    public User getUserById(String id);
+    public User getUserById(int id);
     public void reducePointsById(String id);
     public void updateUser(User user);
     public List<User> getUserByType();
     public void resetPoints();
     public void updateFavoriteVideo(User user);
+    public void updateFavoriteTopical(User user);
+    public void updateTopicalIds(User user);
+    public void updatePointAndBalance(Map map);
+    public void updateUserPassword(User user);
+    public void updateUserAvator(Map map);
+    public void updateUserType(Map map);
+    public void updateUserPoints(Map map);
 
 }

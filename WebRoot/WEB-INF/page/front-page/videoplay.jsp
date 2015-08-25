@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -36,8 +37,14 @@
                 <ul>
                     <li><h4>By:</h4></li>
                     <li><a href="#">94lu-就是撸</a></li>
-                    <li><a href="#" id="favorite_title" onclick="houseVideo('${shareKey}','${userinfo.id}','${pageContext.request.contextPath}');return false"><img src="${pageContext.request.contextPath}/resources/images/sub.png" title="subscribe" />${favorite}</a></li>
-                    <li><a href="#" id="praise_title" onclick="praiseVideo('${shareKey}','${pageContext.request.contextPath}');return false;"><img src="${pageContext.request.contextPath}/resources/images/likes1.png" title="subscribe" />赞一个</a></li>
+                    <c:if test="${userinfo.type>=0}">
+                        <li><a href="${pageContext.request.contextPath}/bbs/replay?tid=${topical.id}"    ><img src="${pageContext.request.contextPath}/resources/images/re1.png" title="下载"/>下载</a></li>
+                    </c:if>
+                    <c:if test="${userinfo.type==null}">
+                        <li><a href="#" onclick="vist_tips(); return false"><img src="${pageContext.request.contextPath}/resources/images/re1.png" title="下载"/>下载</a></li>
+                    </c:if>
+                    <li><a href="#" id="favorite_title" onclick="houseVideo('${shareKey}','${userinfo.id}','${pageContext.request.contextPath}');return false"><img src="${pageContext.request.contextPath}/resources/images/sub.png" title="${favorite}" />${favorite}</a></li>
+                    <li><a href="#" id="praise_title" onclick="praiseVideo('${shareKey}','${pageContext.request.contextPath}');return false;"><img src="${pageContext.request.contextPath}/resources/images/likes1.png" title="赞一个" />赞一个</a></li>
                 </ul>
             </div>
             <div class="video-inner">
@@ -59,7 +66,7 @@
             <div class="video-details">
                 <ul>
                     <li><p>更新时间:  ${video.updatetime}</p></li>
-                    <li><span> </span></li>
+                    <li><span></span></li>
                 </ul>
             </div>
             <div class="clear"> </div>
@@ -77,7 +84,7 @@
     </div>
 </div>
     <!--尾部-->
-    <%@ include file="common/footer.jsp" %>
+    <%@ include file="common/bottom.jsp" %>
 <!--js放在div的后面 才能正确加载-->
 <script src="${pageContext.request.contextPath}/js/jwplayer/jwplayer.js"></script>
 <script type="text/javascript">
@@ -95,7 +102,9 @@
         controlbar: "none",
         screencolor :"#fff"//播放器颜色
     });
-
+function vist_tips(){
+    alert("请先登录账号后进行下载！");
+}
 </script>
 </body>
 </html>

@@ -24,26 +24,11 @@ import javax.servlet.http.HttpServletResponse;
  * 视频播放拦截器
  * 拦截
  */
-public class VideoPlayInterceptor implements HandlerInterceptor {
+public class VideoPlayInterceptor extends BaseHandlerInterceptorAdapter{
     private static Logger logger = Logger.getLogger(VideoPlayInterceptor.class);
     public String[] allowUrls;//还没发现可以直接配置不拦截的资源，所以在代码里面来排除
     public void setAllowUrls(String[] allowUrls) {
         this.allowUrls = allowUrls;
-    }
-
-    @Autowired
-    @Qualifier("com.hexor.service.impl.VistLogService")
-    private VistLogService service = null;
-    public void setService(VistLogService service) {
-        this.service = service;
-    }
-
-    @Autowired
-    @Qualifier("com.hexor.service.impl.UserService")
-    private UserService userService = null;
-
-    public void setUserService(UserService userService) {
-        this.userService = userService;
     }
 
     /**
@@ -56,43 +41,31 @@ public class VideoPlayInterceptor implements HandlerInterceptor {
      */
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
-        //记录访问日志
-        VistLogBean vistLog=new VistLogBean();
-        String url= httpServletRequest.getRequestURL().toString()+"?vkey="+httpServletRequest.getParameter("vkey").toString();
-        String ip = IpUtil.getIpAddr(httpServletRequest);
-        vistLog.setTime(DateUtil.getStrOfDateTime());
+        User user=getSessionUserinfo(httpServletRequest) ;  //获得当前session访问的用户信息
+        String url= httpServletRequest.getRequestURL().toString()+"?vkey="+httpServletRequest.getParameter("vkey").toString();//访问的视频播放页面url
+        httpServletRequest.getSession().setAttribute((String) Configurer.getContextProperty("session.pre_url"), url);//将该请求存入session中，给被拦截登录后自动跳转到该url
+        String ip = IpUtil.getIpAddr(httpServletRequest);//拿到当前访问的ip地址
+        VistLogBean vistLog=new VistLogBean();//访问日志
         vistLog.setIp(ip);
         vistLog.setUrl(url);
-        //获得当前session访问的用户信息
-        User user=(User)httpServletRequest.getSession().getAttribute((String) Configurer.getContextProperty("session.userinfo")) ;
-        if(user!=null){
-            vistLog.setUsername(user.getUsername());
-            //从数据库中查找到用户信息
-            User dbUser=userService.getUserByUsername(user.getUsername());
-            //如果用户为会员查看用户是否是付费会员--推荐在Task里进行操作数据库，将到期的付费会员改变为不是付费会员
-            //当用户为普通会员且积分大于10
-            if(dbUser!=null&&"0".equals(dbUser.getType()+"")&&dbUser.getPoints()>=10){
-                //从数据库中查找用户的积分进行扣除
-                userService.reducePointsById(dbUser.getId()+"");
+        if(user!=null){//当前session已经登录了用户
+            vistLog.setUsername(user.getUsername());//设置访问日志的访问用户
+            User trueUser=userService.getUserById(user.getId());   //从数据库中查找到用户信息
+            int videoViewValue=Integer.parseInt((String) Configurer.getContextProperty("video.view.value"));//观看视频扣除的积分
+            if(trueUser.getType()>=1||(trueUser.getType()>=0&&(trueUser.getPoints()+videoViewValue)>=0)){//如果是vip会员或者普通会员且积分大于观看视频所扣除的积分
+                userService.updatePointAndBalance(videoViewValue, trueUser.getId(), (String) Configurer.getContextProperty("balance.type.viewVideo"), (String) Configurer.getContextProperty("balance.description.viewVideo"), "reduce");//扣除积分 在对应的mapper.xml中写死了只扣除普通会员的积分
+            }else{//会员不符合观看条件的时候
+                httpServletResponse.sendRedirect(httpServletRequest.getContextPath()+"/memberlimit");
             }
-            //会员到期 通过task定时器任务去做会员变更
-            else if(dbUser!=null&&("12345".contains(dbUser.getType()+""))){
-            }
-            else{
-                httpServletResponse.sendRedirect(httpServletRequest.getContextPath()+"/viewlimit");
-            }
-
-        }//当时游客的时候，只能看三次
-        else{
-            long count=service.getIpVistCounts(ip);
-//           int vistlimit=Integer.parseInt((String) Configurer.getContextProperty("user.vistcount"));
-            int vistlimit=3;
-            if(count>vistlimit){
+        }else {//当前是游客
+            long count=service.getTodayIpVistCount(ip, DateUtil.getDateFolder());//当前ip访问的记录
+            long vistlimit=Integer.parseInt((String)Configurer.getContextProperty("vist.views.limit"));
+            if(count>=vistlimit){//游客不符合观看条件的时候
                 httpServletResponse.sendRedirect(httpServletRequest.getContextPath()+"/viewlimit");
             }
         }
         logger.info(vistLog.toString());
-        service.insertVistLog(vistLog);
+        service.insertVistLog(vistLog);//记录访问日志
         return true;
     }
 

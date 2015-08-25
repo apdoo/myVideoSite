@@ -59,7 +59,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  <div class="clear"> </div>
   </div>
   <!--尾部-->
-  <%@ include file="WEB-INF/page/front-page/common/footer.jsp" %>
+  <%@ include file="WEB-INF/page/front-page/common/bottom.jsp" %>
 <script type="text/javascript">
 	$(function(){
 		var root="${pageContext.request.contextPath}";

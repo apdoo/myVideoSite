@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.hexor.dao.IUserBalanceMapper">
+   <sql id="columnUserBalance">
+	  userId,
+	  type,
+	  amount,
+	  description,
+	  time
+   </sql>
+ 
+    <resultMap type="com.hexor.repo.UserBalance" id="userBalanceResultMap">
+        <id property="id" column="id"/>
+        <result property="userId" column="userId"/>
+        <result property="type" column="type"/>
+        <result property="amount" column="amount"/>
+        <result property="description" column="description"/>
+        <result property="time" column="time"/>
+    </resultMap>
+
+    <!--插入-->
+    <insert id="insertUserBalance" parameterType="com.hexor.repo.UserBalance" >
+        insert into UserBalance(<include refid="columnUserBalance"/> ) values(
+        #{userId},
+        #{type},
+        #{amount} ,
+        #{description},
+        #{time}
+        )
+    </insert>
+
+    <!--查询用户的收支记录信息-->
+    <select id="selectBalacneByUserId" parameterType="int" resultMap="userBalanceResultMap">
+        select * from UserBalance where userid=#{value} order by time desc
+    </select>
+    <!--查询用户的每日登录领奖记录-->
+    <select id="selectUserDaily" parameterType="Map" resultType="int">
+        select count(*) from UserBalance where userId=#{userId} and type=#{type} and time=#{time}
+    </select>
+    <!--查询用户的收支记录总条数-->
+    <select id="selectUserTotalBalanceCount" parameterType="int" resultType="long">
+        select count(*) from UserBalance where userId=#{value}
+    </select>
+    <!--使用分页查找用户收支记录信息-->
+    <select id="limit" parameterType="com.hexor.repo.Pager" resultMap="userBalanceResultMap">
+        select * from UserBalance   where userId=#{type}  order by  time desc limit #{index},#{data}
+    </select>
+    <!--用户收支信息-->
+    <select id="selectByUserId" parameterType="String" resultMap="userBalanceResultMap">
+        select * from UserBalance where userId=#{value}
+    </select>
+ </mapper>

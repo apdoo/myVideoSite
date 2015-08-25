@@ -40,6 +40,7 @@
                 <div class="am-u-sm-12 am-u-sm-centered" >
                     <h2 class="ad-h">信息提示</h2>
                     <p class="ad-p">${msg}</p>
+                    <p>← <a href="#" onclick="history.go(-1) ;return false;">返回</a></p>
                     <hr class="ad-hr">
                 </div>
             </div>
@@ -49,7 +50,7 @@
     <div class="clear"> </div>
 </div>
     <!--尾部-->
-    <%@ include file="common/footer.jsp" %>
+    <%@ include file="common/bottom.jsp" %>
 
 </body>
 </html>

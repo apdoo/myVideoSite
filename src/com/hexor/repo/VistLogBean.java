@@ -1,5 +1,7 @@
 package com.hexor.repo;
 
+import com.hexor.util.DateUtil;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Dong
@@ -13,7 +15,7 @@ public class VistLogBean {
     private String username="anonymous";//当前访问的用户名，默认是匿名用户
     private String ip;//当前访问者的ip地址
     private String url;//当前访问的url
-    private String time;//访问时间
+    private String time= DateUtil.getDateFolder();//访问时间
 
     @Override
     public String toString() {

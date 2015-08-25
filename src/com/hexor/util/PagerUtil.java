@@ -11,8 +11,8 @@ public class PagerUtil {
 	
 	
 	/**设置分页
-	 * @param count
-	 * @param currentP
+	 * @param count 总数
+	 * @param currentP 当前请求页数
 	 * @return
 	 */
 	public static Pager SetPager(long count,int currentP){
@@ -22,6 +22,19 @@ public class PagerUtil {
 		//设置当前页数
 		pager.setCurrentPage(currentP);
 		return pager;
+	}
+
+	/**
+	 * 使用自定义的一页显示条数 设置分页
+	 * @param count
+	 * @param currentP
+	 * @param data 自定义的条数
+	 * @return
+	 */
+	public static Pager SetPager(long count,int currentP,int data){
+		Pager pager=new Pager();
+		pager.setData(data);
+		return SetPager(pager,count,currentP);
 	}
 	/**使用自定义的一页显示条数，设置分页
 	 * @param count

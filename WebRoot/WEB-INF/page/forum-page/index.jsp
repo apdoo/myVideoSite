@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -9,224 +10,88 @@
 <head>
     <base href="<%=basePath%>">
 
-    <title>94lu-就是撸</title>
+    <title>94lu社区-${cn_name}</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
     <meta http-equiv="keywords" content="就是撸,94lu">
     <meta http-equiv="description" content="就是撸">
     <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/forum-images/94lu-icon.png">
-    <link href="${pageContext.request.contextPath}/resources/forum-css/style.css" rel="stylesheet" type="text/css"  media="all" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/forum-css/style.css" type="text/css" media="screen" />
-    <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/forum-css/ie_fixes.css" media="screen" /><![endif]-->
-    -->
 </head>
-
 <body>
-<div id="layout_wrapper">
-    <div id="layout_edgetop"></div>
-    <div id="layout_container">
-        <div id="site_title">
-            <h1 class="left"><a href="#">Website name</a></h1>
-            <h2 class="right">Your slogan or perhaps a short introductional text</h2>
-            <div class="clearer">&nbsp;</div>
-        </div>
-        <div id="top_separator"></div>
-        <div id="navigation">
-            <div id="tabs">
-                <ul>
-                    <li class="current_page_item"><a href="index.html"><span>Posts page</span></a></li>
-                    <li><a href="comments.html"><span>Post comments</span></a></li>
-                    <li><a href="page.html"><span>Sample test page</span></a></li>
-                    <li><a href="archives.html"><span>Archives</span></a></li>
-                    <li><a href="empty.html"><span>Empty page</span></a></li>
-                </ul>
-                <div class="clearer">&nbsp;</div>
-            </div>
-        </div>
-        <div class="spacer h5"></div>
-        <div id="main">
-
-            <div class="left" id="main_left">
-
-                <div id="main_left_content">
-
-                    <div class="post">
-
-                        <div class="post_title">
-                            <h1 class="left"><a href="#">Porttitor posuere</a></h1>
-                            <div class="post_date right">April 13th, 2008</div>
-                            <div class="clearer">&nbsp;</div>
-                        </div>
-
-                        <div class="post_body">
-
-                            <p>In hac habitasse platea dictumst. Duis porttitor. Sed vulputate elementum nisl. Vivamus et mi at arcu mattis iaculis. Nullam posuere tristique tortor. In bibendum. Aenean ornare, <a href="index.html">nunc eget pretium</a> porttitor, sem est pretium leo, non euismod nulla dui non diam. Pellentesque dictum faucibus leo. Vestibulum ac ante. Sed in est.</p>
-
-                            <blockquote><p>Sed sodales nisl sit amet augue. Donec ultrices, augue ullamcorper posuere laoreet, turpis massa tristique justo, sed egestas metus magna sed purus.</p></blockquote>
-
-                            <h2>Sollicitudin</h2>
-
-                            <p>Aliquam risus justo, mollis in, laoreet a, consectetuer nec, risus. Nunc blandit sodales lacus. Nam luctus semper mi. In eu diam.</p>
-
-                            <p>Fusce porta pede nec eros. Maecenas ipsum sem, interdum non, aliquam vitae, interdum nec, metus. Maecenas ornare lobortis risus. Etiam placerat varius mauris. Maecenas viverra. Sed feugiat. Donec mattis <a href="index.html">quam aliquam</a> risus. Nulla non felis sollicitudin urna blandit egestas. Integer et libero varius pede tristique ultricies. Cras nisl. Proin quis massa semper felis euismod ultricies.</p>
-
-                            <div class="post_metadata">
-                                <div class="content">
-                                    <div class="left">
-                                        Posted in <a href="#">Maecenas</a>, tagged: <a href="#">arcu</a>, <a href="#">eget</a>, <a href="#">pretium</a>, <a href="#">porttitor</a>
-                                    </div>
-                                    <div class="right">
-                                        <span class="comment"><a href="#">4 Comments</a></span>
-                                    </div>
-                                    <div class="clearer">&nbsp;</div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="post_bottom"></div>
-
-                    </div>
-
-                    <div class="post">
-
-                        <div class="post_title">
-                            <h1 class="left"><a href="#">Adipiscing</a></h1>
-                            <div class="post_date right">March 10th, 2008</div>
-                            <div class="clearer">&nbsp;</div>
-                        </div>
-
-                        <div class="post_body">
-
-                            <p>Aliquam risus justo, mollis in, laoreet a, consectetuer nec, risus. Nunc blandit sodales lacus. Nam luctus semper mi.</p>
-
-                            <ul>
-                                <li>Tristique</li>
-                                <li>Aenean</li>
-                                <li>Pretium</li>
-                            </ul>
-
-                            <p>In hac habitasse platea dictumst. Duis porttitor. Sed vulputate elementum nisl. Vivamus et mi at arcu mattis iaculis. Nullam posuere tristique tortor. In bibendum. Aenean ornare, nunc eget pretium porttitor, sem est pretium leo, non euismod nulla dui non diam. Pellentesque dictum faucibus leo. Vestibulum ac ante. Sed in est.</p>
-
-                            <div class="post_metadata">
-                                <div class="content">
-                                    <div class="left">
-                                        Posted in <a href="#">Vestibulum</a>, tagged: <a href="#">diam</a>, <a href="#">vulputate</a>, <a href="#">platea</a>
-                                    </div>
-                                    <div class="right">
-                                        <span class="comment"><a href="#">11 Comments</a></span>
-                                    </div>
-                                    <div class="clearer">&nbsp;</div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="pagenavigation">
-                        <div class="pagenav">
-                            <div class="left"><a href="#">« Older Entries</a></div>
-                            <div class="right"></div>
-                            <div class="clearer">&nbsp;</div>
-                        </div>
-                        <div class="pagenav_bottom"></div>
-                    </div>
-
+<%@ include file="common/header.jsp" %>
+<div id="Wrapper">
+    <div class="content">
+        <div id="Leftbar"></div>
+        <%@ include file="common/right-content.jsp" %>
+        <div id="Main">
+            <div class="sep20"></div>
+            <div class="box">
+                <div class="header"><div class="fr f12"><span class="fade">共 ${count} 个主题</span></div><a href="${pageContext.request.contextPath}/bbs">94lu社区</a> <span class="chevron">&nbsp;›&nbsp;</span> ${cn_name}</div>
+                <div class="inner" style="background-color: #fff; border-top-left-radius: 3px; border-top-right-radius: 3px;" id="Tabs">
+                    <a href="${pageContext.request.contextPath}/bbs?tab=1" class="tab_current">交流区</a><a href="${pageContext.request.contextPath}/bbs?tab=2" class="tab">建议区</a><a href="${pageContext.request.contextPath}/bbs?tab=3" class="tab">图片区</a><a href="${pageContext.request.contextPath}/bbs?tab=4" class="tab">种子区</a><a href="${pageContext.request.contextPath}/bbs?tab=5" class="tab">下载区</a><a href="${pageContext.request.contextPath}/bbs?tab=6" class="tab">最热</a>
                 </div>
-
-            </div>
-
-            <div class="right" id="main_right">
-
-                <div id="sidebar">
-
-                    <div class="box">
-                        <div class="box_title">Search</div>
-                        <div class="box_body">
-                            <form method="get" id="searchform" action="#">
-                                <div>
-                                    <table class="search">
-                                        <tbody><tr>
-                                            <td><input type="text" value="" name="s" id="s"></td>
-                                            <td style="padding-left: 10px"><input type="image" src="img/button_go.gif"></td>
-                                        </tr>
-                                        </tbody></table>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="box_bottom"></div>
-                    </div>
-
-                    <div class="box">
-                        <div class="box_title">Archives</div>
-                        <div class="box_body">
-                            <ul>
-                                <li><a href="#">December 2007</a> (5)</li>
-                                <li><a href="#">June 2007</a> (2)</li>
-                                <li><a href="#">May 2007</a> (6)</li>
-                                <li><a href="#">March 2007</a> (12)</li>
-                                <li><a href="#">February 2007</a> (8)</li>
-                                <li><a href="#">May 2007</a> (10)</li>
-                            </ul>
-                        </div>
-                        <div class="box_bottom"></div>
-                    </div>
-
-                    <div class="box">
-                        <div class="box_title">Categories</div>
-                        <div class="box_body">
-                            <ul>
-                                <li><a href="#">Single Column</a> (5)</li>
-                                <li><a href="#">Three Columns</a> (2)</li>
-                                <li><a href="#">Two Columns</a> (14)</li>
-                            </ul>
-                        </div>
-                        <div class="box_bottom"></div>
-                    </div>
-
-                    <div class="box">
-                        <div class="box_title">Links</div>
-                        <div class="box_body">
-                            <ul>
-                                <li><a href="http://www.cssmoban.com/category/blogger-templates/">Blogger Templates</a></li>
-                                <li><a href="http://www.cssmoban.com/category/joomla-templates/">Joomla Templates</a></li>
-                                <li><a href="http://www.cssmoban.com/professional-templates/">Professional Templates</a></li>
-                                <li><a href="http://www.cssmoban.com/category/website-templates/">Website Templates</a></li>
-                                <li><a href="http://www.cssmoban.com/category/wordpress-themes/">Wordpress Themes</a></li>
-                            </ul>
-                        </div>
-                        <div class="box_bottom"></div>
-                    </div>
-
-                    <div class="box">
-                        <div class="box_title">Textbox</div>
-                        <div class="box_body p10">
-                            A box with some text.
-                        </div>
-                        <div class="box_bottom"></div>
-                    </div>
-
+                <c:forEach items="${topical_list}" var="topical">
+                <div class="cell item" style=""><div style="position: absolute; margin: -10px -10px 0px 650px;"></div>
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tbody><tr>
+                            <td width="48" valign="top" align="center"><a href="${pageContext.request.contextPath}/bbs/replay?tid=${topical.id}"><img  src="${topical.authorAvatar}"  class="avatar" border="0" align="default"></a></td>
+                            <td width="10"></td>
+                            <td width="auto" valign="middle"><span class="item_title"><a href="${pageContext.request.contextPath}/bbs/replay?tid=${topical.id}">${topical.title}</a></span>
+                                <div class="sep5"></div>
+                                <span class="small fade"><div class="votes"></div><span class="node">${cn_name}</span> &nbsp;•&nbsp; <strong><a href="#" onclick="return false;">作者：${topical.author}</a></strong> &nbsp;•&nbsp; ${topical.time} &nbsp;•&nbsp;${topical.views}  次点击&nbsp;•&nbsp; </span>
+                            </td>
+                            <td width="70" align="right" valign="middle">
+                                <a href="${pageContext.request.contextPath}/bbs/replay?tid=${topical.id}" class="count_livid">${topical.replays}</a>
+                            </td>
+                        </tr>
+                        </tbody></table>
                 </div>
-            </div>
-
-            <div class="clearer">&nbsp;</div>
-
+                </c:forEach>
+            <div class="sep20"></div>
+                <div class="inner">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tbody><tr>
+                            <td width="120" align="left"><c:if test="${pager.currentPage<=pager.pageCount&&pager.currentPage>1}"><input type="button" onclick="pre_page()" value="‹ 上一页" class="super normal button"></c:if></td>
+                            <td width="auto" align="center"><strong class="fade">${pager.currentPage}/${pager.pageCount}</strong></td>
+                            <td width="120" align="right">    <c:if test="${pager.currentPage!=pager.pageCount}"> <input type="button" onclick="next_page()" value="下一页 ›" class="super normal button"> </c:if></td>
+                        </tr>
+                        </tbody></table>
+                </div>
         </div>
-
-        <div id="footer">
-
-            <div class="left">© 2008 Website name</div>
-
-            <div class="right"><a href="http://www.cssmoban.com/">Website template</a> from <a href="http://cssmoban.com/">cssMoban.com</a></div>
-
-            <div class="clearer">&nbsp;</div>
-
-        </div>
-
     </div>
-    <div id="layout_edgebottom"></div>
+    <div class="c"></div>
+    <div class="sep20"></div>
 </div>
+<%@ include file="common/bottom.jsp" %>
+ <script type="text/javascript" >
+     var cn_name="${cn_name}";
+     var tab="${tab}";
+     var currentPage=${pager.currentPage};
+     var bbs_root="${pageContext.request.contextPath}/bbs";
+     $(function(){
+         $("#Tabs").find("a").each(function(key,val){
+             if($(val).text()==cn_name){
+                 $(val).removeClass("tab");
+                 $(val).addClass("tab_current");
+             }else{
+                 $(val).removeClass("tab_current");
+                 $(val).addClass("tab");
+             }
+         });
+     });
+    /**
+    * 上一页按钮
+     */
+     function pre_page(){
+        window.location.href=bbs_root+"?tab="+tab+"&wpage="+(currentPage-1);
+     }
+     /**
+     * 下一页按钮
+      */
+     function next_page(){
+         window.location.href=bbs_root+"?tab="+tab+"&wpage="+(currentPage+1);
+     }
+ </script>
 </body>
 </html>

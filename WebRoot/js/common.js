@@ -283,6 +283,7 @@ function praiseVideo(shareKey,root){
         }
     });
 }
+
 /**
  *收藏视频
  */
@@ -351,7 +352,7 @@ function checkLogin(root){
             success : function(data) {
                 if(data.msg){
                     //表示自动登录成功
-                    $("a[name='headr_account']").text("个人中心");
+                    $("a[name='headr_account']").text("视频收藏");
                     $("a[name='headr_account']").attr("href",root+"/myaccount");
                 }
             },

@@ -97,7 +97,7 @@
     <div class="clear"> </div>
 </div>
     <!--尾部-->
-    <%@ include file="common/footer.jsp" %>
+    <%@ include file="common/bottom.jsp" %>
 <script type="text/javascript">
     /**
      * 点击切换验证码图片

@@ -26,4 +26,6 @@ public interface IVideoService {
     public void videoAddSelf(Map map);
     public void videoReduceSelf(Map map);
     public List<Video> selectVideosInVkeys(List<String> list) throws IOException;
+    public Video getOnlyVideoName(String vkey);
+    public List<Video> selectAll();
 }
