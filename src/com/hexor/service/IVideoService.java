@@ -28,4 +28,5 @@ public interface IVideoService {
     public List<Video> selectVideosInVkeys(List<String> list) throws IOException;
     public Video getOnlyVideoName(String vkey);
     public List<Video> selectAll();
+    public List<Video> selectByToday(String updatetime);
 }

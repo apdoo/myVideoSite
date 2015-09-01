@@ -5,7 +5,7 @@
             <div class="cell">
                 <strong>94lu社区</strong>
                 <div class="sep5"></div>
-                <span class="fade">94lu 是一个关于分享和探索的地方</span>
+                <span class="fade">94lu 是一个关于分享和探索的地方。我们拥有最专业的团队，致力于打造一个开放、自由的狼友社区</span>
             </div>
         </div>
     <div class="sep20"></div>

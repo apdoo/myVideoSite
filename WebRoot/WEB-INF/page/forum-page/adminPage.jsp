@@ -24,7 +24,8 @@
 用户名: <input type="text" id="username" value="" /> <input type="button"  onclick="userInfoWatch()" value="用户信息查询"/> <input type="button" id="addVip_button" onclick="addVip()" value="添加vip"/> <input type="button" id="removeVip_button" onclick="removeVip()" value="移除vip"/> <input type="button"  id="banUser_button" onclick="banUser()" value="用户禁止"/><br/><br/>
 用户名: <input type="text" id="gold_username" value="" />  金币:<input type="text"   id="gold" value="" /> <input id="gold_button" type="button" onclick="addGold()" value="金币操作"/><br/><br/>
 帖子tid: <input type="text" id="tid" value="" /> 置顶排序: <input type="text" id="order" value="1" /> <input type="button"  id="topicalTop_button" onclick="topicalTop('1')" value="帖子置顶"/> <input type="button"  id="topicalTop_cancel_button" onclick="topicalTop('0')" value="取消置顶"/>    <input type="button"  id="topicalRemove_button" onclick="topicalRemove()" value="帖子删除"/> <br/><br/>
- <input type="button"  id="synchroVideo_button" onclick="synchroVideo()" value="同步视频"/>
+<input type="button"  id="synchroVideoToday_button" onclick="synchroVideoToday()" value="同步今天采集的视频"/>
+<input type="button"  id="synchroVideo_button" onclick="synchroVideo()" value="同步所有的视频"/>
 <div id="tips">
 </div>
 <script type="text/javascript">
@@ -198,7 +199,28 @@
              topicalT(top_tid,type,top_order);
          }
     }
-
+    /**
+     * 同步今天采集的视频
+     * */
+    function synchroVideoToday(){
+        if (confirm('是否确认同步今天采集的视频？')){
+            $.ajax({
+                type : "POST",
+                url : "${pageContext.request.contextPath}/admin94lu/synchroVideoToday",
+                dataType:"json",
+                success : function(data) {
+                    $("#tips").html(data.msg);
+                },
+                //请求出错的处理
+                error:function(){
+                }
+            });
+            $("#synchroVideoToday_button").attr({"disabled":"disabled"});
+        }
+    }
+    /**
+    * 同步所有的视频
+     */
     function synchroVideo(){
         if (confirm('是否确认同步？')){
             $.ajax({
@@ -214,7 +236,6 @@
             });
             $("#synchroVideo_button").attr({"disabled":"disabled"});
         }
-
     }
 
 </script>

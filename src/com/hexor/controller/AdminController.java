@@ -2,6 +2,7 @@ package com.hexor.controller;
 
 import com.hexor.repo.*;
 import com.hexor.util.Configurer;
+import com.hexor.util.DateUtil;
 import com.hexor.util.EncodeUtil;
 import com.hexor.util.ResponseUtil;
 import net.sf.json.JSONArray;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
@@ -35,11 +37,40 @@ public class AdminController extends BaseController{
     public String adminHome(){
         return "forum-page/adminPage";
     }
+
+    /**
+     * 同步今日采集的video给topical表
+     * @param response
+     * @throws IOException
+     * @throws InterruptedException
+     */
+    @RequestMapping(value="synchroVideoToday")
+    public void synchroVideoForToday(HttpServletResponse response,HttpServletRequest request) throws IOException, InterruptedException{
+        List<Video> list=videoService.selectByToday(DateUtil.getCurrentDay());
+        int i=0;//同步的数量
+        int j=0;//已经存在的数量
+        for(Video video:list){
+            Thread.sleep(200);
+            Topical topical=topicalService.checkVkey(video.getVkey());//检测当前topical表中是否已经存在该数据
+            if(topical==null){//不存在则插入一条
+                String shareKey= EncodeUtil.encodeString(video.getVkey());
+                String content="<p><strong>"+video.getTitle()+"</strong></p><p><strong><img src=\""+imageRoot+video.getImgName()+"\" alt=\""+video.getTitle()+"\" width=\"140\" height=\"140\" /><br /></strong></p><p><strong>下载链接：<a href=\""+request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()+"/video/download?shareKey="+shareKey+"\">点击打开链接</a><span style='color:#ff0000;'>[提示:下载将会扣除3金币,重复下载不扣除]</span><br /></strong></p>";
+                Topical newTopical=new Topical( 1,  "admin",  "下载区", video.getVkey(),  video.getTitle(),  content);
+                topicalService.insertTopical(newTopical);
+                i++;
+            }else{
+                j++;
+            }
+        }
+        JSONObject json=new JSONObject();
+        json.put("msg","总共:"+list.size()+" 同步:"+i+" 已经存在:"+j);
+        ResponseUtil.outWriteJson(response, json.toString());
+    }
     /**
      * 同步视频表video给topical表
      */
     @RequestMapping(value="synchroVideo")
-    public void synchroVideoForBbsDownloads(HttpServletResponse response) throws IOException, InterruptedException {
+    public void synchroVideoForBbsDownloads(HttpServletResponse response,HttpServletRequest request) throws IOException, InterruptedException {
         List<Video> list=videoService.selectAll();//查找所有视频的列表
         int i=0;//同步的数量
         int j=0;//已经存在的数量
@@ -48,7 +79,7 @@ public class AdminController extends BaseController{
             Topical topical=topicalService.checkVkey(video.getVkey());//检测当前topical表中是否已经存在该数据
             if(topical==null){//不存在则插入一条
                 String shareKey= EncodeUtil.encodeString(video.getVkey());
-                String content="<p><strong>"+video.getTitle()+"</strong></p><p><strong><img src=\""+imageRoot+video.getImgName()+"\" alt=\""+video.getTitle()+"\" width=\"140\" height=\"140\" /><br /></strong></p><p><strong>下载链接：<a href=\"http://localhost:8088/video/video/download?shareKey="+shareKey+"\">点击打开链接</a><span style='color:#ff0000;'>[提示:下载将会扣除5金币,重复下载不扣除]</span><br /></strong></p>";
+                String content="<p><strong>"+video.getTitle()+"</strong></p><p><strong><img src=\""+imageRoot+video.getImgName()+"\" alt=\""+video.getTitle()+"\" width=\"140\" height=\"140\" /><br /></strong></p><p><strong>下载链接：<a href=\""+request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()+"/video/download?shareKey="+shareKey+"\">点击打开链接</a><span style='color:#ff0000;'>[提示:下载将会扣除3金币,重复下载不扣除]</span><br /></strong></p>";
                 Topical newTopical=new Topical( 1,  "admin",  "下载区", video.getVkey(),  video.getTitle(),  content);
                 topicalService.insertTopical(newTopical);
                 i++;

@@ -27,4 +27,5 @@ public interface IVideoMapper {
     public void videoReduceSelf(Map map);
     public List<Video> selectVideosInVkeys(List<String> list);
     public List<Video> selectAll();
+    public List<Video> selectByToday(String updatetime);
 }

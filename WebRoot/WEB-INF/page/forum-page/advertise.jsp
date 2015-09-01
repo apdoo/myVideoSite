@@ -32,7 +32,7 @@
                 <div class="cell">
                     <h1 style="padding-top: 0px;">在 94lu 投放广告</h1>
                     <div class="sep20"></div>
-                    <span class="bigger" style="line-height: 150%;">广告联系请发到　94luvideos@gmail.com 请注意本站不通过任何代理接手广告，请直接联系邮箱。标题请注明广告联系，必带上广告网址。不写明者将不予回复。</span>
+                    <span class="bigger" style="line-height: 150%;">广告联系请发到　94luvideo@gmail.com 请注意本站不通过任何代理接手广告，请直接联系邮箱。标题请注明广告联系，必带上广告网址。不写明者将不予回复。</span>
                     <div class="sep20"></div>
                     <span class="bigger" style="line-height: 150%;">老客户请注意，续费前请首先Email确认。</span>
                     <div class="sep20"></div>

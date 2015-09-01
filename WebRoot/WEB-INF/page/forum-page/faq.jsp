@@ -28,10 +28,10 @@
         <div id="Main"  >
             <div class="sep20"></div>
             <div class="box">
-                <div class="cell"><a href="${pageContext.request.contextPath}/bbs">94lu社区</a> <span class="chevron">&nbsp;›&nbsp;</span> 常见问题</div>
+                <div class="cell"><a target="_blank" href="${pageContext.request.contextPath}/bbs">94lu社区</a> <span class="chevron">&nbsp;›&nbsp;</span> 常见问题</div>
                 <div class="cell topic_content">
                     <h2>视频网址总是被屏蔽，怎么办？</h2>
-                    <p>关注94lu官方微博，发布最新的视频网址。或者发送邮件到 94luvideos@gmail.com即可获得最新的访问网址</p>
+                    <p>关注94lu<a href="http://weibo.com/u/5688400952/">官方微博</a>，发布最新的视频网址。或者发送邮件到 94luvideo@gmail.com即可获得最新的访问网址</p>
                     <h2>94lu金币规则与如何获得金币？</h2>
                     <p>普通会员观看在线视频扣除1金币，下载种子扣除1金币，下载视频扣除3金币。通过领取每日的登录奖励可以获得5金币,或者在建议区给我们提供相关建议或信息，一旦采用，将会奖励100金币到您的账户下。或者直接进行金币充值。详情点击<a href="${pageContext.request.contextPath}/recharge">充值详细页</a></p>
                     <h2>如何获得vip账号？</h2>

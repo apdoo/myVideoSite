@@ -95,6 +95,11 @@ public class VideoService implements IVideoService{
         return mapper.selectAll();
     }
 
+    @Override
+    public List<Video> selectByToday(String updatetime) {
+        return mapper.selectByToday(updatetime);
+    }
+
     /**
      * 根据vkey查询出一条视频信息
      * @param vkey

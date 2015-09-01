@@ -192,6 +192,14 @@ public class VideoController extends BaseController{
                     path=savePath+video.getVideoName();  // path是指欲下载的文件的路径。
                     File file = new File(path);
                     String filename = file.getName();  // 取得文件名。
+                    String requestUrl =RequestUtil.buildOriginalURL(request);//获得下载的url
+                    UserDownloadLog downloadLog=userDownloadLogService.checkDownloadUrl(requestUrl,trueUser.getId()); //检查该url是否已经被该用户下过
+                    logger.info("user:"+trueUser.getUsername()+"download:"+requestUrl);
+                    if(downloadLog==null){//没有当前下载记录，则插入下载记录与扣除当前用户的余额
+                        UserDownloadLog log=new UserDownloadLog(trueUser.getId(),trueUser.getUsername(),path,filename,requestUrl);//记录下载日志
+                        userDownloadLogService.insertUserDownloadLog(log); //插入下载日志记录表
+                        userService.updatePointAndBalance(videoDownloadValue, trueUser.getId(), (String) Configurer.getContextProperty("balance.type.downloadVideo"), (String) Configurer.getContextProperty("balance.description.downloadVideo"), "reduce");//用户积分扣除
+                    }
                     String ext = filename.substring(filename.lastIndexOf(".") + 1).toUpperCase();   // 取得文件的后缀名。
                     InputStream fis = new BufferedInputStream(new FileInputStream(path));  // 以流的形式下载文件。
                     byte[] buffer = new byte[fis.available()];
@@ -209,13 +217,6 @@ public class VideoController extends BaseController{
                     toClient.write(buffer);
                     toClient.flush();
                     toClient.close();
-                    String requestUrl =RequestUtil.buildOriginalURL(request);//获得下载的url
-                    UserDownloadLog downloadLog=userDownloadLogService.checkDownloadUrl(requestUrl,trueUser.getId()); //检查该url是否已经被该用户下过
-                    if(downloadLog==null){//没有当前下载记录，则插入下载记录与扣除当前用户的余额
-                        UserDownloadLog log=new UserDownloadLog(trueUser.getId(),trueUser.getUsername(),path,filename,requestUrl);//记录下载日志
-                        userDownloadLogService.insertUserDownloadLog(log); //插入下载日志记录表
-                        userService.updatePointAndBalance(videoDownloadValue, trueUser.getId(), (String) Configurer.getContextProperty("balance.type.downloadVideo"), (String) Configurer.getContextProperty("balance.description.downloadVideo"), "reduce");//用户积分扣除
-                    }
                 }else{
                     //  response.sendRedirect(request.getContextPath()+"/viewlimit");
                     request.getRequestDispatcher("/bbs/downloadlimit").forward(request,response);//使用内部跳转重新定向

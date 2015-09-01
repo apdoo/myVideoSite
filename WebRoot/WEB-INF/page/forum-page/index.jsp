@@ -37,7 +37,14 @@
                         <tbody><tr>
                             <td width="48" valign="top" align="center"><a href="${pageContext.request.contextPath}/bbs/replay?tid=${topical.id}"><img  src="${topical.authorAvatar}"  class="avatar" border="0" align="default"></a></td>
                             <td width="10"></td>
-                            <td width="auto" valign="middle"><span class="item_title"><a href="${pageContext.request.contextPath}/bbs/replay?tid=${topical.id}">${topical.title}</a></span>
+                            <td width="auto" valign="middle">
+                                <c:if test="${topical.type==1}">
+                                    <span class="item_title_top"> <a style="color:#ff3000;" href="${pageContext.request.contextPath}/bbs/replay?tid=${topical.id}">${topical.title}</a></span>
+                                </c:if>
+                                <c:if test="${topical.type==0}">
+                                    <span class="item_title"> <a  href="${pageContext.request.contextPath}/bbs/replay?tid=${topical.id}">${topical.title}</a></span>
+                                 </c:if>
+
                                 <div class="sep5"></div>
                                 <span class="small fade"><div class="votes"></div><span class="node">${cn_name}</span> &nbsp;•&nbsp; <strong><a href="#" onclick="return false;">作者：${topical.author}</a></strong> &nbsp;•&nbsp; ${topical.time} &nbsp;•&nbsp;${topical.views}  次点击&nbsp;•&nbsp; </span>
                             </td>

@@ -53,9 +53,13 @@
         <result property="author" column="author"/>
         <result property="description" column="description"/>
     </resultMap>
+    <!--查询今日更新的所有视频-->
+    <select id="selectByToday" parameterType="String" resultMap="simplyVideoResultMap">
+        select * from video  where updatetime  LIKE CONCAT('%','${value}','%' ) order by updatetime desc
+    </select>
     <!--查询所有视频-->
     <select id="selectAll" resultMap="simplyVideoResultMap">
-        select * from video
+        select * from video order by updatetime desc
     </select>
     <!-- 针对mysql的分页 limit函数,针对本地化的视频  ${xxxx}：$将传入的数据直接显示生成在sql中，对于字符串数据，需要手动加上引号。-->
     <select id="limit" parameterType="com.hexor.repo.Pager" resultMap="simplyVideoResultMap">

@@ -39,7 +39,7 @@
             <hr class="ad-hr">
             <div class="am-g">
                 <div class="am-u-sm-12 am-u-sm-centered">
-                    <h2 class="ad-h">广告联系请发到　94luvideos@gmail.com 请注意本站不通过任何代理接手广告，请直接联系邮箱。</h2>
+                    <h2 class="ad-h">广告联系请发到　94luvideo@gmail.com 请注意本站不通过任何代理接手广告，请直接联系邮箱。</h2>
                     <p class="ad-p">老客户请注意，续费前请首先Email确认。</p>
                     <p class="ad-p">标题请注明广告联系，必带上广告网址。不写明者将不予回复。</p>
                     <hr class="ad-hr">
