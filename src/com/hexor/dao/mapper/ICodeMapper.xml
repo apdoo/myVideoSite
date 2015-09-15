@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.hexor.dao.ICodeMapper">
+   <sql id="columnICode">
+		 card,
+		 code,
+		 type
+   </sql>
+ 
+    <resultMap type="com.hexor.repo.ICode" id="iCodeResultMap">
+        <id property="id" column="id"/>
+        <result property="card" column="card"/>
+        <result property="code" column="code"/>
+        <result property="type" column="type"/>
+
+
+    </resultMap>
+
+    <insert id="insertICode" parameterType="com.hexor.repo.ICode" >
+        insert into icode(<include refid="columnICode"/> ) values(
+          #{card},
+          #{code},
+          #{type}
+        )
+    </insert>
+
+    <select id="selectAll" resultMap="iCodeResultMap">
+        select * from icode
+    </select>
+
+    <select id="checkICode" parameterType="String" resultType="com.hexor.repo.ICode">
+        select * from icode where code=#{value}
+    </select>
+
+    <delete id="removeICode" parameterType="String">
+        delete from icode where code=#{value}
+    </delete>
+ </mapper>

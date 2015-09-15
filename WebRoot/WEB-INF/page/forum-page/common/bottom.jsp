@@ -3,7 +3,7 @@
     <div class="content">
         <div class="inner">
             <div class="sep10"></div>
-            <strong><a href="${pageContext.request.contextPath}/about" class="dark" target="_self">关于</a> &nbsp; <span class="snow">·</span> &nbsp; <a href="${pageContext.request.contextPath}/faq" class="dark" target="_self">常见问题</a> &nbsp; <span class="snow">·</span>  &nbsp;   <a href="${pageContext.request.contextPath}/advertise" class="dark" target="_self">广告投放</a> &nbsp; <span class="snow">·</span> &nbsp;<a href="${pageContext.request.contextPath}/recharge" class="dark" target="_blank">充值</a> &nbsp; <span class="snow">·</span> &nbsp;<a href="http://weibo.com/u/5688400952/" class="dark" target="_blank">官方微博</a>
+            <strong><a href="${pageContext.request.contextPath}/about" class="dark" target="_self">关于</a> &nbsp; <span class="snow">·</span> &nbsp; <a href="${pageContext.request.contextPath}/faq" class="dark" target="_self">常见问题</a> &nbsp; <span class="snow">·</span>  &nbsp;   <a href="${pageContext.request.contextPath}/advertise" class="dark" target="_self">广告投放</a> &nbsp; <span class="snow">·</span> &nbsp;<a href="${pageContext.request.contextPath}/recharge" class="dark" target="_blank">充值</a> &nbsp; <span class="snow">·</span> &nbsp;<a href="http://weibo.com/u/5688400952/" class="dark" target="_blank">官方微博</a></strong>
             <div class="sep20"></div>
             94lu社区
             <div class="sep5"></div>
@@ -16,3 +16,5 @@
         </div>
     </div>
 </div>
+<script language="javascript" type="text/javascript" src="http://js.users.51.la/18602577.js"></script>
+<noscript><a href="http://www.51.la/?18602577" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/18602577.asp" style="border:none" /></a></noscript>

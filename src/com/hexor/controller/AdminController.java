@@ -1,10 +1,7 @@
 package com.hexor.controller;
 
 import com.hexor.repo.*;
-import com.hexor.util.Configurer;
-import com.hexor.util.DateUtil;
-import com.hexor.util.EncodeUtil;
-import com.hexor.util.ResponseUtil;
+import com.hexor.util.*;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.springframework.stereotype.Controller;
@@ -15,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -185,9 +183,28 @@ public class AdminController extends BaseController{
         }else{
             json.put("msg","没有查到用户:"+username);
         }
-
-
-
         ResponseUtil.outWriteJson(response, json.toString());
     }
+
+    /**
+     * 生成一批注册码插入到数据库中
+     * @param number
+     * @param response
+     * @throws IOException
+     */
+    @RequestMapping(value = "getInvCode")
+    public void getInvCode(@RequestParam(value = "number",required = true,defaultValue = "100") String number,HttpServletResponse response) throws IOException {
+        int num=Integer.parseInt(number);
+        Set<String> set=CodeUtil.getCodes(num,6);//生成6位数的邀请码组成的集合set
+        for(String code:set){
+           codeService.insertICode(code);
+        }
+        List<ICode> list=codeService.selectAll();
+        StringBuffer sb=new StringBuffer();
+        for(ICode iCode:list){
+            sb.append(iCode.getCard()+" "+iCode.getCode()+"<br/>");
+        }
+        ResponseUtil.outWriteText(response, sb.toString());
+    }
+
 }

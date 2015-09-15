@@ -101,3 +101,11 @@ create table UserDownloadLog(
  		  time varchar(30)
  )DEFAULT  charset=utf8;
 
+ --邀请码表
+create table icode(
+  		id int NOT NULL AUTO_INCREMENT primary key,
+  	 card  varchar(20),
+  	 code  varchar(20),
+  	 type varchar(20)
+ )DEFAULT  charset=utf8;
+ --select * into outfile '/tmp/user.txt' from user

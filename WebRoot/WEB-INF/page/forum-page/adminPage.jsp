@@ -25,6 +25,8 @@
 用户名: <input type="text" id="gold_username" value="" />  金币:<input type="text"   id="gold" value="" /> <input id="gold_button" type="button" onclick="addGold()" value="金币操作"/><br/><br/>
 帖子tid: <input type="text" id="tid" value="" /> 置顶排序: <input type="text" id="order" value="1" /> <input type="button"  id="topicalTop_button" onclick="topicalTop('1')" value="帖子置顶"/> <input type="button"  id="topicalTop_cancel_button" onclick="topicalTop('0')" value="取消置顶"/>    <input type="button"  id="topicalRemove_button" onclick="topicalRemove()" value="帖子删除"/> <br/><br/>
 <input type="button"  id="synchroVideoToday_button" onclick="synchroVideoToday()" value="同步今天采集的视频"/>
+<input type="button"  onclick="randomPostVideo()" value="获得5部要用来发帖的视频信息"><br/><br/>
+<input type="button"  id="insertCode_button" onclick="insertCode()" value="插入100个注册码"/>
 <input type="button"  id="synchroVideo_button" onclick="synchroVideo()" value="同步所有的视频"/>
 <div id="tips">
 </div>
@@ -33,6 +35,50 @@
     $(function() {
 
     });
+    /**
+     * 插入一批注册码
+     * */
+    function insertCode(){
+        $.ajax({
+            type : "POST",
+            url : "${pageContext.request.contextPath}"+"/admin94lu/getInvCode",
+
+            dataType:"text",
+            success : function(data) {
+                $("#tips").html(data);
+            },
+            //请求出错的处理
+            error:function(){
+//               alert("请求出错");
+            }
+        });
+        $("#insertCode_button").attr({"disabled":"disabled"});
+    }
+    /**
+     * 随机5个要用来发帖的视频
+     * */
+    function randomPostVideo(){
+        $.ajax({
+            type : "POST",
+            url : "${pageContext.request.contextPath}"+"/video/viewVideosInfo",
+            data:{
+                count:"5",
+                type:"random"//获得是随机一组的视频信息
+            },
+            dataType:"json",
+            success : function(data) {
+                var content="";
+                $.each(data,function(key,val){
+                    content=content+val.title+"   "+val.imgName+"   http://www.94luvideo.com/videoplay?vkey="+val.vkey+"<br/>";
+                });
+                $("#tips").html(content);
+            },
+            //请求出错的处理
+            error:function(){
+//               alert("请求出错");
+            }
+        });
+    }
     /**
     * 会员级别调整
     * @param username

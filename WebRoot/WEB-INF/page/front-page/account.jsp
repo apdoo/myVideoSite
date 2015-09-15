@@ -58,13 +58,18 @@
                             <span><input type="text" name="email" id="email" maxlength="30"></span>
                         </div>
                         <div>
-                            <img id="vimg"  src="${pageContext.request.contextPath}/validation/one" />
+                            <span ><label>邀请码<br/>由于在线观看视频的狼友过多，服务器带宽与流量消耗，为了优先照顾广大会员，启用邀请注册码制度。<a target="_blank" href="http://www.33un.com/product/8965299B78FD71FA">(如何获得邀请码？)</a></label></span>
+                            <span id="code_tiop"></span>
+                            <span><input type="text" name="icode" id="inv_code" maxlength="30"></span>
                         </div>
-                        <div>
-                            <span ><label>验证码</label></span>
-                            <span id="vcode_tip"></span>
-                            <span><input type="text" id="verification_code" name="vcode" maxlength="6"></span>
-                        </div>
+                        <%--<div>--%>
+                            <%--<img id="vimg"  src="${pageContext.request.contextPath}/validation/one" />--%>
+                        <%--</div>--%>
+                        <%--<div>--%>
+                            <%--<span ><label>验证码</label></span>--%>
+                            <%--<span id="vcode_tip"></span>--%>
+                            <%--<span><input type="text" id="verification_code" name="vcode" maxlength="6"></span>--%>
+                        <%--</div>--%>
                         <div>
                             <span> <input id="saveCookieSign" type="checkbox" value="" />记住密码<input id="reg" type="button"   class="button blue" value="注 册" tabindex="5"></span>
                         </div>
@@ -104,7 +109,7 @@
      * */
     $("#vimg").click(function() {
         //带上一个参数，防止请求被缓存
-        $("#vimg").attr("src","${pageContext.request.contextPath}/validation/one?random="+Math.random());
+        <%--$("#vimg").attr("src","${pageContext.request.contextPath}/validation/one?random="+Math.random());--%>
     });
 </script>
 </body>

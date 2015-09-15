@@ -26,6 +26,16 @@ import java.util.List;
  * 基础控制器
  */
 public class BaseController {
+
+    /**
+     * 邀请码service
+     */
+    @Autowired
+    @Qualifier("com.hexor.service.impl.CodeService")
+    protected ICodeService codeService = null;
+    public void setCodeService(ICodeService codeService) {
+        codeService = codeService;
+    }
     /**
      * 用户收支信息记录service
      */

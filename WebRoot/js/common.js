@@ -209,6 +209,8 @@ function videos_init(root,data){
         }
         i++;
     });
+    //外接广告 <!--9-13放的 一个月到期-->
+    content="<div class=\"grid\"><h3>全天24小时享受真人美女一对一服务</h3><a href=\"http://xiu.aikoujiao.com\"><img src=\"http://ww4.sinaimg.cn/bmiddle/005y2Izbgw1evzyzlpi2lg309f07g4qq.gif\" title=\"抚顺同学的老娘\" style=\"width:355;\"></a> <div class=\"time\"> <span></span> </div><div class=\"grid-info\"><div class=\"video-share\"></div><div class=\"video-watch\"></div> <div class=\"clear\"> </div> <div class=\"lables\"> <p>标签: 推广 </p></div></div></div>"+content;
     return content;
 }
 /**

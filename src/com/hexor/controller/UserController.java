@@ -1,5 +1,6 @@
 package com.hexor.controller;
 
+import com.hexor.repo.ICode;
 import com.hexor.repo.User;
 import com.hexor.service.impl.UserService;
 import com.hexor.util.*;
@@ -81,17 +82,20 @@ public class UserController extends BaseController{
      */
     @RequestMapping(value="signup")
     public ModelAndView signup(User user,HttpSession session,HttpServletRequest request){
-        String vcode=(String)session.getAttribute("validation_code");//从session拿去服务端所存的验证码
+//        String vcode=(String)session.getAttribute("validation_code");//从session拿去服务端所存的验证码
+        ICode icode=codeService.checkICode(user.getIcode());
+        if(icode==null) return new ModelAndView("front-page/messagetip", ModelMapUtil.getMsg("邀请码不正确！"));
         User result=userService.checkUser(user.getUsername());//
         if(result!=null)  return new ModelAndView("front-page/messagetip", ModelMapUtil.getMsg("已经存在用户名！")); //当数据库中存在同名用户的时候
-        if(vcode!=null&&user.getVcode()!=null){
-            //转换大小写
-            vcode=vcode.toLowerCase();
-            String in=user.getVcode().toLowerCase();
-            if(!in.equals(vcode)){
-                return new ModelAndView("front-page/messagetip",ModelMapUtil.getMsg("验证码输入错误！"));
-            }
-        }
+//       有邀请码的存在了，注释掉验证码
+//        if(vcode!=null&&user.getVcode()!=null){
+//            //转换大小写
+//            vcode=vcode.toLowerCase();
+//            String in=user.getVcode().toLowerCase();
+//            if(!in.equals(vcode)){
+//                return new ModelAndView("front-page/messagetip",ModelMapUtil.getMsg("验证码输入错误！"));
+//            }
+//        }
         try{
             user.setLoginIp(IpUtil.getIpAddr(request));
             user.setSignupTime(DateUtil.getStrOfDateTime());
@@ -99,6 +103,8 @@ public class UserController extends BaseController{
             //验证成功，加入用户信息岛session与插入到数据库
             session.setAttribute((String) Configurer.getContextProperty("session.userinfo"), user);
             userService.insertUser(user);
+            //移除邀请码
+            codeService.removeICode(user.getIcode());
         }catch (Exception e){
             Map map=ModelMapUtil.getMsg("注册失败!");
             return new ModelAndView("front-page/messagetip",map);

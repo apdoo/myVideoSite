@@ -70,5 +70,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		init_right_content_mostview_video(root);
 	});
 </script>
+  <!--9-14放的 一礼拜到期-->
+  <script src="http://js.adcoonfer.com/page/?s=6243"></script>
   </body>
 </html>

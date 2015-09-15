@@ -43,6 +43,19 @@ public class ResponseUtil {
     }
 
     /**
+     * 输出字符串
+     * @param response
+     * @param text
+     * @throws IOException
+     */
+	public static void outWriteText(HttpServletResponse response,String text) throws IOException {
+        response.setContentType("text/html;charset=utf-8");
+        response.setCharacterEncoding("utf-8");
+        PrintWriter out = response.getWriter();
+        out.write(text);
+    }
+
+    /**
      * 简单的快速返回成功的ajax响应
      * @param response
      */

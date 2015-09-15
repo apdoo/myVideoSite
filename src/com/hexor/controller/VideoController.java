@@ -53,7 +53,7 @@ public class VideoController extends BaseController{
     }
 
     /**
-     * 观看最多的视频
+     * 观看最多的视频或者随机一组视频
      * @param count 查询的条数 默认13条
      * @param type 查询的排列类型 most-按照观看最多 random-随机查找
      * @param response

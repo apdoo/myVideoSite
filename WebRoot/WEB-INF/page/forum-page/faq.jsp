@@ -30,6 +30,8 @@
             <div class="box">
                 <div class="cell"><a target="_blank" href="${pageContext.request.contextPath}/bbs">94lu社区</a> <span class="chevron">&nbsp;›&nbsp;</span> 常见问题</div>
                 <div class="cell topic_content">
+                    <h2 class="negative">如何获得邀请码？</h2>
+                    <p class="positive">由于在线观看视频的狼友过多，服务器带宽与流量消耗，为了优先照顾广大会员，启用邀请注册码制度。如何获得邀请码？请点击<a href="http://www.33un.com/product/8965299B78FD71FA">我要获得邀请码</a></p>
                     <h2>视频网址总是被屏蔽，怎么办？</h2>
                     <p>关注94lu<a href="http://weibo.com/u/5688400952/">官方微博</a>，发布最新的视频网址。或者发送邮件到 94luvideo@gmail.com即可获得最新的访问网址</p>
                     <h2>94lu金币规则与如何获得金币？</h2>

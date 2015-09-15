@@ -12,6 +12,7 @@
     <div class="box">
         <div class="cell"><span class="fade">社区公告</span></div>
         <div class="cell">
+            <span class="red">庆祝大阅兵与国庆到来，回馈广大会员，原价200块vip会员，限时促销33块，机不可失！</span><br/>
            想要查看主题或者发表主题(回复)，请先登录账号
         </div>
     </div>
