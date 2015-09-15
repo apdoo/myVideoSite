@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01dc29ef-f31f-416d-be40-a4b805f28356" name="Default" comment="&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/service/impl/CodeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/util/CodeUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/repo/ICode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/dao/ICodeMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/dao/mapper/ICodeMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hexor/service/ICodeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/recharge-bak.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/yanue.pop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/hexor/repo/BasePojo.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/hexor/repo/BasePojo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/hexor/util/ResponseUtil.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/hexor/util/ResponseUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/controller/AdminController.java" afterPath="$PROJECT_DIR$/src/com/hexor/controller/AdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/controller/BaseController.java" afterPath="$PROJECT_DIR$/src/com/hexor/controller/BaseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/repo/BasePojo.java" afterPath="$PROJECT_DIR$/src/com/hexor/repo/BasePojo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/util/ResponseUtil.java" afterPath="$PROJECT_DIR$/src/com/hexor/util/ResponseUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/controller/UserController.java" afterPath="$PROJECT_DIR$/src/com/hexor/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hexor/controller/VideoController.java" afterPath="$PROJECT_DIR$/src/com/hexor/controller/VideoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/account.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/account.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ad" afterPath="$PROJECT_DIR$/ad" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/adminPage.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/adminPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/bottom.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/bottom.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/bottom.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/bottom.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/js/common.js" afterPath="$PROJECT_DIR$/WebRoot/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.sql" afterPath="$PROJECT_DIR$/database.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/faq.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/faq.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/header.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/header.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/front-page/common/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/index.jsp" afterPath="$PROJECT_DIR$/WebRoot/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/recharge.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/recharge.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/right-content.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/right-content.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/simply-right-content.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/simply-right-content.jsp" />
+    <list default="true" id="01dc29ef-f31f-416d-be40-a4b805f28356" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="myVideoSite.iws" />
@@ -99,8 +68,8 @@
       <file leaf-file-name="header.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10964083">
-              <caret line="8" column="109" selection-start-line="8" selection-start-column="109" selection-end-line="8" selection-end-column="109" />
+            <state vertical-scroll-proportion="0.25141776">
+              <caret line="7" column="79" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -847,7 +816,7 @@
       <workItem from="1442277200207" duration="2914000" />
       <workItem from="1442280851994" duration="1562000" />
       <workItem from="1442296160475" duration="823000" />
-      <workItem from="1442306275772" duration="44000" />
+      <workItem from="1442306275772" duration="253000" />
     </task>
     <task id="LOCAL-00001" summary="test git connect">
       <created>1436150671763</created>
@@ -951,11 +920,17 @@
       <option name="project" value="LOCAL" />
       <updated>1441098203109</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ending&#10;">
+      <created>1442306383245</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1442306383245</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="554262000" />
+    <option name="totallyTimeSpent" value="554471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -963,20 +938,20 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.63822526" sideWeight="0.5151286" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26399395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26399395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1008,7 +983,8 @@
     <MESSAGE value="修改icon图标&#10;" />
     <MESSAGE value="初步上线测试版&#10;" />
     <MESSAGE value="初步运营版本&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="初步运营版本&#10;" />
+    <MESSAGE value="ending&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="ending&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1410,8 +1386,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/page/forum-page/common/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10964083">
-          <caret line="8" column="109" selection-start-line="8" selection-start-column="109" selection-end-line="8" selection-end-column="109" />
+        <state vertical-scroll-proportion="0.25141776">
+          <caret line="7" column="79" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
           <folding />
         </state>
       </provider>
