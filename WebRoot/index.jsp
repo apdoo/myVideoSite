@@ -71,6 +71,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	});
 </script>
   <!--9-14放的 一礼拜到期-->
-  <script src="http://js.adcoonfer.com/page/?s=6243"></script>
+  <%--<script src="http://js.adcoonfer.com/page/?s=6243"></script>--%>
   </body>
 </html>
