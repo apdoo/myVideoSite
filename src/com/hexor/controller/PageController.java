@@ -70,6 +70,7 @@ public class PageController extends BaseController{
         search = new String(search.getBytes("iso8859-1"),"UTF-8");
         return searchvideos(search,wpage,session,request);
     }
+
     /**
      * 视频搜索页面
      * @return
