@@ -109,3 +109,5 @@ create table icode(
   	 type varchar(20)
  )DEFAULT  charset=utf8;
  --select * into outfile '/tmp/user.txt' from user
+
+
