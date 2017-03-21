@@ -34,7 +34,7 @@ public class BaseController {
     @Qualifier("com.hexor.service.impl.CodeService")
     protected ICodeService codeService = null;
     public void setCodeService(ICodeService codeService) {
-        codeService = codeService;
+        codeService  = codeService;
     }
     /**
      * 用户收支信息记录service
